@@ -1,0 +1,25 @@
+{
+    "createMatter":{
+        "Comment":"1.First Test Cases",
+        "caseTitle":"Scheme Apply",
+        "caseNumber":"Test Files",
+        "DateFill":" 20 ",
+        "Description":"Client matter related Details",
+        "caseType":"Individual",
+        "Court":"High Court",
+        "Judge":"Siva kumar",
+        "Priority":"Medium",
+        "Status":"Pending",
+        "oppName":"Raja",
+        "oppEmail":"rajkum@gmk.com",
+        "oppNumber":"9090101011",
+        "Department1":"Civil Law",
+        "Department2":"Sanity Testing",
+        "client1":"Test 1",
+        "client2":"Lauditor to Corporate",
+        "member1":"Member 1",
+        "member2":"Member 2",
+        "document1":"PDF files sample",
+        "document2":"Editer Files"
+    }
+}
