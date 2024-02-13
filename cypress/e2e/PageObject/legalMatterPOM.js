@@ -56,7 +56,9 @@ class legalcaseMatter {
 
         pomAssertioncaseTitleMandatory : () => cy.xpath("//div[text()='Case Title is required']"),
 
-        pomAssertioncaseNumberMandatory : () => cy.xpath("//div[text()='Case Number is required']")
+        pomAssertioncaseNumberMandatory : () => cy.xpath("//div[text()='Case Number is required']"),
+
+        pomNextButtonDepartment : () => cy.xpath("//button[text()='Next']"),
     }
 
     leftSideMatterTab()
@@ -76,6 +78,7 @@ class legalcaseMatter {
 
     createTab()
     {
+        cy.wait(5000);
         this.elements.pomCreateTab().click();
     }
 
@@ -169,6 +172,12 @@ class legalcaseMatter {
     nextButton()
     {
         this.elements.pomNextButtonMatterinfo().click();
+    }
+
+    commonNextButton()
+    {
+        cy.wait(1000);
+        this.elements.pomNextButtonDepartment().click();
     }
 
     selectAllButton()

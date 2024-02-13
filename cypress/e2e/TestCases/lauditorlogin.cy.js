@@ -1,6 +1,6 @@
 import loginPage from "../PageObject/loginpagePOM";
 import groups from "../PageObject/groupsPOM";
-import 'cypress-file-upload';
+
 
 
 describe("Create Department Scenario", () => {

@@ -25,9 +25,8 @@ describe("Create Legal Matter Scenario",()=>{
         legalMatters.leftSideMatterTab();
     });
 
-    it.only("1.Mandatory Fields with Cancel",()=>{
+    it("1.Mandatory Fields with Cancel",()=>{
         legalMatters.leftSideMatterTab();
-        cy.wait(5000);
         legalMatters.createTab();
         legalMatters.caseTitleField(matterData.createMatter.caseTitle);
         legalMatters.caseNumberField(matterData.createMatter.caseNumber);
@@ -41,7 +40,6 @@ describe("Create Legal Matter Scenario",()=>{
     })
 
     it("2.Mandatory Field and DOF with Cancel",()=>{
-        cy.wait(5000);
         legalMatters.createTab();
         legalMatters.caseTitleField(matterData.createMatter.caseTitle);
         legalMatters.caseNumberField(matterData.createMatter.caseNumber);
@@ -59,7 +57,6 @@ describe("Create Legal Matter Scenario",()=>{
     })
 
     it("3.Mandatory and Description with Cancel ",()=>{
-        cy.wait(5000);
         legalMatters.createTab();
         legalMatters.caseTitleField(matterData.createMatter.caseTitle);
         legalMatters.caseNumberField(matterData.createMatter.caseNumber);
@@ -75,7 +72,6 @@ describe("Create Legal Matter Scenario",()=>{
     })
 
     it("4.Mandatory and case types with Cancel ",()=>{
-        cy.wait(5000);
         legalMatters.createTab();
         legalMatters.caseTitleField(matterData.createMatter.caseTitle);
         legalMatters.caseNumberField(matterData.createMatter.caseNumber);
@@ -91,7 +87,6 @@ describe("Create Legal Matter Scenario",()=>{
     })
 
     it("5.Mandatory and court with cancel ",()=>{
-        cy.wait(5000);
         legalMatters.createTab();
         legalMatters.caseTitleField(matterData.createMatter.caseTitle);
         legalMatters.caseNumberField(matterData.createMatter.caseNumber);
@@ -107,7 +102,6 @@ describe("Create Legal Matter Scenario",()=>{
     })
 
     it("6.Mandatory and Judge with cancel ",()=>{
-        cy.wait(5000);
         legalMatters.createTab();
         legalMatters.caseTitleField(matterData.createMatter.caseTitle);
         legalMatters.caseNumberField(matterData.createMatter.caseNumber);
@@ -123,7 +117,6 @@ describe("Create Legal Matter Scenario",()=>{
     })
 
     it("7.Mandatory and Priority with cancel ",()=>{
-        cy.wait(5000);
         legalMatters.createTab();
         legalMatters.caseTitleField(matterData.createMatter.caseTitle);
         legalMatters.caseNumberField(matterData.createMatter.caseNumber);
@@ -134,7 +127,6 @@ describe("Create Legal Matter Scenario",()=>{
     })
 
     it("8.Mandatory and Status with cancel ",()=>{
-        cy.wait(5000);
         legalMatters.createTab();
         legalMatters.caseTitleField(matterData.createMatter.caseTitle);
         legalMatters.caseNumberField(matterData.createMatter.caseNumber);
@@ -145,7 +137,6 @@ describe("Create Legal Matter Scenario",()=>{
     })
 
     it("9.Mandatory and Opponent Advocates with cancel ",()=>{
-        cy.wait(5000);
         legalMatters.createTab();
         legalMatters.caseTitleField(matterData.createMatter.caseTitle);
         legalMatters.caseNumberField(matterData.createMatter.caseNumber);
@@ -165,7 +156,6 @@ describe("Create Legal Matter Scenario",()=>{
     })
 
     it("10.Without enter the mandatory and Check the error message appear",()=>{
-        cy.wait(5000);
         legalMatters.createTab();
         cy.scrollTo('bottom');
         cy.wait(1000);
@@ -177,7 +167,6 @@ describe("Create Legal Matter Scenario",()=>{
     })
 
     it.skip("11.Mandatory with Next button disable in Department",()=>{
-        cy.wait(5000);
         legalMatters.createTab();
         legalMatters.caseTitleField(matterData.createMatter.caseTitle);
         legalMatters.caseNumberField(matterData.createMatter.caseNumber);
@@ -190,7 +179,6 @@ describe("Create Legal Matter Scenario",()=>{
     })
 
     it("12.Mandatory with Departments with Cancel",()=>{
-        cy.wait(5000);
         legalMatters.createTab();
         legalMatters.caseTitleField(matterData.createMatter.caseTitle);
         legalMatters.caseNumberField(matterData.createMatter.caseNumber);
@@ -206,7 +194,6 @@ describe("Create Legal Matter Scenario",()=>{
     })
 
     it("13.Mandatory with Departments and Clients with Cancel",()=>{
-        cy.wait(5000);
         legalMatters.createTab();
         legalMatters.caseTitleField(matterData.createMatter.caseTitle);
         legalMatters.caseNumberField(matterData.createMatter.caseNumber);
@@ -217,7 +204,7 @@ describe("Create Legal Matter Scenario",()=>{
         //Departments
         legalMatters.selectOnRightSide(namesToSelectDepartment);
         cy.scrollTo('bottom');
-        legalMatters.nextButton();
+        legalMatters.commonNextButton();
         //Clients
         legalMatters.selectOnRightSide(namesToSelectClients);
         legalMatters.cancelButton();
@@ -226,7 +213,6 @@ describe("Create Legal Matter Scenario",()=>{
     })
 
     it("14.Mandatory with Departments and TM with Cancel",()=>{
-        cy.wait(5000);
         legalMatters.createTab();
         legalMatters.caseTitleField(matterData.createMatter.caseTitle);
         legalMatters.caseNumberField(matterData.createMatter.caseNumber);
@@ -237,9 +223,9 @@ describe("Create Legal Matter Scenario",()=>{
         //Departments
         legalMatters.selectOnRightSide(namesToSelectDepartment);
         cy.scrollTo('bottom');
-        legalMatters.nextButton();
+        legalMatters.commonNextButton();
         //Clients
-        legalMatters.nextButton();
+        legalMatters.commonNextButton();
         //Team Members
         legalMatters.selectOnRightSide(namesToSelectTM);
         legalMatters.cancelButton();
@@ -248,7 +234,6 @@ describe("Create Legal Matter Scenario",()=>{
     })
 
     it("15.Mandatory with Departments and Documents with Cancel",()=>{
-        cy.wait(5000);
         legalMatters.createTab();
         legalMatters.caseTitleField(matterData.createMatter.caseTitle);
         legalMatters.caseNumberField(matterData.createMatter.caseNumber);
@@ -259,11 +244,11 @@ describe("Create Legal Matter Scenario",()=>{
         //Departments
         legalMatters.selectOnRightSide(namesToSelectDepartment);
         cy.scrollTo('bottom');
-        legalMatters.nextButton();
+        legalMatters.commonNextButton();
         //Clients
-        legalMatters.nextButton();
+        legalMatters.commonNextButton();
         //Team Members
-        legalMatters.nextButton();
+        legalMatters.commonNextButton();
         //Documents
         legalMatters.selectOnRightSide(namesToSelectDocuments);
         legalMatters.cancelButton();
@@ -272,7 +257,6 @@ describe("Create Legal Matter Scenario",()=>{
     })
 
     it("16.Mandatory with Departments,Clients,TeamMember and Documents with Cancel",()=>{
-        cy.wait(5000);
         legalMatters.createTab();
         legalMatters.caseTitleField(matterData.createMatter.caseTitle);
         legalMatters.caseNumberField(matterData.createMatter.caseNumber);
@@ -283,13 +267,13 @@ describe("Create Legal Matter Scenario",()=>{
         //Departments
         legalMatters.selectOnRightSide(namesToSelectDepartment);
         cy.scrollTo('bottom');
-        legalMatters.nextButton();
+        legalMatters.commonNextButton();
         //Clients
         legalMatters.selectOnRightSide(namesToSelectClients);
-        legalMatters.nextButton();
+        legalMatters.commonNextButton();
         //Team Members
         legalMatters.selectOnRightSide(namesToSelectTM);
-        legalMatters.nextButton();
+        legalMatters.commonNextButton();
         //Documents
         legalMatters.selectOnRightSide(namesToSelectDocuments);
         legalMatters.cancelButton();
@@ -298,7 +282,6 @@ describe("Create Legal Matter Scenario",()=>{
     })
 
     it("17.Mandatory with Select and unSelect the Departments",()=>{
-        cy.wait(5000);
         legalMatters.createTab();
         legalMatters.caseTitleField(matterData.createMatter.caseTitle);
         legalMatters.caseNumberField(matterData.createMatter.caseNumber);
@@ -313,7 +296,6 @@ describe("Create Legal Matter Scenario",()=>{
     })
 
     it("18.Mandatory with Select and unSelect the Clients",()=>{
-        cy.wait(5000);
         legalMatters.createTab();
         legalMatters.caseTitleField(matterData.createMatter.caseTitle);
         legalMatters.caseNumberField(matterData.createMatter.caseNumber);
@@ -323,7 +305,7 @@ describe("Create Legal Matter Scenario",()=>{
         cy.wait(1000);
         //Departments
         legalMatters.selectOnRightSide(namesToSelectDepartment);
-        legalMatters.nextButton();
+        legalMatters.commonNextButton();
         //Clients
         legalMatters.selectOnRightSide(namesToSelectClients);
         legalMatters.RemoveOnLeftSide(namesToSelectClients);
@@ -331,7 +313,6 @@ describe("Create Legal Matter Scenario",()=>{
     })
 
     it("19.Mandatory with Select and unSelect the TM",()=>{
-        cy.wait(5000);
         legalMatters.createTab();
         legalMatters.caseTitleField(matterData.createMatter.caseTitle);
         legalMatters.caseNumberField(matterData.createMatter.caseNumber);
@@ -341,9 +322,9 @@ describe("Create Legal Matter Scenario",()=>{
         cy.wait(1000);
         //Departments
         legalMatters.selectOnRightSide(namesToSelectDepartment);
-        legalMatters.nextButton();
+        legalMatters.commonNextButton();
         //Clients
-        legalMatters.nextButton();
+        legalMatters.commonNextButton();
         //Team Members
         legalMatters.selectOnRightSide(namesToSelectTM);
         legalMatters.RemoveOnLeftSide(namesToSelectTM);
@@ -351,7 +332,6 @@ describe("Create Legal Matter Scenario",()=>{
     })
 
     it("20.Mandatory with Select and unSelect the Documents",()=>{
-        cy.wait(5000);
         legalMatters.createTab();
         legalMatters.caseTitleField(matterData.createMatter.caseTitle);
         legalMatters.caseNumberField(matterData.createMatter.caseNumber);
@@ -361,11 +341,11 @@ describe("Create Legal Matter Scenario",()=>{
         cy.wait(1000);
         //Departments
         legalMatters.selectOnRightSide(namesToSelectDepartment);
-        legalMatters.nextButton();
+        legalMatters.commonNextButton();
         //Clients
-        legalMatters.nextButton();
+        legalMatters.commonNextButton();
         //Team Members
-        legalMatters.nextButton();
+        legalMatters.commonNextButton();
         //Documents
         legalMatters.selectOnRightSide(namesToSelectDocuments);
         legalMatters.RemoveOnLeftSide(namesToSelectDocuments);
@@ -373,7 +353,6 @@ describe("Create Legal Matter Scenario",()=>{
     })
 
     it("21.Mandatory with Departments and Select all and Unselect all and verify",()=>{
-        cy.wait(5000);
         legalMatters.createTab();
         legalMatters.caseTitleField(matterData.createMatter.caseTitle);
         legalMatters.caseNumberField(matterData.createMatter.caseNumber);
@@ -390,7 +369,6 @@ describe("Create Legal Matter Scenario",()=>{
 
 
     it("22.Mandatory with Clients and Select all and Unselect all and verify",()=>{
-        cy.wait(5000);
         legalMatters.createTab();
         legalMatters.caseTitleField(matterData.createMatter.caseTitle);
         legalMatters.caseNumberField(matterData.createMatter.caseNumber);
@@ -400,7 +378,7 @@ describe("Create Legal Matter Scenario",()=>{
         cy.wait(1000);
         //Departments
         legalMatters.selectAllButton();
-        legalMatters.nextButton();
+        legalMatters.commonNextButton();
         //Clients
         legalMatters.selectAllButton();
         legalMatters.emptyOnUnSelectListonRightSideVerify();
@@ -409,7 +387,6 @@ describe("Create Legal Matter Scenario",()=>{
     })
 
     it("23.Mandatory with TeamMembers and Select all and Unselect all and verify",()=>{
-        cy.wait(5000);
         legalMatters.createTab();
         legalMatters.caseTitleField(matterData.createMatter.caseTitle);
         legalMatters.caseNumberField(matterData.createMatter.caseNumber);
@@ -419,10 +396,10 @@ describe("Create Legal Matter Scenario",()=>{
         cy.wait(1000);
         //Departments
         legalMatters.selectAllButton();
-        legalMatters.nextButton();
+        legalMatters.commonNextButton();
         //Clients
         legalMatters.selectAllButton();
-        legalMatters.nextButton();
+        legalMatters.commonNextButton();
         //Team Members
         legalMatters.selectAllButton();
         legalMatters.emptyOnUnSelectListonRightSideVerify();
@@ -431,7 +408,6 @@ describe("Create Legal Matter Scenario",()=>{
     })
 
     it("24.Mandatory with Documents and Select all and Unselect all and verify",()=>{
-        cy.wait(5000);
         legalMatters.createTab();
         legalMatters.caseTitleField(matterData.createMatter.caseTitle);
         legalMatters.caseNumberField(matterData.createMatter.caseNumber);
@@ -441,13 +417,13 @@ describe("Create Legal Matter Scenario",()=>{
         cy.wait(1000);
         //Departments
         legalMatters.selectAllButton();
-        legalMatters.nextButton();
+        legalMatters.commonNextButton();
         //Clients
         legalMatters.selectAllButton();
-        legalMatters.nextButton();
+        legalMatters.commonNextButton();
         //Team Members
         legalMatters.selectAllButton();
-        legalMatters.nextButton();
+        legalMatters.commonNextButton();
         //Documents
         legalMatters.selectAllButton();
         legalMatters.emptyOnUnSelectListonRightSideVerify();
