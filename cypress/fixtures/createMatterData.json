@@ -19,7 +19,78 @@
         "client2":"Lauditor to Corporate",
         "member1":"Member 1",
         "member2":"Member 2",
-        "document1":"PDF files sample",
-        "document2":"Editer Files"
+        "document1":"Files DG",
+        "document2":"Files DG2"
+    },
+    "CMatter":{
+        "Comment":"25.Mandatory with Departments",
+        "caseTitle":"Scheme Apply",
+        "caseNumber":"Test Files",
+        "Department1":"Civil Law",
+        "Department2":"Sanity Testing"
+    },
+    "CMatter1":{
+        "Comment":"26.Mandatory with Departments and Clients",
+        "caseTitle":"Scheme Apply 1 ",
+        "caseNumber":"Test Files",
+        "Department1":"Civil Law",
+        "Department2":"Sanity Testing",
+        "client1":"Test 1",
+        "client2":"Lauditor to Corporate"
+    },
+    "CMatter2":{
+        "Comment":"27.Mandatory with Departments and TM",
+        "caseTitle":"Scheme Apply 2 ",
+        "caseNumber":"Test Files",
+        "Department1":"Civil Law",
+        "Department2":"Sanity Testing",
+        "member1":"Member 1",
+        "member2":"Member 2"
+    },
+    "CMatter3":{
+        "Comment":"28.Mandatory with Departments and Documents",
+        "caseTitle":"Scheme Apply 3 ",
+        "caseNumber":"Test Files",
+        "Department1":"Civil Law",
+        "Department2":"Sanity Testing",
+        "document1":"Files DG",
+        "document2":"Files DG2"
+    },
+    "CMatter4":{
+        "Comment":"29.Mandatory with Departments and Clients and TM",
+        "caseTitle":"Scheme Apply 4 ",
+        "caseNumber":"Test Files",
+        "Department1":"Civil Law",
+        "Department2":"Sanity Testing",
+        "client1":"Test 1",
+        "client2":"Lauditor to Corporate",
+        "member1":"Member 1",
+        "member2":"Member 2"
+    },
+    "CMatter5":{
+        "Comment":"30.Mandatory with Departments and Clients and Documents",
+        "caseTitle":"Scheme Apply 5 ",
+        "caseNumber":"Test Files",
+        "Department1":"Civil Law",
+        "Department2":"Sanity Testing",
+        "client1":"Test 1",
+        "client2":"Lauditor to Corporate",
+        "document1":"Files DG",
+        "document2":"Files DG2"
+    },
+    "CMatter6":{
+        "Comment":"31.Mandatory with All",
+        "caseTitle":"Scheme Apply 6 ",
+        "caseNumber":"Test Files",
+        "Department1":"Civil Law",
+        "Department2":"Sanity Testing",
+        "client1":"Test 1",
+        "client2":"Lauditor to Corporate",
+        "member1":"Member 1",
+        "member2":"Member 2",
+        "document1":"Files DG",
+        "document2":"Files DG2"
     }
+    
+
 }

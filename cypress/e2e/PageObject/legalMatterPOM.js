@@ -12,8 +12,6 @@ class legalcaseMatter {
 
         pomCreateTab : () => cy.xpath("//div //a[text()='Create']"),
 
-        pomViewTab : () => cy.xpath("//div //a[text()='View']"),
-
         pomCaseTitleInputBox : () => cy.get("input#title"),
 
         pomCaseNumberInputBox : () => cy.get("input#caseNumbr"),
@@ -59,6 +57,17 @@ class legalcaseMatter {
         pomAssertioncaseNumberMandatory : () => cy.xpath("//div[text()='Case Number is required']"),
 
         pomNextButtonDepartment : () => cy.xpath("//button[text()='Next']"),
+
+        pomSumbitButtonDocument : () => cy.xpath("//button[text()='Submit']"),
+
+        pomYesButtonConfirmation : () => cy.xpath("//button[text()='Yes']"),
+
+        pomNoButtonConfirmation : () => cy.xpath("//button[text()='No']"),
+
+        pomViewMatterSuccess : () => cy.xpath("//button[text()='View Matter List']"),
+
+        pomAddMatterSuccess : () => cy.xpath("//button[text()='Add Matter']")
+
     }
 
     leftSideMatterTab()
@@ -78,13 +87,8 @@ class legalcaseMatter {
 
     createTab()
     {
-        cy.wait(5000);
+        cy.wait(8000);
         this.elements.pomCreateTab().click();
-    }
-
-    viewTab()
-    {
-        this.elements.pomViewTab().click();
     }
 
     // Matter Info Page
@@ -183,6 +187,36 @@ class legalcaseMatter {
     selectAllButton()
     {
         this.elements.pomSelectAllCheckBox().click();
+    }
+
+    submitButton()
+    {
+        cy.wait(1000);
+        this.elements.pomSumbitButtonDocument().click();
+    }
+
+    confirmationNoButton()
+    {
+        cy.wait(1000);
+        this.elements.pomNoButtonConfirmation().click();
+    }
+
+    confirmationYesButton()
+    {
+        cy.wait(1000);
+        this.elements.pomYesButtonConfirmation().click();
+    }
+
+    successAddMatterButton()
+    {
+        cy.wait(1000);
+        this.elements.pomAddMatterSuccess().click();
+    }
+
+    successViewMatterButton()
+    {
+        cy.wait(1000);
+        this.elements.pomViewMatterSuccess().click();
     }
 
     assertionCaseTitle()
