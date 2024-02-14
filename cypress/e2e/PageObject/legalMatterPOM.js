@@ -63,7 +63,7 @@ class legalcaseMatter {
 
     leftSideMatterTab()
     {
-        this.elements.pomLeftsideMatterTab().click({ multiple: true });
+        this.elements.pomLeftsideMatterTab().click();
     }
 
     legalMatterTab()

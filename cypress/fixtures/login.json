@@ -6,11 +6,11 @@
     "group": {
         "groupName": "Lauditor Welcome",
         "descrp": "Test sample details added",
-        "Member1": "Soundarya SCF GH",
-        "Member2": "Soundarya SCF TM",
-        "Member3": "Akhila",
-        "Member4": "Joxi",
-        "Member5": "Member"
+        "Member1": "Member 1",
+        "Member2": "Member 2",
+        "Member3": "Member 3",
+        "Member4": "Group Head",
+        "Member5": "Member 4"
     },
     "group1": {
         "name": "DG law 1",
@@ -63,20 +63,20 @@
     "depart":{
         "name":"Law Defends",
         "desc":"Test",
-        "Member1":"Soundarya SCF GH",
-        "Member2":"Nisoje",
-        "Member3":"Member"
+        "Member1":"Member 1",
+        "Member2":"Member 2",
+        "Member3":"Group Head"
 
     },
     "departmentMember":{
         "name":"Law Defends",
-        "Member1":"muskan",
-        "Member2":"Member"
+        "Member1":"Member 2",
+        "Member2":"Group Head"
     },
     "departmentHead":{
         "name":"Law Defends",
-        "member1":"Member",
-        "AddedMember":"Soundarya SCF GH"
+        "member1":"Member 2",
+        "AddedMember":"Member 1"
     },
     "deleteDepartment":{
         "name":"Department 1",
