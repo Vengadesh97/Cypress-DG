@@ -90,7 +90,33 @@
         "member2":"Member 2",
         "document1":"Files DG",
         "document2":"Files DG2"
+    },
+    "CMatter7":{
+        "Comment":"32.All Field Entry",
+        "caseTitle":"Scheme Apply 7",
+        "caseNumber":"Test Files",
+        "DateFill":" 20 ",
+        "Description":"Client matter related Details",
+        "caseType":"Individual",
+        "Court":"High Court",
+        "Judge":"Siva kumar",
+        "Priority":"Medium",
+        "oppName":"Rajesh",
+        "oppEmail":"rajkumeshgmk@gmail.com",
+        "oppNumber":"9090101011",
+        "Department1":"Civil Law",
+        "Department2":"Sanity Testing",
+        "client1":"Test 1",
+        "client2":"Lauditor to Corporate",
+        "member1":"Member 1",
+        "member2":"Member 2",
+        "UnSelectedmember1":"Anderson",
+        "UnSelectedmember2":"Team Member - Test",
+        "UnSelectedmember3":"Member 3",
+        "UnSelectedmember4":"Group Head",
+        "UnSelectedmember5":"CL-Team Member"
     }
+
     
 
 }
