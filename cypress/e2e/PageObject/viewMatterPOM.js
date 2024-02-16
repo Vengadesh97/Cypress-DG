@@ -50,6 +50,7 @@ class viewMatterPage {
 
         pomJudgesInputBox: () => cy.xpath("//input[@name='judges']"),
 
+        pomEditMatterInfoCancelButton : () => cy.xpath("//button[text()='Cancel']")
     }
 
     // Methods 
@@ -175,6 +176,13 @@ class viewMatterPage {
         }
     }
 
+    // Edit Matter info
+
+    editMatterInfoCancelButton()
+    {
+        this.elements.pomEditMatterInfoCancelButton().click();
+    }
+
     // Edit Matter info in Assertion
 
     verifyEditMatterInfoCaseTitle(Name) {
@@ -208,14 +216,14 @@ class viewMatterPage {
     // Update Department Assertion
 
     // Check selected department list in Left side
-    viewDetailsCheckSelectedDepartmentName(namesToSelect) {
+    updateDepartmentCheckSelectedDepartmentName(namesToSelect) {
         for (let i = 0; i < namesToSelect.length; i++) {
             cy.xpath("//div[@id='selectedgroup']//div[text()='" + namesToSelect[i] + "']").should('be.visible');
         }
     }
 
     // Check Unselected department list in Right side
-    viewDetailsCheckUnSelectedDepartmentName(namesToSelect) {
+    updateDepartmentCheckUnSelectedDepartmentName(namesToSelect) {
         for (let i = 0; i < namesToSelect.length; i++) {
             cy.xpath("//div[@class='callselect'][text()='" + namesToSelect[i] + "']").should('be.visible');
         }
