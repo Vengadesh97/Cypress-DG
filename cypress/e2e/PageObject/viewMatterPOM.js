@@ -8,6 +8,8 @@ class viewMatterPage {
 
         pomViewMatterSearchBox: () => cy.xpath("//div //input[@type='text']"),
 
+        pomViewMatterActionButton: () => cy.get('.rone > :nth-child(6)'),
+
         // View Matter Menu List
 
         pomViewDetailsMenuButton: () => cy.xpath("(//div //button[@role='menuitem'])[1]"),
@@ -57,22 +59,24 @@ class viewMatterPage {
     }
 
     viewMatterSearchBox(text) {
-       // this.elements.pomViewMatterSearchBox().clear();
+        this.elements.pomViewMatterSearchBox().clear();
         this.elements.pomViewMatterSearchBox().type(text);
     }
 
+    viewMatterActionButton()
+    {
+        this.elements.pomViewMatterActionButton().click();
+    }
     //Action Button
-    actionButtonClick(name) {
+    actionButtonsClick(name) {
         // Iterate through groupNameText elements
-        cy.xpath('//tr /td[1]').each(($groupNameText, index) => {
+        cy.xpath('//tr //td[1]').each(($groupNameText, index) => {
             cy.wait(1000);
-            const groupTextComp = $groupNameText.text();
+            var groupTextComp = $groupNameText.text();
 
             if (name.includes(groupTextComp)) {
                 // Click on the action menu using Cypress
-                cy.wait(3000);
-                cy.xpath("//span[text()='Action']").eq(index).click();
-                cy.wait(3000);
+                cy.xpath("//tr//td[6]").eq(index).click();
             }
         })
     }

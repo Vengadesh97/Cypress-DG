@@ -669,17 +669,18 @@ describe("Create Legal Matter Scenario", () => {
        cy.wait(3000);
         viewlegalMatters.viewMatterSearchBox(matterData.CMatter7.caseTitle);
         cy.wait(3000);
-        viewlegalMatters.actionButtonClick(matterData.CMatter7.caseTitle);
-        cy.wait(3000);
+     //   viewlegalMatters.viewMatterActionButton();
+        viewlegalMatters.actionButtonsClick(matterData.CMatter7.caseTitle);
+      //  cy.wait(3000);
         viewlegalMatters.viewDetailsMenuButton();
-        cy.wait(1000);
         viewlegalMatters.viewDetailsTeamMemberAndExternalCounselTab();
-        var namesToSelectMembers = [matterData.CMatter7.member1, matterData.CMatter7.member2];
+        var namesToSelectMembers = [matterData.CMatter7.member1, matterData.CMatter7.member2,matterData.CMatter7.member3];
         viewlegalMatters.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(namesToSelectMembers);
         var namesToCheckUnSelectMembers = [matterData.CMatter7.UnSelectedmember1, matterData.CMatter7.UnSelectedmember2,matterData.CMatter7.UnSelectedmember3,matterData.CMatter7.UnSelectedmember4,matterData.CMatter7.UnSelectedmember5];
         viewlegalMatters.viewDetailsCheckUnSelectedTeamMemberOrClientName(namesToCheckUnSelectMembers);
         cy.wait(1000);
         viewlegalMatters.viewDetailsExternalCounselTab();
-        viewlegalMatters.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(namesToSelectClients);
+        var namesToSelectedClient = [matterData.CMatter7.clients1, matterData.CMatter7.clients2];
+        viewlegalMatters.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(namesToSelectedClient);
     })
 })
