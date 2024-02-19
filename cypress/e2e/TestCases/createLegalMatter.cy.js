@@ -20,11 +20,11 @@ describe("Create Legal Matter Scenario", () => {
         loginpage.loginButton();
     });
 
-    // afterEach(() => {
-    //     loginpage.loadIssues();
-    //     loginpage.homeButton();
-    //     legalMatters.leftSideMatterTab();
-    // });
+    afterEach(() => {
+        loginpage.loadIssues();
+        loginpage.homeButton();
+        legalMatters.leftSideMatterTab();
+    });
 
     it("1.Mandatory Fields with Cancel", () => {
         legalMatters.leftSideMatterTab();
@@ -385,6 +385,7 @@ describe("Create Legal Matter Scenario", () => {
         legalMatters.emptyOnUnSelectListonRightSideVerify();
         legalMatters.selectAllButton();
         legalMatters.emptyOnSelectedListonLeftSideVerify();
+
     })
 
     it("23.Mandatory with TeamMembers and Select all and Unselect all and verify", () => {
@@ -454,6 +455,19 @@ describe("Create Legal Matter Scenario", () => {
         legalMatters.confirmationYesButton();
         //Success popup
         legalMatters.successViewMatterButton();
+        cy.wait(1000);
+        viewlegalMatters.viewMatterSearchBox(matterData.CMatter.caseTitle);
+        cy.wait(1000);
+        viewlegalMatters.actionButtonsClick(matterData.CMatter.caseTitle);
+        viewlegalMatters.editMatterInfoMenuButton();
+        cy.wait(1000);
+        viewlegalMatters.verifyEditMatterInfoCaseTitle(matterData.CMatter.caseTitle);
+        viewlegalMatters.verifyEditMatterInfoCaseNumber(matterData.CMatter.caseNumber);
+        viewlegalMatters.editMatterInfoCancelButton();
+        cy.wait(3000);
+        viewlegalMatters.actionButtonsClick(matterData.CMatter.caseTitle);
+        viewlegalMatters.updateDepartmentMenuButton();
+        viewlegalMatters.updateDepartmentCheckSelectedDepartmentName(namesToSelectDepartments);
     })
 
     it("26.Mandatory with Departments and Clients", () => {
@@ -480,6 +494,32 @@ describe("Create Legal Matter Scenario", () => {
         legalMatters.confirmationYesButton();
         //Success popup
         legalMatters.successViewMatterButton();
+        cy.wait(1000);
+        viewlegalMatters.viewMatterSearchBox(matterData.CMatter1.caseTitle);
+        cy.wait(1000);
+        viewlegalMatters.actionButtonsClick(matterData.CMatter1.caseTitle);
+        viewlegalMatters.viewDetailsMenuButton();
+        viewlegalMatters.viewDetailsTeamMemberAndExternalCounselTab();
+        cy.wait(1000);
+        viewlegalMatters.viewDetailsExternalCounselTab();
+        var namesToSelectedClient = [matterData.CMatter1.clients1, matterData.CMatter1.clients2];
+        viewlegalMatters.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(namesToSelectedClient);
+        cy.scrollTo('top');
+        cy.wait(2000);
+        viewlegalMatters.viewTab();
+        cy.wait(3000);
+        viewlegalMatters.viewMatterSearchBox(matterData.CMatter1.caseTitle);
+        cy.wait(1000);
+        viewlegalMatters.actionButtonsClick(matterData.CMatter1.caseTitle);
+        viewlegalMatters.editMatterInfoMenuButton();
+        cy.wait(1000);
+        viewlegalMatters.verifyEditMatterInfoCaseTitle(matterData.CMatter1.caseTitle);
+        viewlegalMatters.verifyEditMatterInfoCaseNumber(matterData.CMatter1.caseNumber);
+        viewlegalMatters.editMatterInfoCancelButton();
+        cy.wait(3000);
+        viewlegalMatters.actionButtonsClick(matterData.CMatter1.caseTitle);
+        viewlegalMatters.updateDepartmentMenuButton();
+        viewlegalMatters.updateDepartmentCheckSelectedDepartmentName(namesToSelectDepartments);
     })
 
     it("27.Mandatory with Departments and TM", () => {
@@ -506,6 +546,33 @@ describe("Create Legal Matter Scenario", () => {
         legalMatters.confirmationYesButton();
         //Success popup
         legalMatters.successViewMatterButton();
+        cy.wait(1000);
+        viewlegalMatters.viewMatterSearchBox(matterData.CMatter2.caseTitle);
+        cy.wait(1000);
+        viewlegalMatters.actionButtonsClick(matterData.CMatter2.caseTitle);
+        viewlegalMatters.viewDetailsMenuButton();
+        viewlegalMatters.viewDetailsTeamMemberAndExternalCounselTab();
+        var namesToSelectMembers = [matterData.CMatter2.members1, matterData.CMatter2.members2, matterData.CMatter2.members3];
+        viewlegalMatters.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(namesToSelectMembers);
+        var namesToCheckUnSelectMembers = [matterData.CMatter2.UnSelectedmember1, matterData.CMatter2.UnSelectedmember2, matterData.CMatter2.UnSelectedmember3, matterData.CMatter2.UnSelectedmember4, matterData.CMatter2.UnSelectedmember5];
+        viewlegalMatters.viewDetailsCheckUnSelectedTeamMemberOrClientName(namesToCheckUnSelectMembers);
+        cy.wait(1000);
+        cy.scrollTo('top');
+        cy.wait(2000);
+        viewlegalMatters.viewTab();
+        cy.wait(3000);
+        viewlegalMatters.viewMatterSearchBox(matterData.CMatter2.caseTitle);
+        cy.wait(1000);
+        viewlegalMatters.actionButtonsClick(matterData.CMatter2.caseTitle);
+        viewlegalMatters.editMatterInfoMenuButton();
+        cy.wait(1000);
+        viewlegalMatters.verifyEditMatterInfoCaseTitle(matterData.CMatter2.caseTitle);
+        viewlegalMatters.verifyEditMatterInfoCaseNumber(matterData.CMatter2.caseNumber);
+        viewlegalMatters.editMatterInfoCancelButton();
+        cy.wait(3000);
+        viewlegalMatters.actionButtonsClick(matterData.CMatter2.caseTitle);
+        viewlegalMatters.updateDepartmentMenuButton();
+        viewlegalMatters.updateDepartmentCheckSelectedDepartmentName(namesToSelectDepartments);
     })
 
     it("28.Mandatory with Departments and Document", () => {
@@ -532,6 +599,21 @@ describe("Create Legal Matter Scenario", () => {
         legalMatters.confirmationYesButton();
         //Success popup
         legalMatters.successViewMatterButton();
+        cy.wait(2000);
+        viewlegalMatters.viewTab();
+        cy.wait(3000);
+        viewlegalMatters.viewMatterSearchBox(matterData.CMatter3.caseTitle);
+        cy.wait(1000);
+        viewlegalMatters.actionButtonsClick(matterData.CMatter3.caseTitle);
+        viewlegalMatters.editMatterInfoMenuButton();
+        cy.wait(1000);
+        viewlegalMatters.verifyEditMatterInfoCaseTitle(matterData.CMatter3.caseTitle);
+        viewlegalMatters.verifyEditMatterInfoCaseNumber(matterData.CMatter3.caseNumber);
+        viewlegalMatters.editMatterInfoCancelButton();
+        cy.wait(3000);
+        viewlegalMatters.actionButtonsClick(matterData.CMatter3.caseTitle);
+        viewlegalMatters.updateDepartmentMenuButton();
+        viewlegalMatters.updateDepartmentCheckSelectedDepartmentName(namesToSelectDepartments);
     })
 
     it("29.Mandatory with Departments and Clients and TM", () => {
@@ -560,6 +642,36 @@ describe("Create Legal Matter Scenario", () => {
         legalMatters.confirmationYesButton();
         //Success popup
         legalMatters.successViewMatterButton();
+        cy.wait(1000);
+        viewlegalMatters.viewMatterSearchBox(matterData.CMatter4.caseTitle);
+        cy.wait(1000);
+        viewlegalMatters.actionButtonsClick(matterData.CMatter4.caseTitle);
+        viewlegalMatters.viewDetailsMenuButton();
+        viewlegalMatters.viewDetailsTeamMemberAndExternalCounselTab();
+        var namesToSelectMembers = [matterData.CMatter4.members1, matterData.CMatter4.members2, matterData.CMatter4.members3];
+        viewlegalMatters.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(namesToSelectMembers);
+        var namesToCheckUnSelectMembers = [matterData.CMatter4.UnSelectedmember1, matterData.CMatter4.UnSelectedmember2, matterData.CMatter4.UnSelectedmember3, matterData.CMatter4.UnSelectedmember4, matterData.CMatter4.UnSelectedmember5];
+        viewlegalMatters.viewDetailsCheckUnSelectedTeamMemberOrClientName(namesToCheckUnSelectMembers);
+        cy.wait(1000);
+        viewlegalMatters.viewDetailsExternalCounselTab();
+        var namesToSelectedClient = [matterData.CMatter4.clients1, matterData.CMatter4.clients2];
+        viewlegalMatters.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(namesToSelectedClient);
+        cy.scrollTo('top');
+        cy.wait(2000);
+        viewlegalMatters.viewTab();
+        cy.wait(3000);
+        viewlegalMatters.viewMatterSearchBox(matterData.CMatter4.caseTitle);
+        cy.wait(1000);
+        viewlegalMatters.actionButtonsClick(matterData.CMatter4.caseTitle);
+        viewlegalMatters.editMatterInfoMenuButton();
+        cy.wait(1000);
+        viewlegalMatters.verifyEditMatterInfoCaseTitle(matterData.CMatter4.caseTitle);
+        viewlegalMatters.verifyEditMatterInfoCaseNumber(matterData.CMatter4.caseNumber);
+        viewlegalMatters.editMatterInfoCancelButton();
+        cy.wait(3000);
+        viewlegalMatters.actionButtonsClick(matterData.CMatter4.caseTitle);
+        viewlegalMatters.updateDepartmentMenuButton();
+        viewlegalMatters.updateDepartmentCheckSelectedDepartmentName(namesToSelectDepartments);
     })
 
     it("30.Mandatory with Departments and Clients and Documents", () => {
@@ -588,6 +700,32 @@ describe("Create Legal Matter Scenario", () => {
         legalMatters.confirmationYesButton();
         //Success popup
         legalMatters.successViewMatterButton();
+        cy.wait(1000);
+        viewlegalMatters.viewMatterSearchBox(matterData.CMatter5.caseTitle);
+        cy.wait(1000);
+        viewlegalMatters.actionButtonsClick(matterData.CMatter5.caseTitle);
+        viewlegalMatters.viewDetailsMenuButton();
+        viewlegalMatters.viewDetailsTeamMemberAndExternalCounselTab();
+        cy.wait(1000);
+        viewlegalMatters.viewDetailsExternalCounselTab();
+        var namesToSelectedClient = [matterData.CMatter5.clients1, matterData.CMatter5.clients2];
+        viewlegalMatters.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(namesToSelectedClient);
+        cy.scrollTo('top');
+        cy.wait(2000);
+        viewlegalMatters.viewTab();
+        cy.wait(3000);
+        viewlegalMatters.viewMatterSearchBox(matterData.CMatter5.caseTitle);
+        cy.wait(1000);
+        viewlegalMatters.actionButtonsClick(matterData.CMatter5.caseTitle);
+        viewlegalMatters.editMatterInfoMenuButton();
+        cy.wait(1000);
+        viewlegalMatters.verifyEditMatterInfoCaseTitle(matterData.CMatter5.caseTitle);
+        viewlegalMatters.verifyEditMatterInfoCaseNumber(matterData.CMatter5.caseNumber);
+        viewlegalMatters.editMatterInfoCancelButton();
+        cy.wait(3000);
+        viewlegalMatters.actionButtonsClick(matterData.CMatter5.caseTitle);
+        viewlegalMatters.updateDepartmentMenuButton();
+        viewlegalMatters.updateDepartmentCheckSelectedDepartmentName(namesToSelectDepartments);
     })
 
     it("31.Mandatory with All", () => {
@@ -618,6 +756,36 @@ describe("Create Legal Matter Scenario", () => {
         legalMatters.confirmationYesButton();
         //Success popup
         legalMatters.successViewMatterButton();
+        cy.wait(1000);
+        viewlegalMatters.viewMatterSearchBox(matterData.CMatter6.caseTitle);
+        cy.wait(1000);
+        viewlegalMatters.actionButtonsClick(matterData.CMatter6.caseTitle);
+        viewlegalMatters.viewDetailsMenuButton();
+        viewlegalMatters.viewDetailsTeamMemberAndExternalCounselTab();
+        var namesToSelectMembers = [matterData.CMatter6.members1, matterData.CMatter6.members2, matterData.CMatter6.members3];
+        viewlegalMatters.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(namesToSelectMembers);
+        var namesToCheckUnSelectMembers = [matterData.CMatter6.UnSelectedmember1, matterData.CMatter6.UnSelectedmember2, matterData.CMatter6.UnSelectedmember3, matterData.CMatter6.UnSelectedmember4, matterData.CMatter6.UnSelectedmember5];
+        viewlegalMatters.viewDetailsCheckUnSelectedTeamMemberOrClientName(namesToCheckUnSelectMembers);
+        cy.wait(1000);
+        viewlegalMatters.viewDetailsExternalCounselTab();
+        var namesToSelectedClient = [matterData.CMatter6.clients1, matterData.CMatter6.clients2];
+        viewlegalMatters.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(namesToSelectedClient);
+        cy.scrollTo('top');
+        cy.wait(3000);
+        viewlegalMatters.viewTab();
+        cy.wait(3000);
+        viewlegalMatters.viewMatterSearchBox(matterData.CMatter6.caseTitle);
+        cy.wait(1000);
+        viewlegalMatters.actionButtonsClick(matterData.CMatter6.caseTitle);
+        viewlegalMatters.editMatterInfoMenuButton();
+        cy.wait(1000);
+        viewlegalMatters.verifyEditMatterInfoCaseTitle(matterData.CMatter6.caseTitle);
+        viewlegalMatters.verifyEditMatterInfoCaseNumber(matterData.CMatter6.caseNumber);
+        viewlegalMatters.editMatterInfoCancelButton();
+        cy.wait(3000);
+        viewlegalMatters.actionButtonsClick(matterData.CMatter6.caseTitle);
+        viewlegalMatters.updateDepartmentMenuButton();
+        viewlegalMatters.updateDepartmentCheckSelectedDepartmentName(namesToSelectDepartments);
     })
 
     it.only("32.All Field entered and Verify", () => {
@@ -663,25 +831,25 @@ describe("Create Legal Matter Scenario", () => {
         //Confirmation Popup
         legalMatters.confirmationYesButton();
         //Success popup
-       legalMatters.successViewMatterButton();
+        legalMatters.successViewMatterButton();
         cy.wait(1000);
         viewlegalMatters.viewMatterSearchBox(matterData.CMatter7.caseTitle);
         cy.wait(1000);
         viewlegalMatters.actionButtonsClick(matterData.CMatter7.caseTitle);
         viewlegalMatters.viewDetailsMenuButton();
         viewlegalMatters.viewDetailsTeamMemberAndExternalCounselTab();
-        var namesToSelectMembers = [matterData.CMatter7.members1, matterData.CMatter7.members2,matterData.CMatter7.members3];
+        var namesToSelectMembers = [matterData.CMatter7.members1, matterData.CMatter7.members2, matterData.CMatter7.members3];
         viewlegalMatters.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(namesToSelectMembers);
-        var namesToCheckUnSelectMembers = [matterData.CMatter7.UnSelectedmember1, matterData.CMatter7.UnSelectedmember2,matterData.CMatter7.UnSelectedmember3,matterData.CMatter7.UnSelectedmember4,matterData.CMatter7.UnSelectedmember5];
+        var namesToCheckUnSelectMembers = [matterData.CMatter7.UnSelectedmember1, matterData.CMatter7.UnSelectedmember2, matterData.CMatter7.UnSelectedmember3, matterData.CMatter7.UnSelectedmember4, matterData.CMatter7.UnSelectedmember5];
         viewlegalMatters.viewDetailsCheckUnSelectedTeamMemberOrClientName(namesToCheckUnSelectMembers);
         cy.wait(1000);
         viewlegalMatters.viewDetailsExternalCounselTab();
         var namesToSelectedClient = [matterData.CMatter7.clients1, matterData.CMatter7.clients2];
         viewlegalMatters.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(namesToSelectedClient);
         cy.scrollTo('top');
-        cy.wait(5000);
+        cy.wait(3000);
         viewlegalMatters.viewTab();
-        cy.wait(1000);
+        cy.wait(3000);
         viewlegalMatters.viewMatterSearchBox(matterData.CMatter7.caseTitle);
         cy.wait(1000);
         viewlegalMatters.actionButtonsClick(matterData.CMatter7.caseTitle);
