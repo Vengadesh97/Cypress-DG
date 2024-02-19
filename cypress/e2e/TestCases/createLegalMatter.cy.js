@@ -455,6 +455,7 @@ describe("Create Legal Matter Scenario", () => {
         legalMatters.confirmationYesButton();
         //Success popup
         legalMatters.successViewMatterButton();
+        // Assertions
         cy.wait(1000);
         viewlegalMatters.viewMatterSearchBox(matterData.CMatter.caseTitle);
         cy.wait(1000);
@@ -494,6 +495,7 @@ describe("Create Legal Matter Scenario", () => {
         legalMatters.confirmationYesButton();
         //Success popup
         legalMatters.successViewMatterButton();
+        // Assertions
         cy.wait(1000);
         viewlegalMatters.viewMatterSearchBox(matterData.CMatter1.caseTitle);
         cy.wait(1000);
@@ -546,6 +548,7 @@ describe("Create Legal Matter Scenario", () => {
         legalMatters.confirmationYesButton();
         //Success popup
         legalMatters.successViewMatterButton();
+        // Assertions
         cy.wait(1000);
         viewlegalMatters.viewMatterSearchBox(matterData.CMatter2.caseTitle);
         cy.wait(1000);
@@ -599,6 +602,7 @@ describe("Create Legal Matter Scenario", () => {
         legalMatters.confirmationYesButton();
         //Success popup
         legalMatters.successViewMatterButton();
+        // Assertions
         cy.wait(2000);
         viewlegalMatters.viewTab();
         cy.wait(3000);
@@ -642,6 +646,7 @@ describe("Create Legal Matter Scenario", () => {
         legalMatters.confirmationYesButton();
         //Success popup
         legalMatters.successViewMatterButton();
+        //Assertions
         cy.wait(1000);
         viewlegalMatters.viewMatterSearchBox(matterData.CMatter4.caseTitle);
         cy.wait(1000);
