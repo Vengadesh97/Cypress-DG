@@ -13,7 +13,6 @@ describe("Create Legal Matter Scenario", () => {
     var namesToSelectDocuments = [matterData.createMatter.document1, matterData.createMatter.document2];
 
     before(() => {
-
         loginpage.visit();
         loginpage.userName(loginData.codeword.email);
         loginpage.passWord(loginData.codeword.password);

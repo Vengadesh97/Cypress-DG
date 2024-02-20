@@ -1,0 +1,20 @@
+{
+    "Common":{
+        "Comment":"Common Select Department",
+        "Department1":"Civil Law",
+        "Department2":"Sanity Testing",
+        "client1":"Test 1",
+        "client2":"Lauditor to Corporate",
+        "member1":"Member 1",
+        "member2":"Member 2",
+        "document1":"Files DG",
+        "document2":"Files DG2"
+    },    
+    "text1":{
+        "Comment":"1.Mandatory and DOF with Departments",
+        "caseTitle":"Car Insurance Claim",
+        "caseNumber":"NMP322",
+        "DateFill":" 20 "
+    }
+
+}
