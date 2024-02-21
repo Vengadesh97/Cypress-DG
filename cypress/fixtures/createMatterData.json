@@ -12,121 +12,47 @@
         "Status":"Pending",
         "oppName":"Raja",
         "oppEmail":"rajkum@gmk.com",
-        "oppNumber":"9090101011",
-        "Department1":"Civil Law",
-        "Department2":"Sanity Testing",
-        "client1":"Test 1",
-        "client2":"Lauditor to Corporate",
-        "member1":"Member 1",
-        "member2":"Member 2",
-        "document1":"Files DG",
-        "document2":"Files DG2"
+        "oppNumber":"9090101011"
     },
     "CMatter":{
         "Comment":"25.Mandatory with Departments",
         "caseTitle":"Scheme Apply",
-        "caseNumber":"Test Files",
-        "Department1":"Civil Law",
-        "Department2":"Sanity Testing"
+        "caseNumber":"Test Files"
     },
     "CMatter1":{
         "Comment":"26.Mandatory with Departments and Clients",
         "caseTitle":"Scheme Apply 1 ",
-        "caseNumber":"Test Files",
-        "Department1":"Civil Law",
-        "Department2":"Sanity Testing",
-        "client1":"Test 1",
-        "client2":"Lauditor to Corporate",
-        "clients1":" Test 1",
-        "clients2":" Lauditor to Corporate"
+        "caseNumber":"Test Files 1"
     },
     "CMatter2":{
         "Comment":"27.Mandatory with Departments and TM",
         "caseTitle":"Scheme Apply 2 ",
-        "caseNumber":"Test Files",
-        "Department1":"Civil Law",
-        "Department2":"Sanity Testing",
-        "member1":"Member 1",
-        "member2":"Member 2",
-        "members1":" Joe",
-        "members2":" Member 1",
-        "members3":" Member 2",
-        "UnSelectedmember1":"Anderson",
-        "UnSelectedmember2":"Team Member - Test",
-        "UnSelectedmember3":"Member 3",
-        "UnSelectedmember4":"Group Head",
-        "UnSelectedmember5":"CL-Team Member"
+        "caseNumber":"Test Files 2"
     },
     "CMatter3":{
         "Comment":"28.Mandatory with Departments and Documents",
         "caseTitle":"Scheme Apply 3 ",
-        "caseNumber":"Test Files",
-        "Department1":"Civil Law",
-        "Department2":"Sanity Testing",
-        "document1":"Files DG",
-        "document2":"Files DG2"
+        "caseNumber":"Test Files 3"
     },
     "CMatter4":{
         "Comment":"29.Mandatory with Departments and Clients and TM",
         "caseTitle":"Scheme Apply 4 ",
-        "caseNumber":"Test Files",
-        "Department1":"Civil Law",
-        "Department2":"Sanity Testing",
-        "client1":"Test 1",
-        "client2":"Lauditor to Corporate",
-        "member1":"Member 1",
-        "member2":"Member 2",
-        "members1":" Joe",
-        "members2":" Member 1",
-        "members3":" Member 2",
-        "UnSelectedmember1":"Anderson",
-        "UnSelectedmember2":"Team Member - Test",
-        "UnSelectedmember3":"Member 3",
-        "UnSelectedmember4":"Group Head",
-        "UnSelectedmember5":"CL-Team Member",
-        "clients1":" Test 1",
-        "clients2":" Lauditor to Corporate"
+        "caseNumber":"Test Files 4"
     },
     "CMatter5":{
         "Comment":"30.Mandatory with Departments and Clients and Documents",
         "caseTitle":"Scheme Apply 5 ",
-        "caseNumber":"Test Files",
-        "Department1":"Civil Law",
-        "Department2":"Sanity Testing",
-        "client1":"Test 1",
-        "client2":"Lauditor to Corporate",
-        "document1":"Files DG",
-        "document2":"Files DG2",
-        "clients1":" Test 1",
-        "clients2":" Lauditor to Corporate"
+        "caseNumber":"Test Files 5"
     },
     "CMatter6":{
         "Comment":"31.Mandatory with All",
         "caseTitle":"Scheme Apply 6 ",
-        "caseNumber":"Test Files",
-        "Department1":"Civil Law",
-        "Department2":"Sanity Testing",
-        "client1":"Test 1",
-        "client2":"Lauditor to Corporate",
-        "member1":"Member 1",
-        "member2":"Member 2",
-        "document1":"Files DG",
-        "document2":"Files DG2",
-        "members1":" Joe",
-        "members2":" Member 1",
-        "members3":" Member 2",
-        "UnSelectedmember1":"Anderson",
-        "UnSelectedmember2":"Team Member - Test",
-        "UnSelectedmember3":"Member 3",
-        "UnSelectedmember4":"Group Head",
-        "UnSelectedmember5":"CL-Team Member",
-        "clients1":" Test 1",
-        "clients2":" Lauditor to Corporate"
+        "caseNumber":"Test Files 6" 
     },
     "CMatter7":{
         "Comment":"32.All Field Entry",
         "caseTitle":"Scheme Apply 7",
-        "caseNumber":"Test Files",
+        "caseNumber":"Test Files 7",
         "DateFill":" 20 ",
         "Description":"Client matter related Details",
         "caseType":"Individual",
@@ -135,13 +61,18 @@
         "Priority":"Medium",
         "oppName":"Rajesh",
         "oppEmail":"rajkumeshgmk@gmail.com",
-        "oppNumber":"9090101011",
+        "oppNumber":"9090101011"
+    },
+
+    "common":{
         "Department1":"Civil Law",
         "Department2":"Sanity Testing",
         "client1":"Test 1",
         "client2":"Lauditor to Corporate",
         "member1":"Member 1",
         "member2":"Member 2",
+        "document1":"Files DG",
+        "document2":"Files DG2",
         "members1":" Joe",
         "members2":" Member 1",
         "members3":" Member 2",
@@ -151,8 +82,13 @@
         "UnSelectedmember4":"Group Head",
         "UnSelectedmember5":"CL-Team Member",
         "clients1":" Test 1",
-        "clients2":" Lauditor to Corporate"
+        "clients2":" Lauditor to Corporate",
+        "documents1":"Files DG",
+        "documents2":"Files DG2",
+        "unSelecteddocument1":"",
+        "unSelecteddocument2":""
     }
+
 
     
 

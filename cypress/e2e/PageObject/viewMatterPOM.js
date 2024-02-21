@@ -56,21 +56,25 @@ class viewMatterPage {
     // Methods 
 
     viewTab() {
+        cy.wait(2000);
         this.elements.pomViewTab().click();
     }
 
     viewMatterSearchBox(text) {
+        cy.wait(2000);
         this.elements.pomViewMatterSearchBox().clear();
         this.elements.pomViewMatterSearchBox().type(text);
     }
 
     viewMatterActionButton()
     {
+        cy.wait(1000);
         this.elements.pomViewMatterActionButton().click();
     }
     //Action Button
     actionButtonsClick(name) {
         // Iterate through groupNameText elements
+        cy.wait(1000);
         cy.xpath('//tr //td[1]').each(($groupNameText, index) => {
             cy.wait(1000);
             var groupTextComp = $groupNameText.text();
@@ -86,22 +90,27 @@ class viewMatterPage {
 
     // View Details
     viewDetailsMenuButton() {
+        cy.wait(1000);
         this.elements.pomViewDetailsMenuButton().click();
     }
     // Edit Matter info
     editMatterInfoMenuButton() {
+        cy.wait(1000);
         this.elements.pomEditMatterInfoMenuButton().click();
     }
     // Update Department
     updateDepartmentMenuButton() {
+        cy.wait(1000);
         this.elements.pomUpdateDepartmentsMenuButton().click();
     }
     // Reopen / Close Button
     reOpenAndCloseMenuButton() {
+        cy.wait(1000);
         this.elements.pomReopenAndCloseMatterMenuButton().click();
     }
     // Delete Matter
     deleteMatterMenuButton() {
+        cy.wait(1000);
         this.elements.pomDeleteMatterMenuButton().click();
     }
 
@@ -115,24 +124,33 @@ class viewMatterPage {
     // View Details Tab Name
 
     viewDetailsDocumentTab() {
+        cy.wait(1000);
         this.elements.pomViewDetailsDocumentTab().click();
     }
 
     viewDetailsTeamMemberAndExternalCounselTab() {
+        cy.wait(1000);
         this.elements.pomViewDetailsTeamMemberAndExternalCounselTab().click();
     }
 
     viewDetailsTeamMemberTab() {
+        cy.wait(1000);
         this.elements.pomViewDetailsTeamMemberTab().click();
     }
 
     viewDetailsExternalCounselTab() {
+        cy.wait(1000);
         this.elements.pomViewDetailsExternalCounselTab().click();
     }
 
     // Assertion in View Details
 
     // Document Tab
+
+    addNewTab()
+    {   cy.wait(1000);
+        this.elements.pomViewDetailsAddNewTab().click();
+    }
 
     // Check Selected document is appear or not 
     viewDetailsCheckSelectedDocumentNameAppear(namesToSelect) {

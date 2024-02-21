@@ -8,13 +8,106 @@
         "member1":"Member 1",
         "member2":"Member 2",
         "document1":"Files DG",
-        "document2":"Files DG2"
+        "document2":"Files DG2",
+        "members1":" Joe",
+        "members2":" Member 1",
+        "members3":" Member 2",
+        "UnSelectedmember1":"Anderson",
+        "UnSelectedmember2":"Team Member - Test",
+        "UnSelectedmember3":"Member 3",
+        "UnSelectedmember4":"Group Head",
+        "UnSelectedmember5":"CL-Team Member",
+        "clients1":" Test 1",
+        "clients2":" Lauditor to Corporate",
+        "documents1":"Files DG",
+        "documents2":"Files DG2",
+        "unSelecteddocument1":"",
+        "unSelecteddocument2":""
+
     },    
     "text1":{
         "Comment":"1.Mandatory and DOF with Departments",
         "caseTitle":"Car Insurance Claim",
-        "caseNumber":"NMP322",
-        "DateFill":" 20 "
+        "caseNumber":"QW12",
+        "DateFill":" 11 "
+    },
+    "text2":{
+        "Comment":"2.Mandatory and DOF with Departments and Clients",
+        "caseTitle":"Car Insurance",
+        "caseNumber":"WE21",
+        "DateFill":" 12 "
+    },
+    "text3":{
+        "Comment":"3.Mandatory and DOF with Departments and TM",
+        "caseTitle":"Car Claim",
+        "caseNumber":"ER24",
+        "DateFill":" 13 "
+    },
+    "text4":{
+        "Comment":"4.Mandatory and DOF with Departments and Document ",
+        "caseTitle":"Bike Insurance Claim",
+        "caseNumber":"RT11",
+        "DateFill":" 14 "
+    },
+    "text5":{
+        "Comment":"5.Mandatory and DOF with Departments , Clients and TM ",
+        "caseTitle":"Bike Claim",
+        "caseNumber":"JK32",
+        "DateFill":" 15 "
+    },
+    "text6":{
+        "Comment":"6.Mandatory and DOF with Departments , Clients and Documents ",
+        "caseTitle":"Company Insurance Claim",
+        "caseNumber":"YU23",
+        "DateFill":" 16 "
+    },
+    "text7":{
+        "Comment":"7.Mandatory  and DOF with All ",
+        "caseTitle":"Auto Claim",
+        "caseNumber":"WE32",
+        "DateFill":" 17 "
+    },
+    "text8":{
+        "Comment":"8.Mandatory and Description with Departments",
+        "caseTitle":"Claim",
+        "caseNumber":"KL32",
+        "Description":"Client matter "
+    },
+    "text9":{
+        "Comment":"9.Mandatory and Description with Departments and Clients",
+        "caseTitle":"Claim Fill",
+        "caseNumber":"ML311",
+        "Description":"Client matter Details"
+    },
+    "text10":{
+        "Comment":"10.Mandatory and Description with Departments and TM",
+        "caseTitle":"Claim FileUp",
+        "caseNumber":"NM54",
+        "Description":"Client matter case"
+    },
+    "text11":{
+        "Comment":"11.Mandatory and Description with Departments and Document ",
+        "caseTitle":"Old Claim Case",
+        "caseNumber":"OL30",
+        "Description":"Client matter related Details"
+    },
+    "text12":{
+        "Comment":"12.Mandatory and Description with Departments , Clients and TM ",
+        "caseTitle":"Temporary Claim",
+        "caseNumber":"JK34",
+        "Description":"Matter related Details"
+    },
+    "text13":{
+        "Comment":"13.Mandatory and Description with Departments , Clients and Documents ",
+        "caseTitle":"Current live Claim case",
+        "caseNumber":"FG90",
+        "Description":"Client related Details"
+    },
+    "text14":{
+        "Comment":"14.Mandatory  and Description with All ",
+        "caseTitle":"Retain Claim case",
+        "caseNumber":"DF45",
+        "Description":"Client Details"
     }
 
 }

@@ -170,11 +170,13 @@ class legalcaseMatter {
 
     cancelButton()
     {
+        cy.wait(1000);
         this.elements.pomCancelButtonMatterinfo().click();
     }
 
     nextButton()
     {
+        cy.wait(1000);
         this.elements.pomNextButtonMatterinfo().click();
     }
 
@@ -288,6 +290,7 @@ class legalcaseMatter {
 
    // Right Side Select 
   selectOnRightSide(namesToSelect) {
+    cy.wait(1000);
     for (let i = 0; i < namesToSelect.length; i++) {
       cy.xpath("(//div[@class='col-6 matterpadding'])[2] //div[text()='" + namesToSelect[i] + "']//following::input[1]").click();
     }
@@ -326,7 +329,21 @@ class legalcaseMatter {
     cy.xpath("(//div[@class='col-6 matterpadding'])[2] //div[3]").should('be.empty');
   }
 
+  // Scroll Up
+  scrollUp()
+  {
+    cy.wait(1000);
+    cy.scrollTo('top');
+    cy.wait(1000);
+  }
 
+  // Scroll Down
+  scrollDown()
+  {
+    cy.wait(1000);
+    cy.scrollTo('bottom');
+    cy.wait(1000);
+  }
 
   }
 
