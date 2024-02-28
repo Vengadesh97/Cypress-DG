@@ -319,7 +319,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseTitle(data.text6.caseTitle);
         viewMatters.verifyEditMatterInfoCaseNumber(data.text6.caseNumber);
         viewMatters.editMatterInfoCancelButton();
-        viewMatters.actionButtonsClick(data.text.caseTitle);
+        viewMatters.actionButtonsClick(data.text6.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
         viewMatters.updateDepartmentCheckSelectedDepartmentName(selectDepartments);
@@ -383,7 +383,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseTitle(data.text7.caseTitle);
         viewMatters.verifyEditMatterInfoCaseNumber(data.text7.caseNumber);
         viewMatters.editMatterInfoCancelButton();
-        viewMatters.actionButtonsClick(data.text.caseTitle);
+        viewMatters.actionButtonsClick(data.text7.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
         viewMatters.updateDepartmentCheckSelectedDepartmentName(selectDepartments);
