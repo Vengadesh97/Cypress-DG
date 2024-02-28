@@ -1,113 +1,321 @@
 {
-    "Common":{
-        "Comment":"Common Select Department",
-        "Department1":"Civil Law",
-        "Department2":"Sanity Testing",
-        "client1":"Test 1",
-        "client2":"Lauditor to Corporate",
-        "member1":"Member 1",
-        "member2":"Member 2",
-        "document1":"Files DG",
-        "document2":"Files DG2",
-        "members1":" Joe",
-        "members2":" Member 1",
-        "members3":" Member 2",
-        "UnSelectedmember1":"Anderson",
-        "UnSelectedmember2":"Team Member - Test",
-        "UnSelectedmember3":"Member 3",
-        "UnSelectedmember4":"Group Head",
-        "UnSelectedmember5":"CL-Team Member",
-        "clients1":" Test 1",
-        "clients2":" Lauditor to Corporate",
-        "documents1":"Files DG",
-        "documents2":"Files DG2",
-        "unSelecteddocument1":"",
-        "unSelecteddocument2":""
-
-    },    
-    "text1":{
-        "Comment":"1.Mandatory and DOF with Departments",
-        "caseTitle":"Car Insurance Claim",
-        "caseNumber":"QW12",
-        "DateFill":" 11 "
+    "Common": {
+        "Comment": "Common Select Department",
+        "Department1": "Civil Law",
+        "Department2": "Sanity Testing",
+        "client1": "Test 1",
+        "client2": "Lauditor to Corporate",
+        "member1": "Member 1",
+        "member2": "Member 2",
+        "document1": "Files DG",
+        "document2": "Files DG2",
+        "members1": " Joe",
+        "members2": " Member 1",
+        "members3": " Member 2",
+        "UnSelectedmember1": "Anderson",
+        "UnSelectedmember2": "Team Member - Test",
+        "UnSelectedmember3": "Member 3",
+        "UnSelectedmember4": "Group Head",
+        "UnSelectedmember5": "CL-Team Member",
+        "clients1": " Test 1",
+        "clients2": " Lauditor to Corporate",
+        "documents1": "Files DG",
+        "documents2": "Files DG2",
+        "unSelecteddocument1": "",
+        "unSelecteddocument2": ""
     },
-    "text2":{
-        "Comment":"2.Mandatory and DOF with Departments and Clients",
-        "caseTitle":"Car Insurance",
-        "caseNumber":"WE21",
-        "DateFill":" 12 "
+    "text1": {
+        "Comment": "1.Mandatory and DOF with Departments",
+        "caseTitle": "Car Insurance Claim",
+        "caseNumber": "QW12",
+        "DateFill": " 11 "
     },
-    "text3":{
-        "Comment":"3.Mandatory and DOF with Departments and TM",
-        "caseTitle":"Car Claim",
-        "caseNumber":"ER24",
-        "DateFill":" 13 "
+    "text2": {
+        "Comment": "2.Mandatory and DOF with Departments and Clients",
+        "caseTitle": "Car Insurance",
+        "caseNumber": "WE21",
+        "DateFill": " 12 "
     },
-    "text4":{
-        "Comment":"4.Mandatory and DOF with Departments and Document ",
-        "caseTitle":"Bike Insurance Claim",
-        "caseNumber":"RT11",
-        "DateFill":" 14 "
+    "text3": {
+        "Comment": "3.Mandatory and DOF with Departments and TM",
+        "caseTitle": "Car Claim",
+        "caseNumber": "ER24",
+        "DateFill": " 13 "
     },
-    "text5":{
-        "Comment":"5.Mandatory and DOF with Departments , Clients and TM ",
-        "caseTitle":"Bike Claim",
-        "caseNumber":"JK32",
-        "DateFill":" 15 "
+    "text4": {
+        "Comment": "4.Mandatory and DOF with Departments and Document ",
+        "caseTitle": "Bike Insurance Claim",
+        "caseNumber": "RT11",
+        "DateFill": " 14 "
     },
-    "text6":{
-        "Comment":"6.Mandatory and DOF with Departments , Clients and Documents ",
-        "caseTitle":"Company Insurance Claim",
-        "caseNumber":"YU23",
-        "DateFill":" 16 "
+    "text5": {
+        "Comment": "5.Mandatory and DOF with Departments , Clients and TM ",
+        "caseTitle": "Bike Claim",
+        "caseNumber": "JK32",
+        "DateFill": " 15 "
     },
-    "text7":{
-        "Comment":"7.Mandatory  and DOF with All ",
-        "caseTitle":"Auto Claim",
-        "caseNumber":"WE32",
-        "DateFill":" 17 "
+    "text6": {
+        "Comment": "6.Mandatory and DOF with Departments , Clients and Documents ",
+        "caseTitle": "Company Insurance Claim",
+        "caseNumber": "YU23",
+        "DateFill": " 16 "
     },
-    "text8":{
-        "Comment":"8.Mandatory and Description with Departments",
-        "caseTitle":"Claim",
-        "caseNumber":"KL32",
-        "Description":"Client matter "
+    "text7": {
+        "Comment": "7.Mandatory  and DOF with All ",
+        "caseTitle": "Auto Claim",
+        "caseNumber": "WE32",
+        "DateFill": " 17 "
     },
-    "text9":{
-        "Comment":"9.Mandatory and Description with Departments and Clients",
-        "caseTitle":"Claim Fill",
-        "caseNumber":"ML311",
-        "Description":"Client matter Details"
+    "text8": {
+        "Comment": "8.Mandatory and Description with Departments",
+        "caseTitle": "Claim",
+        "caseNumber": "KL32",
+        "Description": "Client matter "
     },
-    "text10":{
-        "Comment":"10.Mandatory and Description with Departments and TM",
-        "caseTitle":"Claim FileUp",
-        "caseNumber":"NM54",
-        "Description":"Client matter case"
+    "text9": {
+        "Comment": "9.Mandatory and Description with Departments and Clients",
+        "caseTitle": "Claim Fill",
+        "caseNumber": "ML311",
+        "Description": "Client matter Details"
     },
-    "text11":{
-        "Comment":"11.Mandatory and Description with Departments and Document ",
-        "caseTitle":"Old Claim Case",
-        "caseNumber":"OL30",
-        "Description":"Client matter related Details"
+    "text10": {
+        "Comment": "10.Mandatory and Description with Departments and TM",
+        "caseTitle": "Claim FileUp",
+        "caseNumber": "NM54",
+        "Description": "Client matter case"
     },
-    "text12":{
-        "Comment":"12.Mandatory and Description with Departments , Clients and TM ",
-        "caseTitle":"Temporary Claim",
-        "caseNumber":"JK34",
-        "Description":"Matter related Details"
+    "text11": {
+        "Comment": "11.Mandatory and Description with Departments and Document ",
+        "caseTitle": "Old Claim Case",
+        "caseNumber": "OL30",
+        "Description": "Client matter related Details"
     },
-    "text13":{
-        "Comment":"13.Mandatory and Description with Departments , Clients and Documents ",
-        "caseTitle":"Current live Claim case",
-        "caseNumber":"FG90",
-        "Description":"Client related Details"
+    "text12": {
+        "Comment": "12.Mandatory and Description with Departments , Clients and TM ",
+        "caseTitle": "Temporary Claim",
+        "caseNumber": "JK34",
+        "Description": "Matter related Details"
     },
-    "text14":{
-        "Comment":"14.Mandatory  and Description with All ",
-        "caseTitle":"Retain Claim case",
-        "caseNumber":"DF45",
-        "Description":"Client Details"
+    "text13": {
+        "Comment": "13.Mandatory and Description with Departments , Clients and Documents ",
+        "caseTitle": "Current live Claim case",
+        "caseNumber": "FG90",
+        "Description": "Client related Details"
+    },
+    "text14": {
+        "Comment": "14.Mandatory  and Description with All ",
+        "caseTitle": "Retain Claim case",
+        "caseNumber": "DF45",
+        "Description": "Client Details"
+    },
+    "text15": {
+        "Comment": "15.Mandatory and CaseType with Departments",
+        "caseTitle": "Current live",
+        "caseNumber": "NJ32",
+        "caseType": "Individuals"
+    },
+    "text16": {
+        "Comment": "16.Mandatory and Case Type with Departments and Clients",
+        "caseTitle": "Current live Claim 1",
+        "caseNumber": "NM32",
+        "caseType": "Solo Client"
+    },
+    "text17": {
+        "Comment": "17.Mandatory and Case Type with Departments and TM",
+        "caseTitle": "Current live Claim 2",
+        "caseNumber": "NP31",
+        "caseType": "Normal Client"
+    },
+    "text18": {
+        "Comment": "18.Mandatory and Case Type with Departments and Document ",
+        "caseTitle": "Current live Claim 3",
+        "caseNumber": "WE32",
+        "caseType": "Entity Person"
+    },
+    "text19": {
+        "Comment": "19.Mandatory and Case Type with Departments , Clients and TM ",
+        "caseTitle": "Current live Claim 4",
+        "caseNumber": "PO32",
+        "caseType": "Firm Client"
+    },
+    "text20": {
+        "Comment": "20.Mandatory and Case Type with Departments , Clients and Documents ",
+        "caseTitle": "Current live Claim 5",
+        "caseNumber": "LO05",
+        "caseType": "Individuals"
+    },
+    "text21": {
+        "Comment": "21.Mandatory and Case Type with All ",
+        "caseTitle": "Current live 11",
+        "caseNumber": "PL11",
+        "caseType": "Normal Client"
+    },
+    "text22": {
+        "Comment": "22.Mandatory and Court with Departments",
+        "caseTitle": "Current live 12",
+        "caseNumber": "PI329",
+        "court": "District courts"
+    },
+    "text23": {
+        "Comment": "23.Mandatory and Court with Departments and Clients",
+        "caseTitle": "Current live 13",
+        "caseNumber": "PP89",
+        "court": "Civil courts"
+    },
+    "text24": {
+        "Comment": "24.Mandatory and Court with Departments and TM",
+        "caseTitle": "Current live 13",
+        "caseNumber": "PI90",
+        "court": "Supreme courts"
+    },
+    "text25": {
+        "Comment": "25.Mandatory and Court with Departments and Document ",
+        "caseTitle": "Current live 14",
+        "caseNumber": "PL89",
+        "court": "Appellate courts"
+    },
+    "text26": {
+        "Comment": "26.Mandatory and Court with Departments , Clients and TM ",
+        "caseTitle": "Current live 15",
+        "caseNumber": "PK39",
+        "court": "Family courts"
+    },
+    "text27": {
+        "Comment": "27.Mandatory and Court with Departments , Clients and Documents ",
+        "caseTitle": "Current live 16",
+        "caseNumber": "PO49",
+        "court": "Munsif courts"
+    },
+    "text28": {
+        "Comment": "28.Mandatory and Court with All ",
+        "caseTitle": "Current live 17",
+        "caseNumber": "PF49",
+        "court": "Special income tax court"
+    },
+    "text29": {
+        "Comment": "29.Mandatory and Judge with Departments",
+        "caseTitle": "special income tax case",
+        "caseNumber": "PD39",
+        "judge": "Carry lorrt"
+    },
+    "text30": {
+        "Comment": "30.Mandatory and Judge with Departments and Clients",
+        "caseTitle": "special income tax",
+        "caseNumber": "PW29",
+        "judge": "Steve"
+    },
+    "text31": {
+        "Comment": "31.Mandatory and Judge with Departments and TM",
+        "caseTitle": "special income case",
+        "caseNumber": "PD39",
+        "judge": "Kevin"
+    },
+    "text32": {
+        "Comment": "32.Mandatory and Judge with Departments and Document ",
+        "caseTitle": "special tax case",
+        "caseNumber": "PE29",
+        "judge": "Devin"
+    },
+    "text33": {
+        "Comment": "33.Mandatory and Judge with Departments , Clients and TM ",
+        "caseTitle": "special case",
+        "caseNumber": "PJ39",
+        "judge": "Hugo"
+    },
+    "text34": {
+        "Comment": "34.Mandatory and Judge with Departments , Clients and Documents ",
+        "caseTitle": "Income tax case",
+        "caseNumber": "PE89",
+        "judge": "Ethan"
+    },
+    "text35": {
+        "Comment": "35.Mandatory and Judge with All ",
+        "caseTitle": "Tax case",
+        "caseNumber": "PE23",
+        "judge": "Marco"
+    },
+    "text36": {
+        "Comment": "36.Mandatory and Priority with Departments",
+        "caseTitle": "live Claim Case 1",
+        "caseNumber": "MJ3",
+        "priority": "Medium"
+    },
+    "text37": {
+        "Comment": "37.Mandatory and Priority with Departments and Clients",
+        "caseTitle": "live Claim Case 2",
+        "caseNumber": "LK3",
+        "priority": "Low"
+    },
+    "text38": {
+        "Comment": "38.Mandatory and Priority with Departments and TM",
+        "caseTitle": "live Claim Case 3",
+        "caseNumber": "ME5",
+        "priority": "Medium"
+    },
+    "text39": {
+        "Comment": "39.Mandatory and Priority with Departments and Document ",
+        "caseTitle": "live Claim Case 4",
+        "caseNumber": "KE32",
+        "priority": "Low"
+    },
+    "text40": {
+        "Comment": "40.Mandatory and Priority with Departments , Clients and TM ",
+        "caseTitle": "live Claim Case 5",
+        "caseNumber": "ME42",
+        "priority": "Medium"
+    },
+    "text41": {
+        "Comment": "41.Mandatory and Priority with Departments , Clients and Documents ",
+        "caseTitle": "live Claim Case 7",
+        "caseNumber": "MR42",
+        "priority": "Low"
+    },
+    "text42": {
+        "Comment": "42.Mandatory and Priority with All ",
+        "caseTitle": "live Claim Case 8",
+        "caseNumber": "BN42",
+        "priority": "Medium"
+    },
+    "text43": {
+        "Comment": "43.Mandatory and Status with Departments",
+        "caseTitle": "Fine Tax case",
+        "caseNumber": "LE32",
+        "status": "Pending"
+    },
+    "text44": {
+        "Comment": "44.Mandatory and Status with Departments and Clients",
+        "caseTitle": "Fine Tax case 1",
+        "caseNumber": "FR78",
+        "status": "Pending"
+    },
+    "text45": {
+        "Comment": "45.Mandatory and Status with Departments and TM",
+        "caseTitle": "Fine Tax case 2",
+        "caseNumber": "MR45",
+        "status": "Pending"
+    },
+    "text46": {
+        "Comment": "46.Mandatory and Status with Departments and Document ",
+        "caseTitle": "Fine Tax case 3",
+        "caseNumber": "BG4",
+        "status": "Pending"
+    },
+    "text47": {
+        "Comment": "47.Mandatory and Status with Departments , Clients and TM ",
+        "caseTitle": "Fine Tax case 4",
+        "caseNumber": "MN32",
+        "status": "Pending"
+    },
+    "text48": {
+        "Comment": "48.Mandatory and Status with Departments , Clients and Documents ",
+        "caseTitle": "Fine Tax case 5",
+        "caseNumber": "MK45",
+        "status": "Pending"
+    },
+    "text49": {
+        "Comment": "49.Mandatory and Status with All ",
+        "caseTitle": "Fine Tax case 6",
+        "caseNumber": "VF43",
+        "status": "Pending"
     }
-
 }
