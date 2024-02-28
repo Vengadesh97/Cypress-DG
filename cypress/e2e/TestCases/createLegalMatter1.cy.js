@@ -14,11 +14,11 @@ describe("Create Legal Matter Scenario 2 ", () => {
     var selectDocuments = [data.Common.document1, data.Common.document2];
 
     // Assertions
-    var checkSelectMembers = [data.Common.members1, matterData.Common.members2, matterData.Common.members3];
+    var checkSelectMembers = [data.Common.members1, data.Common.members2, data.Common.members3];
     var checkUnSelectMembers = [data.Common.UnSelectedmember1, data.Common.UnSelectedmember2, data.Common.UnSelectedmember3, data.Common.UnSelectedmember4, data.Common.UnSelectedmember5];
     var checkSelectedClient = [data.Common.clients1, data.Common.clients2];
-    var checkSelectedDocuments = [matterData.common.documents1, matterData.common.documents2];
-    var checkUnSelectedDocuments = [matterData.common.unSelecteddocument1, matterData.common.unSelecteddocument2];
+    var checkSelectedDocuments = [data.Common.documents1, data.Common.documents2];
+    var checkUnSelectedDocuments = [data.Common.unSelecteddocument1, data.Common.unSelecteddocument2];
 
     before(() => {
         loginPage.visit();

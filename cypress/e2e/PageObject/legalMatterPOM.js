@@ -73,10 +73,13 @@ class legalcaseMatter {
     leftSideMatterTab()
     {
         this.elements.pomLeftsideMatterTab().click();
+        cy.wait(1000);
+        cy.xpath("/html/body/app-root/app-dashboard/div/div[2]/div[1]/div/div[2]/app-matter/app-viewlegalmatter/div[2]/ngx-spinner/div/div[1]/div", { timeout: 10000 }).should('be.visible');
     }
 
     legalMatterTab()
-    {
+    {   
+
         this.elements.pomLeftsideMatterTab().click();
     }
 
@@ -87,7 +90,7 @@ class legalcaseMatter {
 
     createTab()
     {
-        cy.wait(8000);
+        cy.wait(2000);
         this.elements.pomCreateTab().click();
     }
 
