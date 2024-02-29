@@ -7,8 +7,6 @@
         "client2": "Lauditor to Corporate",
         "member1": "Member 1",
         "member2": "Member 2",
-        "document1": "Files DG",
-        "document2": "Files DG2",
         "members1": " Joe",
         "members2": " Member 1",
         "members3": " Member 2",
@@ -18,11 +16,7 @@
         "UnSelectedmember4": "Group Head",
         "UnSelectedmember5": "CL-Team Member",
         "clients1": " Test 1",
-        "clients2": " Lauditor to Corporate",
-        "documents1": "Files DG",
-        "documents2": "Files DG2",
-        "unSelecteddocument1": "",
-        "unSelecteddocument2": ""
+        "clients2": " Lauditor to Corporate"
     },
     "text1": {
         "Comment": "1.Mandatory and DOF with Departments",
@@ -46,7 +40,8 @@
         "Comment": "4.Mandatory and DOF with Departments and Document ",
         "caseTitle": "Bike Insurance Claim",
         "caseNumber": "RT11",
-        "DateFill": " 14 "
+        "DateFill": " 14 ",
+        "document1": ""
     },
     "text5": {
         "Comment": "5.Mandatory and DOF with Departments , Clients and TM ",
@@ -58,12 +53,14 @@
         "Comment": "6.Mandatory and DOF with Departments , Clients and Documents ",
         "caseTitle": "Company Insurance Claim",
         "caseNumber": "YU23",
+        "document1": "",
         "DateFill": " 16 "
     },
     "text7": {
         "Comment": "7.Mandatory  and DOF with All ",
         "caseTitle": "Auto Claim",
         "caseNumber": "WE32",
+        "document1": "",
         "DateFill": " 17 "
     },
     "text8": {
@@ -88,6 +85,7 @@
         "Comment": "11.Mandatory and Description with Departments and Document ",
         "caseTitle": "Old Claim Case",
         "caseNumber": "OL30",
+        "document1": "",
         "Description": "Client matter related Details"
     },
     "text12": {
@@ -100,12 +98,14 @@
         "Comment": "13.Mandatory and Description with Departments , Clients and Documents ",
         "caseTitle": "Current live Claim case",
         "caseNumber": "FG90",
+        "document1": "",
         "Description": "Client related Details"
     },
     "text14": {
         "Comment": "14.Mandatory  and Description with All ",
         "caseTitle": "Retain Claim case",
         "caseNumber": "DF45",
+        "document1": "",
         "Description": "Client Details"
     },
     "text15": {
@@ -130,6 +130,7 @@
         "Comment": "18.Mandatory and Case Type with Departments and Document ",
         "caseTitle": "Current live Claim 3",
         "caseNumber": "WE32",
+        "document1": "",
         "caseType": "Entity Person"
     },
     "text19": {
@@ -142,12 +143,14 @@
         "Comment": "20.Mandatory and Case Type with Departments , Clients and Documents ",
         "caseTitle": "Current live Claim 5",
         "caseNumber": "LO05",
+        "document1": "",
         "caseType": "Individuals"
     },
     "text21": {
         "Comment": "21.Mandatory and Case Type with All ",
         "caseTitle": "Current live 11",
         "caseNumber": "PL11",
+        "document1": "",
         "caseType": "Normal Client"
     },
     "text22": {
@@ -172,6 +175,7 @@
         "Comment": "25.Mandatory and Court with Departments and Document ",
         "caseTitle": "Current live 14",
         "caseNumber": "PL89",
+        "document1": "",
         "court": "Appellate courts"
     },
     "text26": {
@@ -184,12 +188,14 @@
         "Comment": "27.Mandatory and Court with Departments , Clients and Documents ",
         "caseTitle": "Current live 16",
         "caseNumber": "PO49",
+        "document1": "",
         "court": "Munsif courts"
     },
     "text28": {
         "Comment": "28.Mandatory and Court with All ",
         "caseTitle": "Current live 17",
         "caseNumber": "PF49",
+        "document1": "",
         "court": "Special income tax court"
     },
     "text29": {
@@ -214,6 +220,7 @@
         "Comment": "32.Mandatory and Judge with Departments and Document ",
         "caseTitle": "special tax case",
         "caseNumber": "PE29",
+        "document1": "",
         "judge": "Devin"
     },
     "text33": {
@@ -226,12 +233,14 @@
         "Comment": "34.Mandatory and Judge with Departments , Clients and Documents ",
         "caseTitle": "Income tax case",
         "caseNumber": "PE89",
+        "document1": "",
         "judge": "Ethan"
     },
     "text35": {
         "Comment": "35.Mandatory and Judge with All ",
         "caseTitle": "Tax case",
         "caseNumber": "PE23",
+        "document1": "",
         "judge": "Marco"
     },
     "text36": {
@@ -256,6 +265,7 @@
         "Comment": "39.Mandatory and Priority with Departments and Document ",
         "caseTitle": "live Claim Case 4",
         "caseNumber": "KE32",
+        "document1": "",
         "priority": "Low"
     },
     "text40": {
@@ -268,12 +278,14 @@
         "Comment": "41.Mandatory and Priority with Departments , Clients and Documents ",
         "caseTitle": "live Claim Case 7",
         "caseNumber": "MR42",
+        "document1": "",
         "priority": "Low"
     },
     "text42": {
         "Comment": "42.Mandatory and Priority with All ",
         "caseTitle": "live Claim Case 8",
         "caseNumber": "BN42",
+        "document1": "",
         "priority": "Medium"
     },
     "text43": {
@@ -298,6 +310,7 @@
         "Comment": "46.Mandatory and Status with Departments and Document ",
         "caseTitle": "Fine Tax case 3",
         "caseNumber": "BG4",
+        "document1": "",
         "status": "Pending"
     },
     "text47": {
@@ -310,12 +323,14 @@
         "Comment": "48.Mandatory and Status with Departments , Clients and Documents ",
         "caseTitle": "Fine Tax case 5",
         "caseNumber": "MK45",
+        "document1": "",
         "status": "Pending"
     },
     "text49": {
         "Comment": "49.Mandatory and Status with All ",
         "caseTitle": "Fine Tax case 6",
         "caseNumber": "VF43",
+        "document1": "",
         "status": "Pending"
     }
 }

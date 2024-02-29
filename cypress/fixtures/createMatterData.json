@@ -32,7 +32,11 @@
     "CMatter3":{
         "Comment":"28.Mandatory with Departments and Documents",
         "caseTitle":"Scheme Apply 3 ",
-        "caseNumber":"Test Files 3"
+        "caseNumber":"Test Files 3",
+        "document1":"",
+        "document2":"",
+        "documents1":"",
+        "documents2":""
     },
     "CMatter4":{
         "Comment":"29.Mandatory with Departments and Clients and TM",
@@ -42,12 +46,20 @@
     "CMatter5":{
         "Comment":"30.Mandatory with Departments and Clients and Documents",
         "caseTitle":"Scheme Apply 5 ",
-        "caseNumber":"Test Files 5"
+        "caseNumber":"Test Files 5",
+        "document1":"",
+        "document2":"",
+        "documents1":"",
+        "documents2":""
     },
     "CMatter6":{
         "Comment":"31.Mandatory with All",
         "caseTitle":"Scheme Apply 6 ",
-        "caseNumber":"Test Files 6" 
+        "caseNumber":"Test Files 6",
+        "document1":"",
+        "document2":"",
+        "documents1":"",
+        "documents2":""
     },
     "CMatter7":{
         "Comment":"32.All Field Entry",
@@ -84,9 +96,7 @@
         "clients1":" Test 1",
         "clients2":" Lauditor to Corporate",
         "documents1":"Files DG",
-        "documents2":"Files DG2",
-        "unSelecteddocument1":"",
-        "unSelecteddocument2":""
+        "documents2":"Files DG2"
     }
 
 

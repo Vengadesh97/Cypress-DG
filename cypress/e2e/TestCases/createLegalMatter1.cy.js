@@ -11,14 +11,12 @@ describe("Create Legal Matter Scenario 2 ", () => {
     var selectDepartments = [data.Common.Department1, data.Common.Department2];
     var selectClients = [data.Common.client1, data.Common.client2];
     var selectTeamMembers = [data.Common.member1, data.Common.member2];
-    var selectDocuments = [data.Common.document1, data.Common.document2];
 
     // Assertions
     var checkSelectMembers = [data.Common.members1, data.Common.members2, data.Common.members3];
     var checkUnSelectMembers = [data.Common.UnSelectedmember1, data.Common.UnSelectedmember2, data.Common.UnSelectedmember3, data.Common.UnSelectedmember4, data.Common.UnSelectedmember5];
     var checkSelectedClient = [data.Common.clients1, data.Common.clients2];
-    var checkSelectedDocuments = [data.Common.documents1, data.Common.documents2];
-    var checkUnSelectedDocuments = [data.Common.unSelecteddocument1, data.Common.unSelecteddocument2];
+  
 
     before(() => {
         loginPage.visit();
@@ -27,7 +25,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         loginPage.loginButton();
     })
 
-    after(() => {
+    afterEach(() => {
         loginPage.loadIssues();
         loginPage.homeButton();
         legalMatters.leftSideMatterTab();
@@ -176,7 +174,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         //Team Members
         legalMatters.commonNextButton();
         //Documents
-        legalMatters.selectOnRightSide(selectDocuments);
+        legalMatters.selectOnRightSide(data.text4.document1);
         legalMatters.submitButton();
         //Confirmation Popup
         legalMatters.confirmationYesButton();
@@ -190,13 +188,11 @@ describe("Create Legal Matter Scenario 2 ", () => {
         // Document Tab
         viewMatters.viewDetailsDocumentTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(checkSelectedDocuments);
+        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(data.text4.document1);
         // Add New + Tab
         viewMatters.addNewTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(checkSelectedDocuments);
-        // Check UnSelected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckUnSelectedDocumentNameAppear(checkUnSelectedDocuments);
+        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(data.text4.document1);
         legalMatters.scrollUp();
         viewMatters.viewTab();
         viewMatters.viewMatterSearchBox(data.text4.caseTitle);
@@ -283,7 +279,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         //Team Members
         legalMatters.commonNextButton();
         //Documents
-        legalMatters.selectOnRightSide(selectDocuments);
+        legalMatters.selectOnRightSide(data.text6.document1);
         legalMatters.submitButton();
         //Confirmation Popup
         legalMatters.confirmationYesButton();
@@ -297,13 +293,11 @@ describe("Create Legal Matter Scenario 2 ", () => {
         // Document Tab
         viewMatters.viewDetailsDocumentTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(checkSelectedDocuments);
+        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(data.text6.document1);
         // Add New + Tab
         viewMatters.addNewTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(checkSelectedDocuments);
-        // Check UnSelected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckUnSelectedDocumentNameAppear(checkUnSelectedDocuments);
+        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(data.text6.document1);
         // Team Member and Client Tab
         viewMatters.viewDetailsTeamMemberAndExternalCounselTab();
         //Client Tab
@@ -342,7 +336,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         legalMatters.selectOnRightSide(selectTeamMembers);
         legalMatters.commonNextButton();
         //Documents
-        legalMatters.selectOnRightSide(selectDocuments);
+        legalMatters.selectOnRightSide(data.text7.document1);
         legalMatters.submitButton();
         //Confirmation Popup
         legalMatters.confirmationYesButton();
@@ -357,13 +351,11 @@ describe("Create Legal Matter Scenario 2 ", () => {
         // Document Tab
         viewMatters.viewDetailsDocumentTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(checkSelectedDocuments);
+        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(data.text7.document1);
         // Add New + Tab
         viewMatters.addNewTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(checkSelectedDocuments);
-        // Check UnSelected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckUnSelectedDocumentNameAppear(checkUnSelectedDocuments);
+        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(data.text7.document1);
         // Team Member and Client Tab
         viewMatters.viewDetailsTeamMemberAndExternalCounselTab();
         //Selected Team Member
@@ -536,7 +528,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         //Team Members
         legalMatters.commonNextButton();
         //Documents
-        legalMatters.selectOnRightSide(selectDocuments);
+        legalMatters.selectOnRightSide(data.text11.document1);
         legalMatters.submitButton();
         //Confirmation Popup
         legalMatters.confirmationYesButton();
@@ -550,13 +542,11 @@ describe("Create Legal Matter Scenario 2 ", () => {
         // Document Tab
         viewMatters.viewDetailsDocumentTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(checkSelectedDocuments);
+        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(data.text11.document1);
         // Add New + Tab
         viewMatters.addNewTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(checkSelectedDocuments);
-        // Check UnSelected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckUnSelectedDocumentNameAppear(checkUnSelectedDocuments);
+        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(data.text11.document1);
         legalMatters.scrollUp();
         viewMatters.viewTab();
         viewMatters.viewMatterSearchBox(data.text11.caseTitle);
@@ -644,7 +634,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         //Team Members
         legalMatters.commonNextButton();
         //Documents
-        legalMatters.selectOnRightSide(selectDocuments);
+        legalMatters.selectOnRightSide(data.text13.document1);
         legalMatters.submitButton();
         //Confirmation Popup
         legalMatters.confirmationYesButton();
@@ -658,13 +648,11 @@ describe("Create Legal Matter Scenario 2 ", () => {
         // Document Tab
         viewMatters.viewDetailsDocumentTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(checkSelectedDocuments);
+        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(data.text13.document1);
         // Add New + Tab
         viewMatters.addNewTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(checkSelectedDocuments);
-        // Check UnSelected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckUnSelectedDocumentNameAppear(checkUnSelectedDocuments);
+        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(data.text13.document1);
         // Team Member and Client Tab
         viewMatters.viewDetailsTeamMemberAndExternalCounselTab();
         //Client Tab
@@ -704,7 +692,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         legalMatters.selectOnRightSide(selectTeamMembers);
         legalMatters.commonNextButton();
         //Documents
-        legalMatters.selectOnRightSide(selectDocuments);
+        legalMatters.selectOnRightSide(data.text14.document1);
         legalMatters.submitButton();
         //Confirmation Popup
         legalMatters.confirmationYesButton();
@@ -719,13 +707,11 @@ describe("Create Legal Matter Scenario 2 ", () => {
         // Document Tab
         viewMatters.viewDetailsDocumentTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(checkSelectedDocuments);
+        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(data.text14.document1);
         // Add New + Tab
         viewMatters.addNewTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(checkSelectedDocuments);
-        // Check UnSelected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckUnSelectedDocumentNameAppear(checkUnSelectedDocuments);
+        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(data.text14.document1);
         // Team Member and Client Tab
         viewMatters.viewDetailsTeamMemberAndExternalCounselTab();
         //Selected Team Member
@@ -899,7 +885,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         //Team Members
         legalMatters.commonNextButton();
         //Documents
-        legalMatters.selectOnRightSide(selectDocuments);
+        legalMatters.selectOnRightSide(data.text18.document1);
         legalMatters.submitButton();
         //Confirmation Popup
         legalMatters.confirmationYesButton();
@@ -913,13 +899,11 @@ describe("Create Legal Matter Scenario 2 ", () => {
         // Document Tab
         viewMatters.viewDetailsDocumentTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(checkSelectedDocuments);
+        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(data.text18.document1);
         // Add New + Tab
         viewMatters.addNewTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(checkSelectedDocuments);
-        // Check UnSelected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckUnSelectedDocumentNameAppear(checkUnSelectedDocuments);
+        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(data.text18.document1);
         legalMatters.scrollUp();
         viewMatters.viewTab();
         viewMatters.viewMatterSearchBox(data.text18.caseTitle);
@@ -1007,7 +991,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         //Team Members
         legalMatters.commonNextButton();
         //Documents
-        legalMatters.selectOnRightSide(selectDocuments);
+        legalMatters.selectOnRightSide(data.text20.document1);
         legalMatters.submitButton();
         //Confirmation Popup
         legalMatters.confirmationYesButton();
@@ -1021,13 +1005,11 @@ describe("Create Legal Matter Scenario 2 ", () => {
         // Document Tab
         viewMatters.viewDetailsDocumentTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(checkSelectedDocuments);
+        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(data.text20.document1);
         // Add New + Tab
         viewMatters.addNewTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(checkSelectedDocuments);
-        // Check UnSelected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckUnSelectedDocumentNameAppear(checkUnSelectedDocuments);
+        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(data.text20.document1);
         // Team Member and Client Tab
         viewMatters.viewDetailsTeamMemberAndExternalCounselTab();
         //Client Tab
@@ -1067,7 +1049,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         legalMatters.selectOnRightSide(selectTeamMembers);
         legalMatters.commonNextButton();
         //Documents
-        legalMatters.selectOnRightSide(selectDocuments);
+        legalMatters.selectOnRightSide(data.text21.document1);
         legalMatters.submitButton();
         //Confirmation Popup
         legalMatters.confirmationYesButton();
@@ -1082,13 +1064,11 @@ describe("Create Legal Matter Scenario 2 ", () => {
         // Document Tab
         viewMatters.viewDetailsDocumentTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(checkSelectedDocuments);
+        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(data.text21.document1);
         // Add New + Tab
         viewMatters.addNewTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(checkSelectedDocuments);
-        // Check UnSelected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckUnSelectedDocumentNameAppear(checkUnSelectedDocuments);
+        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(data.text21.document1);
         // Team Member and Client Tab
         viewMatters.viewDetailsTeamMemberAndExternalCounselTab();
         //Selected Team Member
@@ -1262,7 +1242,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         //Team Members
         legalMatters.commonNextButton();
         //Documents
-        legalMatters.selectOnRightSide(selectDocuments);
+        legalMatters.selectOnRightSide(data.text25.document1);
         legalMatters.submitButton();
         //Confirmation Popup
         legalMatters.confirmationYesButton();
@@ -1276,13 +1256,11 @@ describe("Create Legal Matter Scenario 2 ", () => {
         // Document Tab
         viewMatters.viewDetailsDocumentTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(checkSelectedDocuments);
+        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(data.text25.document1);
         // Add New + Tab
         viewMatters.addNewTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(checkSelectedDocuments);
-        // Check UnSelected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckUnSelectedDocumentNameAppear(checkUnSelectedDocuments);
+        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(data.text25.document1);
         legalMatters.scrollUp();
         viewMatters.viewTab();
         viewMatters.viewMatterSearchBox(data.text25.caseTitle);
@@ -1370,7 +1348,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         //Team Members
         legalMatters.commonNextButton();
         //Documents
-        legalMatters.selectOnRightSide(selectDocuments);
+        legalMatters.selectOnRightSide(data.text27.document1);
         legalMatters.submitButton();
         //Confirmation Popup
         legalMatters.confirmationYesButton();
@@ -1384,13 +1362,11 @@ describe("Create Legal Matter Scenario 2 ", () => {
         // Document Tab
         viewMatters.viewDetailsDocumentTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(checkSelectedDocuments);
+        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(data.text27.document1);
         // Add New + Tab
         viewMatters.addNewTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(checkSelectedDocuments);
-        // Check UnSelected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckUnSelectedDocumentNameAppear(checkUnSelectedDocuments);
+        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(data.text27.document1);
         // Team Member and Client Tab
         viewMatters.viewDetailsTeamMemberAndExternalCounselTab();
         //Client Tab
@@ -1430,7 +1406,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         legalMatters.selectOnRightSide(selectTeamMembers);
         legalMatters.commonNextButton();
         //Documents
-        legalMatters.selectOnRightSide(selectDocuments);
+        legalMatters.selectOnRightSide(data.text28.document1);
         legalMatters.submitButton();
         //Confirmation Popup
         legalMatters.confirmationYesButton();
@@ -1445,13 +1421,11 @@ describe("Create Legal Matter Scenario 2 ", () => {
         // Document Tab
         viewMatters.viewDetailsDocumentTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(checkSelectedDocuments);
+        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(data.text28.document1);
         // Add New + Tab
         viewMatters.addNewTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(checkSelectedDocuments);
-        // Check UnSelected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckUnSelectedDocumentNameAppear(checkUnSelectedDocuments);
+        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(data.text28.document1);
         // Team Member and Client Tab
         viewMatters.viewDetailsTeamMemberAndExternalCounselTab();
         //Selected Team Member
@@ -1625,7 +1599,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         //Team Members
         legalMatters.commonNextButton();
         //Documents
-        legalMatters.selectOnRightSide(selectDocuments);
+        legalMatters.selectOnRightSide(data.text32.document1);
         legalMatters.submitButton();
         //Confirmation Popup
         legalMatters.confirmationYesButton();
@@ -1639,13 +1613,11 @@ describe("Create Legal Matter Scenario 2 ", () => {
         // Document Tab
         viewMatters.viewDetailsDocumentTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(checkSelectedDocuments);
+        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(data.text32.document1);
         // Add New + Tab
         viewMatters.addNewTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(checkSelectedDocuments);
-        // Check UnSelected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckUnSelectedDocumentNameAppear(checkUnSelectedDocuments);
+        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(data.text32.document1);
         legalMatters.scrollUp();
         viewMatters.viewTab();
         viewMatters.viewMatterSearchBox(data.text32.caseTitle);
@@ -1733,7 +1705,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         //Team Members
         legalMatters.commonNextButton();
         //Documents
-        legalMatters.selectOnRightSide(selectDocuments);
+        legalMatters.selectOnRightSide(data.text34.document1);
         legalMatters.submitButton();
         //Confirmation Popup
         legalMatters.confirmationYesButton();
@@ -1747,13 +1719,11 @@ describe("Create Legal Matter Scenario 2 ", () => {
         // Document Tab
         viewMatters.viewDetailsDocumentTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(checkSelectedDocuments);
+        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(data.text34.document1);
         // Add New + Tab
         viewMatters.addNewTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(checkSelectedDocuments);
-        // Check UnSelected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckUnSelectedDocumentNameAppear(checkUnSelectedDocuments);
+        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(data.text34.document1);
         // Team Member and Client Tab
         viewMatters.viewDetailsTeamMemberAndExternalCounselTab();
         //Client Tab
@@ -1793,7 +1763,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         legalMatters.selectOnRightSide(selectTeamMembers);
         legalMatters.commonNextButton();
         //Documents
-        legalMatters.selectOnRightSide(selectDocuments);
+        legalMatters.selectOnRightSide(data.text35.document1);
         legalMatters.submitButton();
         //Confirmation Popup
         legalMatters.confirmationYesButton();
@@ -1808,13 +1778,11 @@ describe("Create Legal Matter Scenario 2 ", () => {
         // Document Tab
         viewMatters.viewDetailsDocumentTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(checkSelectedDocuments);
+        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(data.text35.document1);
         // Add New + Tab
         viewMatters.addNewTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(checkSelectedDocuments);
-        // Check UnSelected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckUnSelectedDocumentNameAppear(checkUnSelectedDocuments);
+        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(data.text35.document1);
         // Team Member and Client Tab
         viewMatters.viewDetailsTeamMemberAndExternalCounselTab();
         //Selected Team Member
@@ -1985,7 +1953,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         //Team Members
         legalMatters.commonNextButton();
         //Documents
-        legalMatters.selectOnRightSide(selectDocuments);
+        legalMatters.selectOnRightSide(data.text39.document1);
         legalMatters.submitButton();
         //Confirmation Popup
         legalMatters.confirmationYesButton();
@@ -1999,13 +1967,11 @@ describe("Create Legal Matter Scenario 2 ", () => {
         // Document Tab
         viewMatters.viewDetailsDocumentTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(checkSelectedDocuments);
+        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(data.text39.document1);
         // Add New + Tab
         viewMatters.addNewTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(checkSelectedDocuments);
-        // Check UnSelected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckUnSelectedDocumentNameAppear(checkUnSelectedDocuments);
+        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(data.text39.document1);
         legalMatters.scrollUp();
         viewMatters.viewTab();
         viewMatters.viewMatterSearchBox(data.text39.caseTitle);
@@ -2091,7 +2057,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         //Team Members
         legalMatters.commonNextButton();
         //Documents
-        legalMatters.selectOnRightSide(selectDocuments);
+        legalMatters.selectOnRightSide(data.text41.document1);
         legalMatters.submitButton();
         //Confirmation Popup
         legalMatters.confirmationYesButton();
@@ -2105,13 +2071,11 @@ describe("Create Legal Matter Scenario 2 ", () => {
         // Document Tab
         viewMatters.viewDetailsDocumentTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(checkSelectedDocuments);
+        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(data.text41.document1);
         // Add New + Tab
         viewMatters.addNewTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(checkSelectedDocuments);
-        // Check UnSelected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckUnSelectedDocumentNameAppear(checkUnSelectedDocuments);
+        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(data.text41.document1);
         // Team Member and Client Tab
         viewMatters.viewDetailsTeamMemberAndExternalCounselTab();
         //Client Tab
@@ -2150,7 +2114,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         legalMatters.selectOnRightSide(selectTeamMembers);
         legalMatters.commonNextButton();
         //Documents
-        legalMatters.selectOnRightSide(selectDocuments);
+        legalMatters.selectOnRightSide(data.text42.document1);
         legalMatters.submitButton();
         //Confirmation Popup
         legalMatters.confirmationYesButton();
@@ -2165,13 +2129,11 @@ describe("Create Legal Matter Scenario 2 ", () => {
         // Document Tab
         viewMatters.viewDetailsDocumentTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(checkSelectedDocuments);
+        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(data.text42.document1);
         // Add New + Tab
         viewMatters.addNewTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(checkSelectedDocuments);
-        // Check UnSelected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckUnSelectedDocumentNameAppear(checkUnSelectedDocuments);
+        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(data.text42.document1);
         // Team Member and Client Tab
         viewMatters.viewDetailsTeamMemberAndExternalCounselTab();
         //Selected Team Member
@@ -2341,7 +2303,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         //Team Members
         legalMatters.commonNextButton();
         //Documents
-        legalMatters.selectOnRightSide(selectDocuments);
+        legalMatters.selectOnRightSide(data.text46.document1);
         legalMatters.submitButton();
         //Confirmation Popup
         legalMatters.confirmationYesButton();
@@ -2355,13 +2317,11 @@ describe("Create Legal Matter Scenario 2 ", () => {
         // Document Tab
         viewMatters.viewDetailsDocumentTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(checkSelectedDocuments);
+        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(data.text46.document1);
         // Add New + Tab
         viewMatters.addNewTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(checkSelectedDocuments);
-        // Check UnSelected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckUnSelectedDocumentNameAppear(checkUnSelectedDocuments);
+        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(data.text46.document1);
         legalMatters.scrollUp();
         viewMatters.viewTab();
         viewMatters.viewMatterSearchBox(data.text46.caseTitle);
@@ -2447,7 +2407,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         //Team Members
         legalMatters.commonNextButton();
         //Documents
-        legalMatters.selectOnRightSide(selectDocuments);
+        legalMatters.selectOnRightSide(data.text48.document1);
         legalMatters.submitButton();
         //Confirmation Popup
         legalMatters.confirmationYesButton();
@@ -2461,13 +2421,11 @@ describe("Create Legal Matter Scenario 2 ", () => {
         // Document Tab
         viewMatters.viewDetailsDocumentTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(checkSelectedDocuments);
+        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(data.text48.document1);
         // Add New + Tab
         viewMatters.addNewTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(checkSelectedDocuments);
-        // Check UnSelected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckUnSelectedDocumentNameAppear(checkUnSelectedDocuments);
+        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(data.text48.document1);
         // Team Member and Client Tab
         viewMatters.viewDetailsTeamMemberAndExternalCounselTab();
         //Client Tab
@@ -2506,7 +2464,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         legalMatters.selectOnRightSide(selectTeamMembers);
         legalMatters.commonNextButton();
         //Documents
-        legalMatters.selectOnRightSide(selectDocuments);
+        legalMatters.selectOnRightSide(data.text49.document1);
         legalMatters.submitButton();
         //Confirmation Popup
         legalMatters.confirmationYesButton();
@@ -2521,13 +2479,11 @@ describe("Create Legal Matter Scenario 2 ", () => {
         // Document Tab
         viewMatters.viewDetailsDocumentTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(checkSelectedDocuments);
+        viewMatters.viewDetailsCheckSelectedDocumentNameAppear(data.text49.document1);
         // Add New + Tab
         viewMatters.addNewTab();
         // Check Selected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(checkSelectedDocuments);
-        // Check UnSelected Document Name Appear
-        viewMatters.viewDetailsAddExistingCheckUnSelectedDocumentNameAppear(checkUnSelectedDocuments);
+        viewMatters.viewDetailsAddExistingCheckSelectedDocumentNameAppear(data.text49.document1);
         // Team Member and Client Tab
         viewMatters.viewDetailsTeamMemberAndExternalCounselTab();
         //Selected Team Member

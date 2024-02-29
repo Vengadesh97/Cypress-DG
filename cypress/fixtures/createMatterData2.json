@@ -1,0 +1,62 @@
+{
+    "text1":{
+        "Comment":"1.Mandatory and Opponent Advocate with Departments",
+        "caseTitle":"Labour Matters",
+        "caseNumber":"KM3",
+        "oppName":"Arun",
+        "oppEmail":"arun32@gmail.com",
+        "oppNumber":"9090101011"
+    },
+    "text2":{
+        "Comment":"2.Mandatory and Opponent Advocate with Departments and Clients",
+        "caseTitle":"Labour Matters 1",
+        "caseNumber":"KMK3",
+        "oppName":"Ashok",
+        "oppEmail":"ashok@gmail.com",
+        "oppNumber":"8090101011"
+    },
+    "text3":{
+        "Comment":"3.Mandatory and Opponent Advocate with Departments and TM",
+        "caseTitle":"Labour Matters 2",
+        "caseNumber":"KMR2",
+        "oppName":"afsal",
+        "oppEmail":"afsal@gmail.com",
+        "oppNumber":"9890101011"
+    },
+    "text4":{
+        "Comment":"4.Mandatory and Opponent Advocate with Departments and Document ",
+        "caseTitle":"Labour Matters 3",
+        "caseNumber":"KMI9",
+        "document1":"",
+        "oppName":"arvind",
+        "oppEmail":"arvind@gmail.com",
+        "oppNumber":"7978101011"
+    },
+    "text5":{
+        "Comment":"5.Mandatory and Opponent Advocate with Departments , Clients and TM ",
+        "caseTitle":"Labour Matters 4",
+        "caseNumber":"KML4",
+        "oppName":"Balaji",
+        "oppEmail":"balaji@gmail.com",
+        "oppNumber":"8020101011"
+    },
+    "text6":{
+        "Comment":"6.Mandatory and Opponent Advocate with Departments , Clients and Documents ",
+        "caseTitle":"Labour Matters 5",
+        "caseNumber":"JM43",
+        "document1":"",
+        "oppName":"Bala",
+        "oppEmail":"bala@gmail.com",
+        "oppNumber":"7080101011"
+    },
+    "text7":{
+        "Comment":"7.Mandatory and Opponent Advocate with All ",
+        "caseTitle":"Labour Matters 6",
+        "caseNumber":"ER32",
+        "document1":"",
+        "oppName":"Bivi",
+        "oppEmail":"Bivi@gmail.com",
+        "oppNumber":"10100101011"
+    }
+
+}
