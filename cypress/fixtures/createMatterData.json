@@ -33,10 +33,10 @@
         "Comment":"28.Mandatory with Departments and Documents",
         "caseTitle":"Scheme Apply 3 ",
         "caseNumber":"Test Files 3",
-        "document1":"",
-        "document2":"",
-        "documents1":"",
-        "documents2":""
+        "document1":"Files DG",
+        "document2":"Files DG2",
+        "documents1":"Files DG",
+        "documents2":"Files DG2"
     },
     "CMatter4":{
         "Comment":"29.Mandatory with Departments and Clients and TM",
@@ -47,19 +47,19 @@
         "Comment":"30.Mandatory with Departments and Clients and Documents",
         "caseTitle":"Scheme Apply 5 ",
         "caseNumber":"Test Files 5",
-        "document1":"",
-        "document2":"",
-        "documents1":"",
-        "documents2":""
+        "document1":"Files DG",
+        "document2":"Files DG2",
+        "documents1":"Files DG",
+        "documents2":"Files DG2"
     },
     "CMatter6":{
         "Comment":"31.Mandatory with All",
         "caseTitle":"Scheme Apply 6 ",
         "caseNumber":"Test Files 6",
-        "document1":"",
-        "document2":"",
-        "documents1":"",
-        "documents2":""
+        "document1":"Files DG",
+        "document2":"Files DG2",
+        "documents1":"Files DG",
+        "documents2":"Files DG2"
     },
     "CMatter7":{
         "Comment":"32.All Field Entry",

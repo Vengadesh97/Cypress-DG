@@ -779,8 +779,743 @@ describe("Create Legal Matter Scenario 3",()=>{
         view.updateDepartmentCheckSelectedDepartmentName(selectDepartments);
     })
 
+    it("15.Mandatory DOF and Case Type with Departments", () => {
+        create.createTab();
+        create.caseTitleField(data.text15.caseTitle);
+        create.caseNumberField(data.text15.caseNumber);
+        create.scrollDown();
+        create.dateClick();
+        create.dateOfFilling(data.text15.dateFill);
+        create.caseTypeField(data.text15.caseType);
+        create.nextButton();
+        //Departments
+        create.selectOnRightSide(selectDepartments);
+        create.commonNextButton();
+        //Clients
+        create.commonNextButton();
+        //Team Members
+        create.commonNextButton();
+        //Documents
+        create.submitButton();
+        //Confirmation Popup
+        create.confirmationYesButton();
+        //Success popup
+        create.successViewMatterButton();
+        view.viewMatterSearchBox(data.text15.caseTitle);
+        view.actionButtonsClick(data.text15.caseTitle);
+        view.editMatterInfoMenuButton();
+        view.verifyEditMatterInfoCaseTitle(data.text15.caseTitle);
+        view.verifyEditMatterInfoCaseNumber(data.text15.caseNumber);
+        view.verifyEditMatterInfoCaseType(data.text15.caseType);
+        view.editMatterInfoCancelButton();
+        view.actionButtonsClick(data.text15.caseTitle);
+        view.updateDepartmentMenuButton();
+        view.updateDepartmentCheckSelectedDepartmentName(selectDepartments);
+    })
 
+    it("16.Mandatory DOF and Case Type with Departments and Clients", () => {
+        create.createTab();
+        create.caseTitleField(data.text16.caseTitle);
+        create.caseNumberField(data.text16.caseNumber);
+        create.scrollDown();
+        create.dateClick();
+        create.dateOfFilling(data.text16.dateFill);
+        create.caseTypeField(data.text16.caseType);
+        create.nextButton();
+        //Departments
+        create.selectOnRightSide(selectDepartments);
+        create.commonNextButton();
+        //Clients
+        create.selectOnRightSide(selectClients);
+        create.commonNextButton();
+        //TeamMembers
+        create.commonNextButton();
+        //Documents
+        create.submitButton();
+        //Confirmation Popup
+        create.confirmationYesButton();
+        //Success Popup
+        create.successViewMatterButton();
+        //View Matter 
+        view.viewMatterSearchBox(data.text16.caseTitle);
+        // Action Button
+        view.actionButtonsClick(data.text16.caseTitle);
+        // View Details
+        view.viewDetailsMenuButton();
+        // Team Member and Client Tab
+        view.viewDetailsTeamMemberAndExternalCounselTab();
+        //Client Tab
+        view.viewDetailsExternalCounselTab();
+        //Selected Client
+        view.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(checkSelectedClient);
+        create.scrollUp();
+        view.viewTab();
+        view.viewMatterSearchBox(data.text16.caseTitle);
+        view.actionButtonsClick(data.text16.caseTitle);
+        // Edit Matter Info
+        view.editMatterInfoMenuButton();
+        view.verifyEditMatterInfoCaseTitle(data.text16.caseTitle);
+        view.verifyEditMatterInfoCaseNumber(data.text16.caseNumber);
+        view.verifyEditMatterInfoCaseType(data.text16.caseType);
+        view.editMatterInfoCancelButton();
+        view.actionButtonsClick(data.text16.caseTitle);
+        // Update Department
+        view.updateDepartmentMenuButton();
+        view.updateDepartmentCheckSelectedDepartmentName(selectDepartments);
+    })
 
+    it("17.Mandatory DOF and Case Type with Departments and TM", () => {
+        create.createTab();
+        create.caseTitleField(data.text17.caseTitle);
+        create.caseNumberField(data.text17.caseNumber);
+        create.scrollDown();
+        create.dateClick();
+        create.dateOfFilling(data.text17.dateFill);
+        create.caseTypeField(data.text17.caseType);
+        create.nextButton();
+        // Departments
+        create.selectOnRightSide(selectDepartments);
+        create.commonNextButton();
+        // Clients
+        create.commonNextButton();
+        // Team Members
+        create.selectOnRightSide(selectTeamMembers);
+        create.commonNextButton();
+        // Documents
+        create.submitButton();
+        // Confirmation popup
+        create.confirmationYesButton();
+        // Success Popup
+        create.successViewMatterButton();
+        // View Matter 
+        view.viewMatterSearchBox(data.text17.caseTitle);
+        // Action Button
+        view.actionButtonsClick(data.text17.caseTitle);
+        // View Details
+        view.viewDetailsMenuButton();
+        // Team Member and Client Tab
+        view.viewDetailsTeamMemberAndExternalCounselTab();
+        //Selected Team Member
+        view.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(checkSelectMembers);
+        //Unselected Team Member
+        view.viewDetailsCheckUnSelectedTeamMemberOrClientName(checkUnSelectMembers);
+        create.scrollUp();
+        view.viewTab();
+        view.viewMatterSearchBox(data.text17.caseTitle);
+        view.actionButtonsClick(data.text17.caseTitle);
+        // Edit Matter Info
+        view.editMatterInfoMenuButton();
+        view.verifyEditMatterInfoCaseTitle(data.text17.caseTitle);
+        view.verifyEditMatterInfoCaseNumber(data.text17.caseNumber);
+        view.verifyEditMatterInfoCaseType(data.text17.caseType);
+        view.editMatterInfoCancelButton();
+        view.actionButtonsClick(data.text17.caseTitle);
+        // Update Department
+        view.updateDepartmentMenuButton();
+        view.updateDepartmentCheckSelectedDepartmentName(selectDepartments);
+    })
+
+    it("18.Mandatory DOF and Case Type with Departments and Document ", () => {
+        create.createTab();
+        create.caseTitleField(data.text18.caseTitle);
+        create.caseNumberField(data.text18.caseNumber);
+        create.scrollDown();
+        create.dateClick();
+        create.dateOfFilling(data.text18.dateFill);
+        create.caseTypeField(data.text18.caseType);
+        create.nextButton();
+        //Departments
+        create.selectOnRightSide(selectDepartments);
+        create.commonNextButton();
+        //Clients
+        create.commonNextButton();
+        //Team Members
+        create.commonNextButton();
+        //Documents
+        create.selectOnRightSide(data.text18.document1);
+        create.submitButton();
+        //Confirmation Popup
+        create.confirmationYesButton();
+        //Success Popup
+        create.successViewMatterButton();
+        //View Matter 
+        view.viewMatterSearchBox(data.text18.caseTitle);
+        view.actionButtonsClick(data.text18.caseTitle);
+        // View Details
+        view.viewDetailsMenuButton();
+        // Document Tab
+        view.viewDetailsDocumentTab();
+        // Check Selected Document Name Appear
+        view.viewDetailsCheckSelectedDocumentNameAppear(data.text18.document1);
+        // Add New + Tab
+        view.addNewTab();
+        // Check Selected Document Name Appear
+        view.viewDetailsAddExistingCheckSelectedDocumentNameAppear(data.text18.document1);
+        create.scrollUp();
+        view.viewTab();
+        view.viewMatterSearchBox(data.text18.caseTitle);
+        // Action Button
+        view.actionButtonsClick(data.text18.caseTitle);
+        // Edit Matter Info
+        view.editMatterInfoMenuButton();
+        view.verifyEditMatterInfoCaseTitle(data.text18.caseTitle);
+        view.verifyEditMatterInfoCaseNumber(data.text18.caseNumber);
+        view.verifyEditMatterInfoCaseType(data.text18.caseType);
+        view.editMatterInfoCancelButton();
+        view.actionButtonsClick(data.text18.caseTitle);
+        // Update Department
+        view.updateDepartmentMenuButton();
+        view.updateDepartmentCheckSelectedDepartmentName(selectDepartments);
+    })
+
+    it("19.Mandatory DOF and Case Type with Departments ,Clients and TM ", () => {
+        create.createTab();
+        create.caseTitleField(data.text19.caseTitle);
+        create.caseNumberField(data.text19.caseNumber);
+        create.scrollDown();
+        create.dateClick();
+        create.dateOfFilling(data.text19.dateFill);
+        create.caseTypeField(data.text19.caseType);
+        create.nextButton();
+        //Departments
+        create.selectOnRightSide(selectDepartments);
+        create.commonNextButton();
+        //Clients
+        create.selectOnRightSide(selectClients);
+        create.commonNextButton();
+        //Team Members
+        create.selectOnRightSide(selectTeamMembers);
+        create.commonNextButton();
+        //Documents
+        create.submitButton();
+        //Confirmation Popup
+        create.confirmationYesButton();
+        //Success Popup
+        create.successViewMatterButton();
+        //View Matter 
+        view.viewMatterSearchBox(data.text19.caseTitle);
+        // Action Button
+        view.actionButtonsClick(data.text19.caseTitle);
+        // View Details
+        view.viewDetailsMenuButton();
+        // Team Member and Client Tab
+        view.viewDetailsTeamMemberAndExternalCounselTab();
+        //Selected Team Member
+        view.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(checkSelectMembers);
+        //Unselected Team Member
+        view.viewDetailsCheckUnSelectedTeamMemberOrClientName(checkUnSelectMembers);
+        //Client Tab
+        view.viewDetailsExternalCounselTab();
+        //Selected Client
+        view.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(checkSelectedClient);
+        create.scrollUp();
+        view.viewTab();
+        view.viewMatterSearchBox(data.text19.caseTitle);
+        view.actionButtonsClick(data.text19.caseTitle);
+        // Edit Matter Info
+        view.editMatterInfoMenuButton();
+        view.verifyEditMatterInfoCaseTitle(data.text19.caseTitle);
+        view.verifyEditMatterInfoCaseNumber(data.text19.caseNumber);
+        view.verifyEditMatterInfoCaseType(data.text19.caseType);
+        view.editMatterInfoCancelButton();
+        view.actionButtonsClick(data.text19.caseTitle);
+        // Update Department
+        view.updateDepartmentMenuButton();
+        view.updateDepartmentCheckSelectedDepartmentName(selectDepartments);
+    })
+
+    it("20.Mandatory DOF and Case Type with Departments , Clients and Documents ", () => {
+        create.createTab();
+        create.caseTitleField(data.text20.caseTitle);
+        create.caseNumberField(data.text20.caseNumber);
+        create.scrollDown();
+        create.dateClick();
+        create.dateOfFilling(data.text20.dateFill);
+        create.caseTypeField(data.text20.caseType);
+        create.nextButton();
+        //Departments
+        create.selectOnRightSide(selectDepartments);
+        create.commonNextButton();
+        //Clients
+        create.selectOnRightSide(selectClients);
+        create.commonNextButton();
+        //Team Members
+        create.commonNextButton();
+        //Documents
+        create.selectOnRightSide(data.text20.document1);
+        create.submitButton();
+        //Confirmation Popup
+        create.confirmationYesButton();
+        //Success Popup
+        create.successViewMatterButton();
+        //View Matter 
+        view.viewMatterSearchBox(data.text20.caseTitle);
+        view.actionButtonsClick(data.text20.caseTitle);
+        // View Details
+        view.viewDetailsMenuButton();
+        // Document Tab
+        view.viewDetailsDocumentTab();
+        // Check Selected Document Name Appear
+        view.viewDetailsCheckSelectedDocumentNameAppear(data.text20.document1);
+        // Add New + Tab
+        view.addNewTab();
+        // Check Selected Document Name Appear
+        view.viewDetailsAddExistingCheckSelectedDocumentNameAppear(data.text20.document1);
+        // Team Member and Client Tab
+        view.viewDetailsTeamMemberAndExternalCounselTab();
+        //Client Tab
+        view.viewDetailsExternalCounselTab();
+        //Selected Client
+        view.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(checkSelectedClient);
+        create.scrollUp();
+        view.viewTab();
+        view.viewMatterSearchBox(data.text20.caseTitle);
+        view.actionButtonsClick(data.text20.caseTitle);
+        // Edit Matter Info
+        view.editMatterInfoMenuButton();
+        view.verifyEditMatterInfoCaseTitle(data.text20.caseTitle);
+        view.verifyEditMatterInfoCaseNumber(data.text20.caseNumber);
+        view.verifyEditMatterInfoCaseType(data.text20.caseType);
+        view.editMatterInfoCancelButton();
+        view.actionButtonsClick(data.text20.caseTitle);
+        // Update Department
+        view.updateDepartmentMenuButton();
+        view.updateDepartmentCheckSelectedDepartmentName(selectDepartments);
+    })
+
+    it("21.Mandatory DOF and Case Type with All ", () => {
+        create.createTab();
+        create.caseTitleField(data.text21.caseTitle);
+        create.caseNumberField(data.text21.caseNumber);
+        create.scrollDown();
+        create.dateClick();
+        create.dateOfFilling(data.text21.dateFill);
+        create.caseTypeField(data.text21.caseType);
+        create.nextButton();
+        //Departments
+        create.selectOnRightSide(selectDepartments);
+        create.commonNextButton();
+        //Clients
+        create.selectOnRightSide(selectClients);
+        create.commonNextButton();
+        //Team Members
+        create.selectOnRightSide(selectTeamMembers);
+        create.commonNextButton();
+        //Documents
+        create.selectOnRightSide(data.text21.document1);
+        create.submitButton();
+        //Confirmation Popup
+        create.confirmationYesButton();
+        //Success Popup
+        create.successViewMatterButton();
+        //View Matter 
+        view.viewMatterSearchBox(data.text21.caseTitle);
+        // Action Button
+        view.actionButtonsClick(data.text21.caseTitle);
+        // View Details
+        view.viewDetailsMenuButton();
+        // Document Tab
+        view.viewDetailsDocumentTab();
+        // Check Selected Document Name Appear
+        view.viewDetailsCheckSelectedDocumentNameAppear(data.text21.document1);
+        // Add New + Tab
+        view.addNewTab();
+        // Check Selected Document Name Appear
+        view.viewDetailsAddExistingCheckSelectedDocumentNameAppear(data.text21.document1);
+        // Team Member and Client Tab
+        view.viewDetailsTeamMemberAndExternalCounselTab();
+        //Selected Team Member
+        view.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(checkSelectMembers);
+        //Unselected Team Member
+        view.viewDetailsCheckUnSelectedTeamMemberOrClientName(checkUnSelectMembers);
+        //Client Tab
+        view.viewDetailsExternalCounselTab();
+        //Selected Client
+        view.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(checkSelectedClient);
+        create.scrollUp();
+        view.viewTab();
+        view.viewMatterSearchBox(data.text21.caseTitle);
+        view.actionButtonsClick(data.text21.caseTitle);
+        // Edit Matter Info
+        view.editMatterInfoMenuButton();
+        view.verifyEditMatterInfoCaseTitle(data.text21.caseTitle);
+        view.verifyEditMatterInfoCaseNumber(data.text21.caseNumber);
+        view.verifyEditMatterInfoCaseType(data.text21.caseType);
+        view.editMatterInfoCancelButton();
+        view.actionButtonsClick(data.text21.caseTitle);
+        // Update Department
+        view.updateDepartmentMenuButton();
+        view.updateDepartmentCheckSelectedDepartmentName(selectDepartments);
+    })
+
+    it("22.Mandatory DOF and Court with Departments", () => {
+        create.createTab();
+        create.caseTitleField(data.text22.caseTitle);
+        create.caseNumberField(data.text22.caseNumber);
+        create.scrollDown();
+        create.dateClick();
+        create.dateOfFilling(data.text22.dateFill);
+        create.courtField(data.text22.court);
+        create.nextButton();
+        //Departments
+        create.selectOnRightSide(selectDepartments);
+        create.commonNextButton();
+        //Clients
+        create.commonNextButton();
+        //Team Members
+        create.commonNextButton();
+        //Documents
+        create.submitButton();
+        //Confirmation Popup
+        create.confirmationYesButton();
+        //Success popup
+        create.successViewMatterButton();
+        view.viewMatterSearchBox(data.text22.caseTitle);
+        view.actionButtonsClick(data.text22.caseTitle);
+        view.editMatterInfoMenuButton();
+        view.verifyEditMatterInfoCaseTitle(data.text22.caseTitle);
+        view.verifyEditMatterInfoCaseNumber(data.text22.caseNumber);
+        view.verifyEditMatterInfoCourt(data.text22.court);
+        view.editMatterInfoCancelButton();
+        view.actionButtonsClick(data.text22.caseTitle);
+        view.updateDepartmentMenuButton();
+        view.updateDepartmentCheckSelectedDepartmentName(selectDepartments);
+    })
+
+    it("23.Mandatory DOF and Court with Departments and Clients", () => {
+        create.createTab();
+        create.caseTitleField(data.text23.caseTitle);
+        create.caseNumberField(data.text23.caseNumber);
+        create.scrollDown();
+        create.dateClick();
+        create.dateOfFilling(data.text23.dateFill);
+        create.courtField(data.text23.court);
+        create.nextButton();
+        //Departments
+        create.selectOnRightSide(selectDepartments);
+        create.commonNextButton();
+        //Clients
+        create.selectOnRightSide(selectClients);
+        create.commonNextButton();
+        //TeamMembers
+        create.commonNextButton();
+        //Documents
+        create.submitButton();
+        //Confirmation Popup
+        create.confirmationYesButton();
+        //Success Popup
+        create.successViewMatterButton();
+        //View Matter 
+        view.viewMatterSearchBox(data.text23.caseTitle);
+        // Action Button
+        view.actionButtonsClick(data.text23.caseTitle);
+        // View Details
+        view.viewDetailsMenuButton();
+        // Team Member and Client Tab
+        view.viewDetailsTeamMemberAndExternalCounselTab();
+        //Client Tab
+        view.viewDetailsExternalCounselTab();
+        //Selected Client
+        view.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(checkSelectedClient);
+        create.scrollUp();
+        view.viewTab();
+        view.viewMatterSearchBox(data.text23.caseTitle);
+        view.actionButtonsClick(data.text23.caseTitle);
+        // Edit Matter Info
+        view.editMatterInfoMenuButton();
+        view.verifyEditMatterInfoCaseTitle(data.text23.caseTitle);
+        view.verifyEditMatterInfoCaseNumber(data.text23.caseNumber);
+        view.verifyEditMatterInfoCourt(data.text23.court);
+        view.editMatterInfoCancelButton();
+        view.actionButtonsClick(data.text23.caseTitle);
+        // Update Department
+        view.updateDepartmentMenuButton();
+        view.updateDepartmentCheckSelectedDepartmentName(selectDepartments);
+    })
+
+    it("24.Mandatory DOF and Court with Departments and TM", () => {
+        create.createTab();
+        create.caseTitleField(data.text24.caseTitle);
+        create.caseNumberField(data.text24.caseNumber);
+        create.scrollDown();
+        create.dateClick();
+        create.dateOfFilling(data.text24.dateFill);
+        create.courtField(data.text24.court);
+        create.nextButton();
+        // Departments
+        create.selectOnRightSide(selectDepartments);
+        create.commonNextButton();
+        // Clients
+        create.commonNextButton();
+        // Team Members
+        create.selectOnRightSide(selectTeamMembers);
+        create.commonNextButton();
+        // Documents
+        create.submitButton();
+        // Confirmation popup
+        create.confirmationYesButton();
+        // Success Popup
+        create.successViewMatterButton();
+        // View Matter 
+        view.viewMatterSearchBox(data.text24.caseTitle);
+        // Action Button
+        view.actionButtonsClick(data.text24.caseTitle);
+        // View Details
+        view.viewDetailsMenuButton();
+        // Team Member and Client Tab
+        view.viewDetailsTeamMemberAndExternalCounselTab();
+        //Selected Team Member
+        view.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(checkSelectMembers);
+        //Unselected Team Member
+        view.viewDetailsCheckUnSelectedTeamMemberOrClientName(checkUnSelectMembers);
+        create.scrollUp();
+        view.viewTab();
+        view.viewMatterSearchBox(data.text24.caseTitle);
+        view.actionButtonsClick(data.text24.caseTitle);
+        // Edit Matter Info
+        view.editMatterInfoMenuButton();
+        view.verifyEditMatterInfoCaseTitle(data.text24.caseTitle);
+        view.verifyEditMatterInfoCaseNumber(data.text24.caseNumber);
+        view.verifyEditMatterInfoCourt(data.text24.court);
+        view.editMatterInfoCancelButton();
+        view.actionButtonsClick(data.text24.caseTitle);
+        // Update Department
+        view.updateDepartmentMenuButton();
+        view.updateDepartmentCheckSelectedDepartmentName(selectDepartments);
+    })
+
+    it("25.Mandatory DOF and Court with Departments and Document ", () => {
+        create.createTab();
+        create.caseTitleField(data.text25.caseTitle);
+        create.caseNumberField(data.text25.caseNumber);
+        create.scrollDown();
+        create.dateClick();
+        create.dateOfFilling(data.text25.dateFill);
+        create.courtField(data.text25.court);
+        create.nextButton();
+        //Departments
+        create.selectOnRightSide(selectDepartments);
+        create.commonNextButton();
+        //Clients
+        create.commonNextButton();
+        //Team Members
+        create.commonNextButton();
+        //Documents
+        create.selectOnRightSide(data.text25.document1);
+        create.submitButton();
+        //Confirmation Popup
+        create.confirmationYesButton();
+        //Success Popup
+        create.successViewMatterButton();
+        //View Matter 
+        view.viewMatterSearchBox(data.text25.caseTitle);
+        view.actionButtonsClick(data.text25.caseTitle);
+        // View Details
+        view.viewDetailsMenuButton();
+        // Document Tab
+        view.viewDetailsDocumentTab();
+        // Check Selected Document Name Appear
+        view.viewDetailsCheckSelectedDocumentNameAppear(data.text25.document1);
+        // Add New + Tab
+        view.addNewTab();
+        // Check Selected Document Name Appear
+        view.viewDetailsAddExistingCheckSelectedDocumentNameAppear(data.text25.document1);
+        create.scrollUp();
+        view.viewTab();
+        view.viewMatterSearchBox(data.text25.caseTitle);
+        // Action Button
+        view.actionButtonsClick(data.text25.caseTitle);
+        // Edit Matter Info
+        view.editMatterInfoMenuButton();
+        view.verifyEditMatterInfoCaseTitle(data.text25.caseTitle);
+        view.verifyEditMatterInfoCaseNumber(data.text25.caseNumber);
+        view.verifyEditMatterInfoCourt(data.text25.court);
+        view.editMatterInfoCancelButton();
+        view.actionButtonsClick(data.text25.caseTitle);
+        // Update Department
+        view.updateDepartmentMenuButton();
+        view.updateDepartmentCheckSelectedDepartmentName(selectDepartments);
+    })
+
+    it("26.Mandatory DOF and Court with Departments ,Clients and TM ", () => {
+        create.createTab();
+        create.caseTitleField(data.text26.caseTitle);
+        create.caseNumberField(data.text26.caseNumber);
+        create.scrollDown();
+        create.dateClick();
+        create.dateOfFilling(data.text26.dateFill);
+        create.courtField(data.text26.court);
+        create.nextButton();
+        //Departments
+        create.selectOnRightSide(selectDepartments);
+        create.commonNextButton();
+        //Clients
+        create.selectOnRightSide(selectClients);
+        create.commonNextButton();
+        //Team Members
+        create.selectOnRightSide(selectTeamMembers);
+        create.commonNextButton();
+        //Documents
+        create.submitButton();
+        //Confirmation Popup
+        create.confirmationYesButton();
+        //Success Popup
+        create.successViewMatterButton();
+        //View Matter 
+        view.viewMatterSearchBox(data.text26.caseTitle);
+        // Action Button
+        view.actionButtonsClick(data.text26.caseTitle);
+        // View Details
+        view.viewDetailsMenuButton();
+        // Team Member and Client Tab
+        view.viewDetailsTeamMemberAndExternalCounselTab();
+        //Selected Team Member
+        view.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(checkSelectMembers);
+        //Unselected Team Member
+        view.viewDetailsCheckUnSelectedTeamMemberOrClientName(checkUnSelectMembers);
+        //Client Tab
+        view.viewDetailsExternalCounselTab();
+        //Selected Client
+        view.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(checkSelectedClient);
+        create.scrollUp();
+        view.viewTab();
+        view.viewMatterSearchBox(data.text26.caseTitle);
+        view.actionButtonsClick(data.text26.caseTitle);
+        // Edit Matter Info
+        view.editMatterInfoMenuButton();
+        view.verifyEditMatterInfoCaseTitle(data.text26.caseTitle);
+        view.verifyEditMatterInfoCaseNumber(data.text26.caseNumber);
+        view.verifyEditMatterInfoCourt(data.text26.court);
+        view.editMatterInfoCancelButton();
+        view.actionButtonsClick(data.text26.caseTitle);
+        // Update Department
+        view.updateDepartmentMenuButton();
+        view.updateDepartmentCheckSelectedDepartmentName(selectDepartments);
+    })
+
+    it("27.Mandatory DOF and Court with Departments , Clients and Documents ", () => {
+        create.createTab();
+        create.caseTitleField(data.text27.caseTitle);
+        create.caseNumberField(data.text27.caseNumber);
+        create.scrollDown();
+        create.dateClick();
+        create.dateOfFilling(data.text27.dateFill);
+        create.courtField(data.text27.court);
+        create.nextButton();
+        //Departments
+        create.selectOnRightSide(selectDepartments);
+        create.commonNextButton();
+        //Clients
+        create.selectOnRightSide(selectClients);
+        create.commonNextButton();
+        //Team Members
+        create.commonNextButton();
+        //Documents
+        create.selectOnRightSide(data.text27.document1);
+        create.submitButton();
+        //Confirmation Popup
+        create.confirmationYesButton();
+        //Success Popup
+        create.successViewMatterButton();
+        //View Matter 
+        view.viewMatterSearchBox(data.text27.caseTitle);
+        view.actionButtonsClick(data.text27.caseTitle);
+        // View Details
+        view.viewDetailsMenuButton();
+        // Document Tab
+        view.viewDetailsDocumentTab();
+        // Check Selected Document Name Appear
+        view.viewDetailsCheckSelectedDocumentNameAppear(data.text27.document1);
+        // Add New + Tab
+        view.addNewTab();
+        // Check Selected Document Name Appear
+        view.viewDetailsAddExistingCheckSelectedDocumentNameAppear(data.text27.document1);
+        // Team Member and Client Tab
+        view.viewDetailsTeamMemberAndExternalCounselTab();
+        //Client Tab
+        view.viewDetailsExternalCounselTab();
+        //Selected Client
+        view.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(checkSelectedClient);
+        create.scrollUp();
+        view.viewTab();
+        view.viewMatterSearchBox(data.text27.caseTitle);
+        view.actionButtonsClick(data.text27.caseTitle);
+        // Edit Matter Info
+        view.editMatterInfoMenuButton();
+        view.verifyEditMatterInfoCaseTitle(data.text27.caseTitle);
+        view.verifyEditMatterInfoCaseNumber(data.text27.caseNumber);
+        view.verifyEditMatterInfoCourt(data.text27.court);
+        view.editMatterInfoCancelButton();
+        view.actionButtonsClick(data.text27.caseTitle);
+        // Update Department
+        view.updateDepartmentMenuButton();
+        view.updateDepartmentCheckSelectedDepartmentName(selectDepartments);
+    })
+
+    it("28.Mandatory DOF and Court with All ", () => {
+        create.createTab();
+        create.caseTitleField(data.text28.caseTitle);
+        create.caseNumberField(data.text28.caseNumber);
+        create.scrollDown();
+        create.dateClick();
+        create.dateOfFilling(data.text28.dateFill);
+        create.courtField(data.text28.court);
+        create.nextButton();
+        //Departments
+        create.selectOnRightSide(selectDepartments);
+        create.commonNextButton();
+        //Clients
+        create.selectOnRightSide(selectClients);
+        create.commonNextButton();
+        //Team Members
+        create.selectOnRightSide(selectTeamMembers);
+        create.commonNextButton();
+        //Documents
+        create.selectOnRightSide(data.text28.document1);
+        create.submitButton();
+        //Confirmation Popup
+        create.confirmationYesButton();
+        //Success Popup
+        create.successViewMatterButton();
+        //View Matter 
+        view.viewMatterSearchBox(data.text28.caseTitle);
+        // Action Button
+        view.actionButtonsClick(data.text28.caseTitle);
+        // View Details
+        view.viewDetailsMenuButton();
+        // Document Tab
+        view.viewDetailsDocumentTab();
+        // Check Selected Document Name Appear
+        view.viewDetailsCheckSelectedDocumentNameAppear(data.text28.document1);
+        // Add New + Tab
+        view.addNewTab();
+        // Check Selected Document Name Appear
+        view.viewDetailsAddExistingCheckSelectedDocumentNameAppear(data.text28.document1);
+        // Team Member and Client Tab
+        view.viewDetailsTeamMemberAndExternalCounselTab();
+        //Selected Team Member
+        view.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(checkSelectMembers);
+        //Unselected Team Member
+        view.viewDetailsCheckUnSelectedTeamMemberOrClientName(checkUnSelectMembers);
+        //Client Tab
+        view.viewDetailsExternalCounselTab();
+        //Selected Client
+        view.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(checkSelectedClient);
+        create.scrollUp();
+        view.viewTab();
+        view.viewMatterSearchBox(data.text28.caseTitle);
+        view.actionButtonsClick(data.text28.caseTitle);
+        // Edit Matter Info
+        view.editMatterInfoMenuButton();
+        view.verifyEditMatterInfoCaseTitle(data.text28.caseTitle);
+        view.verifyEditMatterInfoCaseNumber(data.text28.caseNumber);
+        view.verifyEditMatterInfoCourt(data.text28.court);
+        view.editMatterInfoCancelButton();
+        view.actionButtonsClick(data.text28.caseTitle);
+        // Update Department
+        view.updateDepartmentMenuButton();
+        view.updateDepartmentCheckSelectedDepartmentName(selectDepartments);
+    })
 
 
 

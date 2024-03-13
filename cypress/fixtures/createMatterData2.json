@@ -1,62 +1,210 @@
 {
-    "text1":{
-        "Comment":"1.Mandatory and Opponent Advocate with Departments",
-        "caseTitle":"Labour Matters",
-        "caseNumber":"KM3",
-        "oppName":"Arun",
-        "oppEmail":"arun32@gmail.com",
-        "oppNumber":"9090101011"
+    "text1": {
+        "Comment": "1.Mandatory and Opponent Advocate with Departments",
+        "caseTitle": "Labour Matters",
+        "caseNumber": "KM3",
+        "oppName": "Arun",
+        "oppEmail": "arun32@gmail.com",
+        "oppNumber": "9090101011"
     },
-    "text2":{
-        "Comment":"2.Mandatory and Opponent Advocate with Departments and Clients",
-        "caseTitle":"Labour Matters 1",
-        "caseNumber":"KMK3",
-        "oppName":"Ashok",
-        "oppEmail":"ashok@gmail.com",
-        "oppNumber":"8090101011"
+    "text2": {
+        "Comment": "2.Mandatory and Opponent Advocate with Departments and Clients",
+        "caseTitle": "Labour Matters 1",
+        "caseNumber": "KMK3",
+        "oppName": "Ashok",
+        "oppEmail": "ashok@gmail.com",
+        "oppNumber": "8090101011"
     },
-    "text3":{
-        "Comment":"3.Mandatory and Opponent Advocate with Departments and TM",
-        "caseTitle":"Labour Matters 2",
-        "caseNumber":"KMR2",
-        "oppName":"afsal",
-        "oppEmail":"afsal@gmail.com",
-        "oppNumber":"9890101011"
+    "text3": {
+        "Comment": "3.Mandatory and Opponent Advocate with Departments and TM",
+        "caseTitle": "Labour Matters 2",
+        "caseNumber": "KMR2",
+        "oppName": "afsal",
+        "oppEmail": "afsal@gmail.com",
+        "oppNumber": "9890101011"
     },
-    "text4":{
-        "Comment":"4.Mandatory and Opponent Advocate with Departments and Document ",
-        "caseTitle":"Labour Matters 3",
-        "caseNumber":"KMI9",
-        "document1":"",
-        "oppName":"arvind",
-        "oppEmail":"arvind@gmail.com",
-        "oppNumber":"7978101011"
+    "text4": {
+        "Comment": "4.Mandatory and Opponent Advocate with Departments and Document ",
+        "caseTitle": "Labour Matters 3",
+        "caseNumber": "KMI9",
+        "document1": "",
+        "oppName": "arvind",
+        "oppEmail": "arvind@gmail.com",
+        "oppNumber": "7978101011"
     },
-    "text5":{
-        "Comment":"5.Mandatory and Opponent Advocate with Departments , Clients and TM ",
-        "caseTitle":"Labour Matters 4",
-        "caseNumber":"KML4",
-        "oppName":"Balaji",
-        "oppEmail":"balaji@gmail.com",
-        "oppNumber":"8020101011"
+    "text5": {
+        "Comment": "5.Mandatory and Opponent Advocate with Departments , Clients and TM ",
+        "caseTitle": "Labour Matters 4",
+        "caseNumber": "KML4",
+        "oppName": "Balaji",
+        "oppEmail": "balaji@gmail.com",
+        "oppNumber": "8020101011"
     },
-    "text6":{
-        "Comment":"6.Mandatory and Opponent Advocate with Departments , Clients and Documents ",
-        "caseTitle":"Labour Matters 5",
-        "caseNumber":"JM43",
-        "document1":"",
-        "oppName":"Bala",
-        "oppEmail":"bala@gmail.com",
-        "oppNumber":"7080101011"
+    "text6": {
+        "Comment": "6.Mandatory and Opponent Advocate with Departments , Clients and Documents ",
+        "caseTitle": "Labour Matters 5",
+        "caseNumber": "JM43",
+        "document1": "",
+        "oppName": "Bala",
+        "oppEmail": "bala@gmail.com",
+        "oppNumber": "7080101011"
     },
-    "text7":{
-        "Comment":"7.Mandatory and Opponent Advocate with All ",
-        "caseTitle":"Labour Matters 6",
-        "caseNumber":"ER32",
-        "document1":"",
-        "oppName":"Bivi",
-        "oppEmail":"Bivi@gmail.com",
-        "oppNumber":"10100101011"
+    "text7": {
+        "Comment": "7.Mandatory and Opponent Advocate with All ",
+        "caseTitle": "Labour Matters 6",
+        "caseNumber": "ER32",
+        "document1": "",
+        "oppName": "Bivi",
+        "oppEmail": "Bivi@gmail.com",
+        "oppNumber": "10100101011"
+    },
+    "text8": {
+        "Comment": "8.Mandatory DOF and Description with Departments",
+        "caseTitle": "Labour Matters 7",
+        "caseNumber": "ML33",
+        "DateFill": " 11 ",
+        "Description": "Details are added"
+    },
+    "text9": {
+        "Comment": "9.Mandatory DOF and Description with Departments and Clients",
+        "caseTitle": "Labour Matters 8",
+        "caseNumber": "VM3",
+        "DateFill": " 12 ",
+        "Description": "Files are attached"
+    },
+    "text10": {
+        "Comment": "10.Mandatory DOF and Description with Departments and TM",
+        "caseTitle": "Labour Matters 9",
+        "caseNumber": "RE2",
+        "DateFill": " 13 ",
+        "Description": "Client related documents are attached"
+    },
+    "text11": {
+        "Comment": "11.Mandatory DOF and Description with Departments and Document",
+        "caseTitle": "Labour Matters 10",
+        "caseNumber": "PER3",
+        "DateFill": " 14 ",
+        "Description": "Members not added in the matter"
+    },
+    "text12": {
+        "Comment": "12.Mandatory DOF and Description with Departments ,Clients and TM",
+        "caseTitle": "Labour Matters 11",
+        "caseNumber": "LKM3",
+        "DateFill": " 15 ",
+        "Description": "Client and Team Member added in the matter"
+    },
+    "text13": {
+        "Comment": "13.Mandatory DOF and Description with Departments , Clients and Documents",
+        "caseTitle": "Labour Matters 12",
+        "caseNumber": "MER3",
+        "DateFill": " 16 ",
+        "Description": "Client matter related Details"
+    },
+    "text14": {
+        "Comment": "14.Mandatory DOF and Description with All ",
+        "caseTitle": "Labour Matters 13",
+        "caseNumber": "ERT3",
+        "DateFill": " 17 ",
+        "Description": "All details are added"
+    },
+    "text15": {
+        "Comment": "15.Mandatory DOF and Description with Departments",
+        "caseTitle": "Labour Matters 14",
+        "caseNumber": "KMT43",
+        "DateFill": " 18 ",
+        "caseType": "Criminal"
+    },
+    "text16": {
+        "Comment": "16.Mandatory DOF and Description with Departments and Clients",
+        "caseTitle": "Labour Matters 15",
+        "caseNumber": "RT45",
+        "DateFill": " 19 ",
+        "caseType": "Civil"
+    },
+    "text17": {
+        "Comment": "17.Mandatory DOF and Description with Departments and TM",
+        "caseTitle": "Labour Matters 16",
+        "caseNumber": "VNM54",
+        "DateFill": " 20 ",
+        "caseType": "Others"
+    },
+    "text18": {
+        "Comment": "18.Mandatory DOF and Description with Departments and Document",
+        "caseTitle": "Labour Matters 17",
+        "caseNumber": "MSD5",
+        "DateFill": " 21 ",
+        "caseType": "Criminal"
+    },
+    "text19": {
+        "Comment": "19.Mandatory DOF and Description with Departments ,Clients and TM",
+        "caseTitle": "Labour Matters 18",
+        "caseNumber": "JM40",
+        "DateFill": " 22 ",
+        "caseType": "Civil"
+    },
+    "text20": {
+        "Comment": "20.Mandatory DOF and Description with Departments , Clients and Documents",
+        "caseTitle": "Labour Matters 19",
+        "caseNumber": "YAH3",
+        "DateFill": " 23 ",
+        "caseType": "Others"
+    },
+    "text21": {
+        "Comment": "21.Mandatory DOF and Description with All ",
+        "caseTitle": "Labour Matters 20",
+        "caseNumber": "MT3",
+        "DateFill": " 24 ",
+        "caseType": "Individuals"
+    },
+    "text22": {
+        "Comment": "22.Mandatory DOF and Court with Departments",
+        "caseTitle": "Labour Matters 14",
+        "caseNumber": "KMT43",
+        "DateFill": " 18 ",
+        "court": "High Court"
+    },
+    "text23": {
+        "Comment": "23.Mandatory DOF and Court with Departments and Clients",
+        "caseTitle": "Labour Matters 15",
+        "caseNumber": "RT45",
+        "DateFill": " 19 ",
+        "court": "Madras Court"
+    },
+    "text24": {
+        "Comment": "24.Mandatory DOF and Court with Departments and TM",
+        "caseTitle": "Labour Matters 16",
+        "caseNumber": "VNM54",
+        "DateFill": " 20 ",
+        "court": "Supreme Court"
+    },
+    "text25": {
+        "Comment": "25.Mandatory DOF and Court with Departments and Document",
+        "caseTitle": "Labour Matters 17",
+        "caseNumber": "MSD5",
+        "DateFill": " 21 ",
+        "court": "District Court"
+    },
+    "text26": {
+        "Comment": "26.Mandatory DOF and Court with Departments ,Clients and TM",
+        "caseTitle": "Labour Matters 18",
+        "caseNumber": "JM40",
+        "DateFill": " 22 ",
+        "court": "SubOrdinate Court"
+    },
+    "text27": {
+        "Comment": "27.Mandatory DOF and Court with Departments , Clients and Documents",
+        "caseTitle": "Labour Matters 19",
+        "caseNumber": "YAH3",
+        "DateFill": " 23 ",
+        "court": "Commerical Court"
+    },
+    "text28": {
+        "Comment": "28.Mandatory DOF and Court with All ",
+        "caseTitle": "Labour Matters 20",
+        "caseNumber": "MT3",
+        "DateFill": " 24 ",
+        "court": "Administrative Court"
     }
+
 
 }
