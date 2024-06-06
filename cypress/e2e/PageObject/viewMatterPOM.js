@@ -61,7 +61,7 @@ class viewMatterPage {
     }
 
     viewMatterSearchBox(text) {
-        cy.wait(2000);
+        cy.wait(3000);
         this.elements.pomViewMatterSearchBox().clear();
         this.elements.pomViewMatterSearchBox().type(text);
     }

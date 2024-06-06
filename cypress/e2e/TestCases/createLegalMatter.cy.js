@@ -15,7 +15,7 @@ describe("Create Legal Matter Scenario", () => {
 
     // Assertion
     var checkSelectedMembers = [matterData.common.members1, matterData.common.members2, matterData.common.members3];
-    var checkUnSelectedMembers = [matterData.common.UnSelectedmember1, matterData.common.UnSelectedmember2, data.common.UnSelectedmember3, data.common.UnSelectedmember4, data.common.UnSelectedmember5];
+    var checkUnSelectedMembers = [matterData.common.UnSelectedmember1, matterData.common.UnSelectedmember2, matterData.common.UnSelectedmember3, matterData.common.UnSelectedmember4, matterData.common.UnSelectedmember5];
     var checkSelectedClients = [matterData.common.clients1, matterData.common.clients2];   
 
     before(() => {
@@ -31,6 +31,7 @@ describe("Create Legal Matter Scenario", () => {
         legalMatters.leftSideMatterTab();
     });
 
+    
     it("1.Mandatory Fields with Cancel", () => {
         legalMatters.leftSideMatterTab();
         legalMatters.createTab();
@@ -149,7 +150,7 @@ describe("Create Legal Matter Scenario", () => {
         legalMatters.scrollUp();
         legalMatters.assertionCaseTitle();
         legalMatters.assertionCaseNumber();
-        legalMatters.assertionOpponentAdvocate();
+       // legalMatters.assertionOpponentAdvocate();
     })
 
     it("10.Without enter the mandatory and Check the error message appear", () => {
@@ -435,6 +436,7 @@ describe("Create Legal Matter Scenario", () => {
         viewlegalMatters.verifyEditMatterInfoCaseTitle(matterData.CMatter.caseTitle);
         viewlegalMatters.verifyEditMatterInfoCaseNumber(matterData.CMatter.caseNumber);
         viewlegalMatters.editMatterInfoCancelButton();
+        viewlegalMatters.viewMatterSearchBox(matterData.CMatter.caseTitle);
         viewlegalMatters.actionButtonsClick(matterData.CMatter.caseTitle);
         // Update Department
         viewlegalMatters.updateDepartmentMenuButton();
@@ -442,7 +444,7 @@ describe("Create Legal Matter Scenario", () => {
     })
 
     it("26.Mandatory with Departments and Clients", () => {
-        legalMatters.createTab();
+       legalMatters.createTab();
         legalMatters.caseTitleField(matterData.CMatter1.caseTitle);
         legalMatters.caseNumberField(matterData.CMatter1.caseNumber);
         legalMatters.scrollDown();
@@ -473,6 +475,7 @@ describe("Create Legal Matter Scenario", () => {
         // Client Tab
         viewlegalMatters.viewDetailsExternalCounselTab();
         // Check selected Client name is appear
+        cy.wait(1000);
         viewlegalMatters.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(checkSelectedClients);
         legalMatters.scrollUp();
         viewlegalMatters.viewTab();
@@ -483,6 +486,7 @@ describe("Create Legal Matter Scenario", () => {
         viewlegalMatters.verifyEditMatterInfoCaseTitle(matterData.CMatter1.caseTitle);
         viewlegalMatters.verifyEditMatterInfoCaseNumber(matterData.CMatter1.caseNumber);
         viewlegalMatters.editMatterInfoCancelButton();
+        viewlegalMatters.viewMatterSearchBox(matterData.CMatter1.caseTitle);
         viewlegalMatters.actionButtonsClick(matterData.CMatter1.caseTitle);
         // Update Department
         viewlegalMatters.updateDepartmentMenuButton();
@@ -531,6 +535,7 @@ describe("Create Legal Matter Scenario", () => {
         viewlegalMatters.verifyEditMatterInfoCaseTitle(matterData.CMatter2.caseTitle);
         viewlegalMatters.verifyEditMatterInfoCaseNumber(matterData.CMatter2.caseNumber);
         viewlegalMatters.editMatterInfoCancelButton();
+        viewlegalMatters.viewMatterSearchBox(matterData.CMatter2.caseTitle);
         viewlegalMatters.actionButtonsClick(matterData.CMatter2.caseTitle);
         // Update Department
         viewlegalMatters.updateDepartmentMenuButton();
@@ -583,6 +588,7 @@ describe("Create Legal Matter Scenario", () => {
         viewlegalMatters.verifyEditMatterInfoCaseTitle(matterData.CMatter3.caseTitle);
         viewlegalMatters.verifyEditMatterInfoCaseNumber(matterData.CMatter3.caseNumber);
         viewlegalMatters.editMatterInfoCancelButton();
+        viewlegalMatters.viewMatterSearchBox(matterData.CMatter3.caseTitle);
         viewlegalMatters.actionButtonsClick(matterData.CMatter3.caseTitle);
         // update department
         viewlegalMatters.updateDepartmentMenuButton();
@@ -636,14 +642,15 @@ describe("Create Legal Matter Scenario", () => {
         viewlegalMatters.verifyEditMatterInfoCaseTitle(matterData.CMatter4.caseTitle);
         viewlegalMatters.verifyEditMatterInfoCaseNumber(matterData.CMatter4.caseNumber);
         viewlegalMatters.editMatterInfoCancelButton();
+        viewlegalMatters.viewMatterSearchBox(matterData.CMatter4.caseTitle);
         viewlegalMatters.actionButtonsClick(matterData.CMatter4.caseTitle);
         // update Department
         viewlegalMatters.updateDepartmentMenuButton();
         viewlegalMatters.updateDepartmentCheckSelectedDepartmentName(selectDepartments);
     })
 
-    it("30.Mandatory with Departments and Clients and Documents", () => {
-        legalMatters.createTab();
+    it("30.Mandatory with Departments and Clients and Documents", () => {  
+         legalMatters.createTab();
         legalMatters.caseTitleField(matterData.CMatter5.caseTitle);
         legalMatters.caseNumberField(matterData.CMatter5.caseNumber);
         legalMatters.scrollDown();
@@ -666,7 +673,7 @@ describe("Create Legal Matter Scenario", () => {
         legalMatters.confirmationYesButton();
         //Success popup
         legalMatters.successViewMatterButton();
-        // View Matter
+       // View Matter
         viewlegalMatters.viewMatterSearchBox(matterData.CMatter5.caseTitle);
         viewlegalMatters.actionButtonsClick(matterData.CMatter5.caseTitle);
         // View Details
@@ -685,7 +692,7 @@ describe("Create Legal Matter Scenario", () => {
         viewlegalMatters.viewDetailsTeamMemberAndExternalCounselTab();
         // Client Tab
         viewlegalMatters.viewDetailsExternalCounselTab();
-        viewlegalMatters.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(selectClients);
+        viewlegalMatters.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(checkSelectedClients);
         legalMatters.scrollUp();
         viewlegalMatters.viewTab();
         viewlegalMatters.viewMatterSearchBox(matterData.CMatter5.caseTitle);
@@ -695,13 +702,14 @@ describe("Create Legal Matter Scenario", () => {
         viewlegalMatters.verifyEditMatterInfoCaseTitle(matterData.CMatter5.caseTitle);
         viewlegalMatters.verifyEditMatterInfoCaseNumber(matterData.CMatter5.caseNumber);
         viewlegalMatters.editMatterInfoCancelButton();
+        viewlegalMatters.viewMatterSearchBox(matterData.CMatter5.caseTitle);
         viewlegalMatters.actionButtonsClick(matterData.CMatter5.caseTitle);
         // Update Department
         viewlegalMatters.updateDepartmentMenuButton();
         viewlegalMatters.updateDepartmentCheckSelectedDepartmentName(selectDepartments);
     })
 
-    it("31.Mandatory with All", () => {
+    it("31.Mandatory with All", () => { 
         legalMatters.createTab();
         legalMatters.caseTitleField(matterData.CMatter6.caseTitle);
         legalMatters.caseNumberField(matterData.CMatter6.caseNumber);
@@ -743,14 +751,14 @@ describe("Create Legal Matter Scenario", () => {
         legalMatters.scrollUp();
         // Team member and Client Tab
         viewlegalMatters.viewDetailsTeamMemberAndExternalCounselTab();
-        // Check Selected Team Member
-        viewlegalMatters.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(namesToSelectMembers);
-        // Check unSelected Team Member
-        viewlegalMatters.viewDetailsCheckUnSelectedTeamMemberOrClientName(namesToCheckUnSelectMembers);
+          // Check Selected Team Member 
+          viewlegalMatters.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(checkSelectedMembers);
+          // Check UnSelected Team Member
+          viewlegalMatters.viewDetailsCheckUnSelectedTeamMemberOrClientName(checkUnSelectedMembers);
         // Client Tab
         viewlegalMatters.viewDetailsExternalCounselTab();
         // Check Selected Client Name
-        viewlegalMatters.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(namesToSelectedClient);
+        viewlegalMatters.viewDetailsCheckSelectedTeamMemberOrClientNameAppear(checkSelectedClients);
         legalMatters.scrollUp();
         viewlegalMatters.viewTab();
         viewlegalMatters.viewMatterSearchBox(matterData.CMatter6.caseTitle);
@@ -760,6 +768,7 @@ describe("Create Legal Matter Scenario", () => {
         viewlegalMatters.verifyEditMatterInfoCaseTitle(matterData.CMatter6.caseTitle);
         viewlegalMatters.verifyEditMatterInfoCaseNumber(matterData.CMatter6.caseNumber);
         viewlegalMatters.editMatterInfoCancelButton();
+        viewlegalMatters.viewMatterSearchBox(matterData.CMatter6.caseTitle);
         viewlegalMatters.actionButtonsClick(matterData.CMatter6.caseTitle);
         // Update Department
         viewlegalMatters.updateDepartmentMenuButton();

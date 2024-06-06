@@ -58,6 +58,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseTitle(data.text1.caseTitle);
         viewMatters.verifyEditMatterInfoCaseNumber(data.text1.caseNumber);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text1.caseTitle);
         viewMatters.actionButtonsClick(data.text1.caseTitle);
         viewMatters.updateDepartmentMenuButton();
         viewMatters.updateDepartmentCheckSelectedDepartmentName(selectDepartments);
@@ -105,6 +106,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseTitle(data.text2.caseTitle);
         viewMatters.verifyEditMatterInfoCaseNumber(data.text2.caseNumber);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text2.caseTitle);
         viewMatters.actionButtonsClick(data.text2.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -153,6 +155,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseTitle(data.text3.caseTitle);
         viewMatters.verifyEditMatterInfoCaseNumber(data.text3.caseNumber);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text3.caseTitle);
         viewMatters.actionButtonsClick(data.text3.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -203,6 +206,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseTitle(data.text4.caseTitle);
         viewMatters.verifyEditMatterInfoCaseNumber(data.text4.caseNumber);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text4.caseTitle);
         viewMatters.actionButtonsClick(data.text4.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -257,6 +261,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseTitle(data.text5.caseTitle);
         viewMatters.verifyEditMatterInfoCaseNumber(data.text5.caseNumber);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text5.caseTitle);
         viewMatters.actionButtonsClick(data.text5.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -313,6 +318,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseTitle(data.text6.caseTitle);
         viewMatters.verifyEditMatterInfoCaseNumber(data.text6.caseNumber);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text6.caseTitle);
         viewMatters.actionButtonsClick(data.text6.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -375,6 +381,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseTitle(data.text7.caseTitle);
         viewMatters.verifyEditMatterInfoCaseNumber(data.text7.caseNumber);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text7.caseTitle);
         viewMatters.actionButtonsClick(data.text7.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -409,6 +416,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseNumber(data.text8.caseNumber);
         viewMatters.verifyEditMatterInfoDescription(data.text8.Description);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text8.caseTitle);
         viewMatters.actionButtonsClick(data.text8.caseTitle);
         // update Department
         viewMatters.updateDepartmentMenuButton();
@@ -458,6 +466,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseNumber(data.text9.caseNumber);
         viewMatters.verifyEditMatterInfoDescription(data.text9.Description);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text9.caseTitle);
         viewMatters.actionButtonsClick(data.text9.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -507,6 +516,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseNumber(data.text10.caseNumber);
         viewMatters.verifyEditMatterInfoDescription(data.text10.Description);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text10.caseTitle);
         viewMatters.actionButtonsClick(data.text10.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -558,6 +568,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseNumber(data.text11.caseNumber);
         viewMatters.verifyEditMatterInfoDescription(data.text11.Description);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text11.caseTitle);
         viewMatters.actionButtonsClick(data.text11.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -612,6 +623,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseNumber(data.text12.caseNumber);
         viewMatters.verifyEditMatterInfoDescription(data.text12.Description);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text12.caseTitle);
         viewMatters.actionButtonsClick(data.text12.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -669,6 +681,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseNumber(data.text13.caseNumber);
         viewMatters.verifyEditMatterInfoDescription(data.text13.Description);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text13.caseTitle);
         viewMatters.actionButtonsClick(data.text13.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -732,6 +745,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseNumber(data.text14.caseNumber);
         viewMatters.verifyEditMatterInfoDescription(data.text14.Description);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text14.caseTitle);
         viewMatters.actionButtonsClick(data.text14.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -766,6 +780,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseNumber(data.text15.caseNumber);
         viewMatters.verifyEditMatterInfoCaseType(data.text15.caseType);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text15.caseTitle);
         viewMatters.actionButtonsClick(data.text15.caseTitle);
         // update Department
         viewMatters.updateDepartmentMenuButton();
@@ -815,6 +830,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseNumber(data.text16.caseNumber);
         viewMatters.verifyEditMatterInfoCaseType(data.text16.caseType);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text16.caseTitle);
         viewMatters.actionButtonsClick(data.text16.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -864,6 +880,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseNumber(data.text17.caseNumber);
         viewMatters.verifyEditMatterInfoCaseType(data.text17.caseType);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text17.caseTitle);
         viewMatters.actionButtonsClick(data.text17.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -915,6 +932,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseNumber(data.text18.caseNumber);
         viewMatters.verifyEditMatterInfoCaseType(data.text18.caseType);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text18.caseTitle);
         viewMatters.actionButtonsClick(data.text18.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -969,6 +987,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseNumber(data.text19.caseNumber);
         viewMatters.verifyEditMatterInfoCaseType(data.text19.caseType);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text19.caseTitle);
         viewMatters.actionButtonsClick(data.text19.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -1026,6 +1045,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseNumber(data.text20.caseNumber);
         viewMatters.verifyEditMatterInfoCaseType(data.text20.caseType);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text20.caseTitle);
         viewMatters.actionButtonsClick(data.text20.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -1089,6 +1109,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseNumber(data.text21.caseNumber);
         viewMatters.verifyEditMatterInfoCaseType(data.text21.caseType);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text21.caseTitle);
         viewMatters.actionButtonsClick(data.text21.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -1123,6 +1144,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseNumber(data.text22.caseNumber);
         viewMatters.verifyEditMatterInfoCourt(data.text22.court);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text22.caseTitle);
         viewMatters.actionButtonsClick(data.text22.caseTitle);
         // update Department
         viewMatters.updateDepartmentMenuButton();
@@ -1172,6 +1194,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseNumber(data.text23.caseNumber);
         viewMatters.verifyEditMatterInfoCourt(data.text23.court);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text23.caseTitle);
         viewMatters.actionButtonsClick(data.text23.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -1221,6 +1244,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseNumber(data.text24.caseNumber);
         viewMatters.verifyEditMatterInfoCourt(data.text24.court);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text24.caseTitle);
         viewMatters.actionButtonsClick(data.text24.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -1272,6 +1296,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseNumber(data.text25.caseNumber);
         viewMatters.verifyEditMatterInfoCourt(data.text25.court);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text25.caseTitle);
         viewMatters.actionButtonsClick(data.text25.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -1326,6 +1351,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseNumber(data.text26.caseNumber);
         viewMatters.verifyEditMatterInfoCourt(data.text26.court);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text26.caseTitle);
         viewMatters.actionButtonsClick(data.text26.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -1383,6 +1409,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseNumber(data.text27.caseNumber);
         viewMatters.verifyEditMatterInfoCourt(data.text27.court);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text27.caseTitle);
         viewMatters.actionButtonsClick(data.text27.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -1446,6 +1473,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseNumber(data.text28.caseNumber);
         viewMatters.verifyEditMatterInfoCourt(data.text28.court);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text28.caseTitle);
         viewMatters.actionButtonsClick(data.text28.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -1480,6 +1508,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseNumber(data.text29.caseNumber);
         viewMatters.verifyEditMatterInfoJudges(data.text29.judge);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text29.caseTitle);
         viewMatters.actionButtonsClick(data.text29.caseTitle);
         // update Department
         viewMatters.updateDepartmentMenuButton();
@@ -1529,6 +1558,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseNumber(data.text30.caseNumber);
         viewMatters.verifyEditMatterInfoJudges(data.text30.judge);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text30.caseTitle);
         viewMatters.actionButtonsClick(data.text30.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -1578,6 +1608,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseNumber(data.text31.caseNumber);
         viewMatters.verifyEditMatterInfoJudges(data.text31.judge);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text31.caseTitle);
         viewMatters.actionButtonsClick(data.text31.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -1629,6 +1660,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseNumber(data.text32.caseNumber);
         viewMatters.verifyEditMatterInfoJudges(data.text32.judge);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text32.caseTitle);
         viewMatters.actionButtonsClick(data.text32.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -1683,6 +1715,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseNumber(data.text33.caseNumber);
         viewMatters.verifyEditMatterInfoJudges(data.text33.judge);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text33.caseTitle);
         viewMatters.actionButtonsClick(data.text33.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -1740,6 +1773,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseNumber(data.text34.caseNumber);
         viewMatters.verifyEditMatterInfoJudges(data.text34.judge);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text34.caseTitle);
         viewMatters.actionButtonsClick(data.text34.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -1803,6 +1837,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseNumber(data.text35.caseNumber);
         viewMatters.verifyEditMatterInfoJudges(data.text35.judge);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text35.caseTitle);
         viewMatters.actionButtonsClick(data.text35.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -1836,6 +1871,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseTitle(data.text36.caseTitle);
         viewMatters.verifyEditMatterInfoCaseNumber(data.text36.caseNumber);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text36.caseTitle);
         viewMatters.actionButtonsClick(data.text36.caseTitle);
         // update Department
         viewMatters.updateDepartmentMenuButton();
@@ -1884,6 +1920,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseTitle(data.text37.caseTitle);
         viewMatters.verifyEditMatterInfoCaseNumber(data.text37.caseNumber);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text37.caseTitle);
         viewMatters.actionButtonsClick(data.text37.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -1932,6 +1969,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseTitle(data.text38.caseTitle);
         viewMatters.verifyEditMatterInfoCaseNumber(data.text38.caseNumber);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text38.caseTitle);
         viewMatters.actionButtonsClick(data.text38.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -1982,6 +2020,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseTitle(data.text39.caseTitle);
         viewMatters.verifyEditMatterInfoCaseNumber(data.text39.caseNumber);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text39.caseTitle);
         viewMatters.actionButtonsClick(data.text39.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -2035,6 +2074,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseTitle(data.text40.caseTitle);
         viewMatters.verifyEditMatterInfoCaseNumber(data.text40.caseNumber);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text40.caseTitle);
         viewMatters.actionButtonsClick(data.text40.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -2091,6 +2131,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseTitle(data.text41.caseTitle);
         viewMatters.verifyEditMatterInfoCaseNumber(data.text41.caseNumber);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text41.caseTitle);
         viewMatters.actionButtonsClick(data.text41.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -2153,6 +2194,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseTitle(data.text42.caseTitle);
         viewMatters.verifyEditMatterInfoCaseNumber(data.text42.caseNumber);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text42.caseTitle);
         viewMatters.actionButtonsClick(data.text42.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -2186,6 +2228,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseTitle(data.text43.caseTitle);
         viewMatters.verifyEditMatterInfoCaseNumber(data.text43.caseNumber);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text43.caseTitle);
         viewMatters.actionButtonsClick(data.text43.caseTitle);
         // update Department
         viewMatters.updateDepartmentMenuButton();
@@ -2234,6 +2277,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseTitle(data.text44.caseTitle);
         viewMatters.verifyEditMatterInfoCaseNumber(data.text44.caseNumber);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text44.caseTitle);
         viewMatters.actionButtonsClick(data.text44.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -2282,6 +2326,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseTitle(data.text45.caseTitle);
         viewMatters.verifyEditMatterInfoCaseNumber(data.text45.caseNumber);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text45.caseTitle);
         viewMatters.actionButtonsClick(data.text45.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -2332,6 +2377,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseTitle(data.text46.caseTitle);
         viewMatters.verifyEditMatterInfoCaseNumber(data.text46.caseNumber);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text46.caseTitle);
         viewMatters.actionButtonsClick(data.text46.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -2385,6 +2431,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseTitle(data.text47.caseTitle);
         viewMatters.verifyEditMatterInfoCaseNumber(data.text47.caseNumber);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text47.caseTitle);
         viewMatters.actionButtonsClick(data.text47.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -2441,6 +2488,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseTitle(data.text48.caseTitle);
         viewMatters.verifyEditMatterInfoCaseNumber(data.text48.caseNumber);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text48.caseTitle);
         viewMatters.actionButtonsClick(data.text48.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();
@@ -2503,6 +2551,7 @@ describe("Create Legal Matter Scenario 2 ", () => {
         viewMatters.verifyEditMatterInfoCaseTitle(data.text49.caseTitle);
         viewMatters.verifyEditMatterInfoCaseNumber(data.text49.caseNumber);
         viewMatters.editMatterInfoCancelButton();
+        viewMatters.viewMatterSearchBox(data.text49.caseTitle);
         viewMatters.actionButtonsClick(data.text49.caseTitle);
         // Update Department
         viewMatters.updateDepartmentMenuButton();

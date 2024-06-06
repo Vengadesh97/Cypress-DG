@@ -31,7 +31,9 @@ class LoginPage
 
     homeButton()
     {
-        cy.scrollTo('topRight')
+        cy.wait(1000);
+        cy.scrollTo('topRight');
+        cy.wait(1000);
         this.elements.homebutton().click();
     }
 

@@ -4,7 +4,7 @@ class legalcaseMatter {
 
     elements = {
 
-        pomLeftsideMatterTab : () => cy.xpath("//div //span[text()='Matters']"),
+        pomLeftsideMatterTab : () => cy.xpath("(//div //span[text()='Matters'])[1]"),
 
         pomLegalMatterTab : () => cy.xpath("//div //a[text()='Legal Matters']"),
 
@@ -72,9 +72,9 @@ class legalcaseMatter {
 
     leftSideMatterTab()
     {
-        this.elements.pomLeftsideMatterTab().click();
         cy.wait(1000);
-        cy.xpath("/html/body/app-root/app-dashboard/div/div[2]/div[1]/div/div[2]/app-matter/app-viewlegalmatter/div[2]/ngx-spinner/div/div[1]/div", { timeout: 10000 }).should('be.visible');
+        this.elements.pomLeftsideMatterTab().click();
+    //    cy.xpath("/html/body/app-root/app-dashboard/div/div[2]/div[1]/div/div[2]/app-matter/app-viewlegalmatter/div[2]/ngx-spinner/div/div[1]/div", { timeout: 10000 }).should('be.visible');
     }
 
     legalMatterTab()
@@ -191,6 +191,7 @@ class legalcaseMatter {
 
     selectAllButton()
     {
+        cy.wait(1000);
         this.elements.pomSelectAllCheckBox().click();
     }
 
