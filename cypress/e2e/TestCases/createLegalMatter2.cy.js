@@ -62,6 +62,7 @@ describe("Create Legal Matter Scenario 3",()=>{
         view.verifyEditMatterInfoCaseTitle(data.text1.caseTitle);
         view.verifyEditMatterInfoCaseNumber(data.text1.caseNumber);
         view.editMatterInfoCancelButton();
+        view.viewMatterSearchBox(data.text1.caseTitle);
         view.actionButtonsClick(data.text1.caseTitle);
         view.updateDepartmentMenuButton();
         view.updateDepartmentCheckSelectedDepartmentName(selectDepartments);
@@ -113,6 +114,7 @@ describe("Create Legal Matter Scenario 3",()=>{
         view.verifyEditMatterInfoCaseTitle(data.text2.caseTitle);
         view.verifyEditMatterInfoCaseNumber(data.text2.caseNumber);
         view.editMatterInfoCancelButton();
+        view.viewMatterSearchBox(data.text2.caseTitle);
         view.actionButtonsClick(data.text2.caseTitle);
         // Update Department
         view.updateDepartmentMenuButton();
@@ -165,6 +167,7 @@ describe("Create Legal Matter Scenario 3",()=>{
         view.verifyEditMatterInfoCaseTitle(data.text3.caseTitle);
         view.verifyEditMatterInfoCaseNumber(data.text3.caseNumber);
         view.editMatterInfoCancelButton();
+        view.viewMatterSearchBox(data.text3.caseTitle);
         view.actionButtonsClick(data.text3.caseTitle);
         // Update Department
         view.updateDepartmentMenuButton();
@@ -219,6 +222,7 @@ describe("Create Legal Matter Scenario 3",()=>{
         view.verifyEditMatterInfoCaseTitle(data.text4.caseTitle);
         view.verifyEditMatterInfoCaseNumber(data.text4.caseNumber);
         view.editMatterInfoCancelButton();
+        view.viewMatterSearchBox(data.text4.caseTitle);
         view.actionButtonsClick(data.text4.caseTitle);
         // Update Department
         view.updateDepartmentMenuButton();
@@ -277,6 +281,7 @@ describe("Create Legal Matter Scenario 3",()=>{
         view.verifyEditMatterInfoCaseTitle(data.text5.caseTitle);
         view.verifyEditMatterInfoCaseNumber(data.text5.caseNumber);
         view.editMatterInfoCancelButton();
+        view.viewMatterSearchBox(data.text5.caseTitle);
         view.actionButtonsClick(data.text5.caseTitle);
         // Update Department
         view.updateDepartmentMenuButton();
@@ -337,6 +342,7 @@ describe("Create Legal Matter Scenario 3",()=>{
         view.verifyEditMatterInfoCaseTitle(data.text6.caseTitle);
         view.verifyEditMatterInfoCaseNumber(data.text6.caseNumber);
         view.editMatterInfoCancelButton();
+        view.viewMatterSearchBox(data.text6.caseTitle);
         view.actionButtonsClick(data.text6.caseTitle);
         // Update Department
         view.updateDepartmentMenuButton();
@@ -403,6 +409,7 @@ describe("Create Legal Matter Scenario 3",()=>{
         view.verifyEditMatterInfoCaseTitle(data.text7.caseTitle);
         view.verifyEditMatterInfoCaseNumber(data.text7.caseNumber);
         view.editMatterInfoCancelButton();
+        view.viewMatterSearchBox(data.text7.caseTitle);
         view.actionButtonsClick(data.text7.caseTitle);
         // Update Department
         view.updateDepartmentMenuButton();
@@ -439,6 +446,7 @@ describe("Create Legal Matter Scenario 3",()=>{
         view.verifyEditMatterInfoCaseNumber(data.text8.caseNumber);
         view.verifyEditMatterInfoDescription(data.text8.Description);
         view.editMatterInfoCancelButton();
+        view.viewMatterSearchBox(data.text8.caseTitle);
         view.actionButtonsClick(data.text8.caseTitle);
         view.updateDepartmentMenuButton();
         view.updateDepartmentCheckSelectedDepartmentName(selectDepartments);
@@ -489,6 +497,7 @@ describe("Create Legal Matter Scenario 3",()=>{
         view.verifyEditMatterInfoCaseNumber(data.text9.caseNumber);
         view.verifyEditMatterInfoDescription(data.text9.Description);
         view.editMatterInfoCancelButton();
+        view.viewMatterSearchBox(data.text9.caseTitle);
         view.actionButtonsClick(data.text9.caseTitle);
         // Update Department
         view.updateDepartmentMenuButton();
@@ -540,6 +549,7 @@ describe("Create Legal Matter Scenario 3",()=>{
         view.verifyEditMatterInfoCaseNumber(data.text10.caseNumber);
         view.verifyEditMatterInfoDescription(data.text10.Description);
         view.editMatterInfoCancelButton();
+        view.viewMatterSearchBox(data.text10.caseTitle);
         view.actionButtonsClick(data.text10.caseTitle);
         // Update Department
         view.updateDepartmentMenuButton();
