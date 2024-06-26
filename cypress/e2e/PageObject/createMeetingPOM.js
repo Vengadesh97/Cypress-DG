@@ -2,244 +2,307 @@ const { expect } = require("chai");
 
 class createMeetingPOM {
 
- // Web Element declartaions 
+   // Web Element declartaions 
    elements = {
 
-    locLeftSideMeetingMenu: () => cy.xpath("//span[text()='Meetings']"),
+      locLeftSideMeetingMenu: () => cy.xpath("//span[text()='Meetings']"),
 
-    locCreateTab: () => cy.xpath("//a[text()='Create']"),
+      locCreateTab: () => cy.xpath("//a[text()='Create']"),
 
-    locLegalEventRadiobutton : () => cy.xpath("//input[@id='legalMatter']"),
+      locLegalEventRadiobutton: () => cy.xpath("//input[@id='legalMatter']"),
 
-    locAllDaysCheckbox : () =>Cy.xpath("//input[@type='checkbox']"),
+      locDateOfFilling: () => cy.get("input#drp"),
 
-    locMeetingLink : () => cy.xpath("//input[@id='meeting-link']"),
+      locAllDaysCheckbox: () => Cy.xpath("//input[@type='checkbox']"),
 
-    locDialinNumber : () => cy.xpath("//input[@id='number']"),
+      locNotifications: () => cy.xpath("//ul //li //div //a [@aria-label='Close']"),
 
-    locLocation : () => cy.xpath("//input[@id='location']"),
+      locMeetingLink: () => cy.xpath("//input[@id='meeting-link']"),
 
-    locMeetingAgenda : () => cy.xpath("//textarea[@name='meeting-agenda']"),
+      locDialinNumber: () => cy.xpath("//input[@id='number']"),
 
-    locAddTeamMember : () => cy.xpath("//input[@list='browsers']"),
+      locLocation: () => cy.xpath("//input[@id='location']"),
 
-    locButtonAddTM : () => cy.xpath("(//input[@value='ADD'])[1]"),
+      locMeetingAgenda: () => cy.xpath("//textarea[@name='meeting-agenda']"),
 
-    locExternalTeamMember : () => cy.xpath("//input[@placeholder='Search External Counsel']"),
+      locAddTeamMember: () => cy.xpath("//input[@list='browsers']"),
 
-    locButtonAddExternalTM : () => cy.xpath("(//input[@value='ADD'])[2]"),
+      locButtonAddTM: () => cy.xpath("(//input[@value='ADD'])[1]"),
 
-    locdocument : () => cy.xpath("//input[@placeholder='Search Document']"),
+      locExternalTeamMember: () => cy.xpath("//input[@placeholder='Search External Counsel']"),
 
-    locButtonAddDoc : () => cy.xpath("//input[@value='Attach']")
+      locButtonAddExternalTM: () => cy.xpath("(//input[@value='ADD'])[2]"),
 
-    }
-   
-    // Left Side Meeting Menu
-    leftsideMeetingMenu()
-    {
-        cy.wait(1000);
-        this.elements.locLeftSideMeetingMenu().click();
-    }
+      locdocument: () => cy.xpath("//input[@placeholder='Search Document']"),
 
-    // Create Tab 
+      locButtonAddDoc: () => cy.xpath("//input[@value='Attach']"),
 
-    createTab()
-    {
-        cy.wait(1000);
-        this.elements.locCreateTab().click();
-    }
+      locButtonSave: () => cy.xpath("//div //button[text()='Save']"),
 
-    // Event Type
+      locButtonCancel: () => cy.xpath("//div //button[text()='Cancel']"),
 
-    legalEventTypeSelect()
-    {
-        cy.wait(1000);
-        this.elements.locLegalEventRadiobutton().click();
-    }
+      locAlertPopupViewChanges: () => cy.xpath("//div //button[text()='View Changes']")
 
-    // Matter Name 
+   }
 
-    selectMatterName(name)
-    {
-      if (name!=="")
-     {
-        cy.wait(1000);
-        cy.xpath("//select[@formcontrolname='matter_id']").select(name);
-     }
-    }
+   // Left Side Meeting Menu
+   leftsideMeetingMenu() {
+      cy.wait(1000);
+      this.elements.locLeftSideMeetingMenu().click();
+   }
 
-    // Subject Task
-    selectSubjectTask(name)
-    {
-    if (name!=="")
-     {
-        cy.wait(2000);
-        cy.xpath("//select[@formcontrolname='title']").select(name);
-     }
-    }
+   // Create Tab 
 
-    // Start Time
-    
-    selectStartTime(name)
-    {
-    if (name!=="")
-     {
-        cy.wait(1000);
-        cy.xpath("//select[@formcontrolname='from_ts']").select(name);
-     }
-    }
+   createTab() {
+      cy.wait(1000);
+      this.elements.locCreateTab().click();
+   }
 
-    // End Time
+   // Event Type
 
-    selectEndTime(name)
-    {
-    if (name!=="")
-     {
-        cy.wait(1000);
-        cy.xpath("//select[@formcontrolname='to_ts']").select(name);
-     }
-    }
+   legalEventTypeSelect() {
+      cy.wait(1000);
+      this.elements.locLegalEventRadiobutton().click();
+   }
 
-    // Time Zone
+   // Matter Name 
 
-    selectTimeZone(name)
-    {
-    if (name!=="")
-     {
-        cy.wait(1000);
-        cy.xpath("//select[@formcontrolname='timezone_location']").select(name);
-     }
-    }    
+   selectMatterName(name) {
+      if (name !== "") {
+         cy.wait(1000);
+         cy.xpath("//select[@formcontrolname='matter_id']").select(name);
+      }
+   }
 
-    // Repetition 
+   // Subject Task
+   selectSubjectTask(name) {
+      if (name !== "") {
+         cy.wait(1000);
+         cy.xpath("//select[@formcontrolname='title']").select(name);
+      }
+   }
 
-    selectReptition(name)
-    {
-    if (name!=="")
-     {
-        cy.wait(1000);
-        cy.xpath("//select[@formcontrolname='repeat_interval']").select(name);
-     }
-    }   
+   // Select Date
+   dateClick() {
+      cy.wait(500);
+      this.elements.locDateOfFilling().click();
+   }
 
-    // All Day
+   // Choose Date
+   selectDate(date) {
 
-    checkboxAllDay()
-    {
-        cy.wait(1000);
-        this.elements.locAllDaysCheckbox().click();
-    }
+      cy.wait(500);
+      cy.xpath("//span[text()='" + date + "']").click({ multiple: true });
+   }
 
-    // Meeting link
 
-    meetingLinkText(name)
-    {
-        if (name!=="")
-        {
-        cy.wait(1000);
-        this.elements.locMeetingLink().type(name);
-        }
-    }
+   // Start Time
 
-    // Dial in Num
+   selectStartTime(name) {
+      if (name !== "") {
+         cy.wait(1000);
+         cy.xpath("//select[@formcontrolname='from_ts']").select(name);
+      }
+   }
 
-    dialinNumText(name)
-    {
-        if (name!=="")
-        {
-        cy.wait(1000);
-        this.elements.locDialinNumber().type(name);
-        }
-    }
+   // End Time
 
-    // Location
+   selectEndTime(name) {
+      if (name !== "") {
+         cy.wait(1000);
+         cy.xpath("//select[@formcontrolname='to_ts']").select(name);
+      }
+   }
 
-    locationText(name)
-    {
-        if (name!=="")
-        {
-        cy.wait(1000);
-        this.elements.locLocation().type(name);
-        }
-    }
+   // Time Zone
 
-    // Meeting Agenda
+   selectTimeZone(name) {
+      if (name !== "") {
+         cy.wait(1000);
+         cy.xpath("//select[@formcontrolname='timezone_location']").select(name);
+      }
+   }
 
-    meetingAgendaText(name)
-    {
-        if (name!=="")
-        {
-        cy.wait(1000);
-        this.elements.locMeetingAgenda().type(name);
-        }
-        
-    }
+   // Repetition 
 
-     // Add Team Member 
+   selectReptition(name) {
+      if (name !== "") {
+         cy.wait(1000);
+         cy.xpath("//select[@formcontrolname='repeat_interval']").select(name);
+      }
+   }
 
-     addTeamMember(name)
-     {
-        if (name!=="")
-        {
+   // All Day
+
+   checkboxAllDay() {
+      cy.wait(1000);
+      this.elements.locAllDaysCheckbox().click();
+   }
+
+   // Notifications
+
+   removeNotifications() {
+      cy.wait(1000);
+      this.elements.locNotifications().click();
+      cy.wait(500);
+   }
+
+
+   // Meeting link
+
+   meetingLinkText(name) {
+      if (name !== "") {
+         cy.wait(1000);
+         this.elements.locMeetingLink().type(name);
+      }
+   }
+
+   // Dial in Num
+
+   dialinNumText(name) {
+      if (name !== "") {
+         cy.wait(1000);
+         this.elements.locDialinNumber().type(name);
+      }
+   }
+
+   // Location
+
+   locationText(name) {
+      if (name !== "") {
+         cy.wait(1000);
+         this.elements.locLocation().type(name);
+      }
+   }
+
+   // Meeting Agenda
+
+   meetingAgendaText(name) {
+      if (name !== "") {
+         cy.wait(1000);
+         this.elements.locMeetingAgenda().type(name);
+      }
+
+   }
+
+   // Add Team Member 
+
+   addTeamMember(name) {
+      if (name !== "") {
          cy.wait(1000);
          this.elements.locAddTeamMember().type(name);
          cy.wait(100);
          this.elements.locButtonAddTM().click();
-        }
-     }
+      }
+   }
 
-     // Add External Counsels
+   // Add External Counsels
 
-     addExternalCounselSelect(name)
-     {
-     if (name!=="")
-      {
+   addExternalCounselSelect(name) {
+      if (name !== "") {
          cy.wait(1000);
          cy.xpath("//select[@id='select']").select(name);
       }
-     } 
+   }
 
-     // Add External Team member
+   // Add External Team member
 
-     addExternalTeamMember(name)
-     {
-        if (name!=="")
-        {
+   addExternalTeamMember(name) {
+      if (name !== "") {
          cy.wait(1000);
          this.elements.locExternalTeamMember().type(name);
          cy.wait(100);
          this.elements.locButtonAddExternalTM().click();
-        }
-     }
+      }
+   }
 
-     // Add Document
+   // Add Document
 
-     addDocument(name)
-     {
-        if (name!=="")
-        {
+   addDocument(name) {
+      if (name !== "") {
          cy.wait(1000);
          this.elements.locdocument().type(name);
          cy.wait(100);
          this.elements.locButtonAddDoc().click();
-        }
-     }
+      }
+   }
 
-    scrollCenter()
-    {
+   // Cancel 
+
+   cancelButton() {
+      this.elements.locButtonCancel().click();
+   }
+
+   // Save
+
+   saveButton() {
+      this.elements.locButtonSave().click();
+   }
+
+   // View Changes
+
+   successPopupViewChanges() {
+      cy.wait(2000);
+      this.elements.locAlertPopupViewChanges().click();
+   }
+
+   scrollCenter() {
       cy.wait(1000);
       cy.scrollTo('center');
       cy.wait(1000);
-    }
+   }
 
-    scrollDown()
-    {
+   scrollDown() {
       cy.wait(1000);
       cy.scrollTo('bottom');
       cy.wait(1000);
-    }
+   }
+
+
+   viewDay(string) {
+
+      cy.wait(1000);
+      let text = cy.xpath("//label[@class='tdate']").invoke('text');
+      let date = dateParse(dateTrim(text));
+      let date1 = dateParse(string);
+
+      let diff = (date1 - date) / (1000 * 60 * 60 * 24);
+      let flag = 1;
+      let dd = Math.round(diff);
+      if (dd < 0) {
+         flag = 0;
+         dd = -1 * dd;
+      }
+      for (let i = 0; i < dd; i++) {
+
+         if (flag === 0) {
+            cy.wait(500);
+            leftArrow.click();
+         } else {
+            cy.wait(500);
+            rightArrow.click();
+         }
+      }
+   }
+
+
+
 
 }
+
+function dateTrim(text) {
+
+   const string = text.split(",")[1].substring(1) + "," + text.split(",")[2];
+   return dateTrim;
+}
+
+// View Meetings 
+
+function dateParse(text) {
+   const formatter = new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+   const date = new Date(text);
+   return formatter.format(date);
+}
+
 
 module.exports = new createMeetingPOM();

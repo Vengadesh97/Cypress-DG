@@ -1,0 +1,147 @@
+{
+    "common": {
+        "addTM": "Anderson",
+        "addTM1": "Team Member - Test",
+        "selectClient": "Alliance Law Group",
+        "addClientTM": "Team Member - A",
+        "addClientTM1": "Team Member - B",
+        "addDocum": "Files DG"
+    },
+    "text1": {
+        "Comment": "1.Mandatory Fields only",
+        "matterName": "Car Insurance Claim",
+        "selectTask": "Case filling",
+        "chooseDate": "1",
+        "StartTime": "00:00",
+        "EndTime": "00:15"
+    },
+    "text2": {
+        "Comment": "2.Mandatory Fields with meeting link",
+        "matterName": "Car Insurance Claim",
+        "selectTask": "Case filling",
+        "chooseDate": "1",
+        "StartTime": "00:15",
+        "EndTime": "00:30",
+        "meetingLink": "https://www.uplead.com/meeting-request-emails/"    
+    },
+    "text3": {
+        "Comment": "3.Mandatory Fields with Dial Num",
+        "matterName": "Car Insurance Claim",
+        "selectTask": "Case filling",
+        "chooseDate": "1",
+        "StartTime": "00:30",
+        "EndTime": "00:45",
+        "dial": "4622595648" 
+    },
+    "text4": {
+        "Comment": "4.Mandatory Fields with location",
+        "matterName": "Car Insurance Claim",
+        "selectTask": "Case filling",
+        "chooseDate": "1",
+        "StartTime": "00:45",
+        "EndTime": "01:00",
+        "location": "Cuddalore"
+    },
+    "text5": {
+        "Comment": "5.Mandatory Fields with meeting agenda",
+        "matterName": "Car Insurance Claim",
+        "selectTask": "Case filling",
+        "chooseDate": "1",
+        "StartTime": "01:00",
+        "EndTime": "01:15",
+        "meetingAgenda": "Discuss about the cases"
+    },
+    "text6": {
+        "Comment": "6.Mandatory Fields with TM",
+        "matterName": "Car Insurance Claim",
+        "selectTask": "Case filling",
+        "chooseDate": " 1 ",
+        "StartTime": "01:15",
+        "EndTime": "01:30"
+    },
+    "text7": {
+        "Comment": "7.Mandatory Fields with Clients",
+        "matterName": "Car Insurance Claim",
+        "selectTask": "Case filling",
+        "chooseDate": "1",
+        "StartTime": "01:30",
+        "EndTime": "01:45" 
+    },
+    "text8": {
+        "Comment": "8.Mandatory Fields with Documents",
+        "matterName": "Car Insurance Claim",
+        "selectTask": "Case filling",
+        "chooseDate": "1",
+        "StartTime": "01:45",
+        "EndTime": "02:00"
+    },
+    "text9": {
+        "Comment": "9.Mandatory with Notifications",
+        "matterName": "Car Insurance Claim",
+        "selectTask": "Case filling",
+        "chooseDate": "1",
+        "StartTime": "02:00",
+        "EndTime": "02:15"
+    },
+    "text10": {
+        "Comment": "10.Mandatory with Notifications and Meeting Link",
+        "matterName": "Car Insurance Claim",
+        "selectTask": "Case filling",
+        "chooseDate": "1",
+        "StartTime": "02:15",
+        "EndTime": "02:30",
+        "meetingLink": "https://www.uplead.com/meeting-request-emails/"    
+    },
+    "text11": {
+        "Comment": "11.Mandatory with Notifications and Dial Num",
+        "matterName": "Car Insurance Claim",
+        "selectTask": "Case filling",
+        "chooseDate": "1",
+        "StartTime": "02:30",
+        "EndTime": "02:45",
+        "dial": "4622595648" 
+    },
+    "text12": {
+        "Comment": "12.Mandatory with Notifications and Loc",
+        "matterName": "Car Insurance Claim",
+        "selectTask": "Case filling",
+        "chooseDate": "1",
+        "StartTime": "02:45",
+        "EndTime": "03:00",
+        "location": "Cuddalore"
+    },
+    "text13": {
+        "Comment": "13.Mandatory with Notifications and Meeting Agenda",
+        "matterName": "Car Insurance Claim",
+        "selectTask": "Case filling",
+        "chooseDate": "1",
+        "StartTime": "03:00",
+        "EndTime": "03:15",
+        "meetingAgenda": "Discuss about the cases"
+    },
+    "text14": {
+        "Comment": "14.Mandatory with Notifications and TM",
+        "matterName": "Car Insurance Claim",
+        "selectTask": "Case filling",
+        "chooseDate": " 1 ",
+        "StartTime": "03:15",
+        "EndTime": "03:30"
+    },
+    "text15": {
+        "Comment": "15.Mandatory with Notifications and Clients",
+        "matterName": "Car Insurance Claim",
+        "selectTask": "Case filling",
+        "chooseDate": "1",
+        "StartTime": "03:30",
+        "EndTime": "03:45" 
+    },
+    "text16": {
+        "Comment": "16.Mandatory with Notifications and Docum",
+        "matterName": "Car Insurance Claim",
+        "selectTask": "Case filling",
+        "chooseDate": "1",
+        "StartTime": "03:45",
+        "EndTime": "04:00"
+    }
+
+}
