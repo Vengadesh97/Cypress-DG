@@ -5,63 +5,60 @@ class createMeetingPOM {
    // Web Element declartaions 
    elements = {
 
-      locLeftSideMeetingMenu: () => cy.xpath("//span[text()='Meetings']"),
+      locLeftSideMeetingMenu: () => cy.xpath("//span[text()='Meetings']",{ timeout: 10000 }).should('be.visible'),
 
-      locCreateTab: () => cy.xpath("//a[text()='Create']"),
+      locCreateTab: () => cy.xpath("//a[text()='Create']",{ timeout: 10000 }).should('be.visible'),
 
-      locLegalEventRadiobutton: () => cy.xpath("//input[@id='legalMatter']"),
+      locLegalEventRadiobutton: () => cy.xpath("//input[@id='legalMatter']",{ timeout: 10000 }).should('be.visible'),
 
-      locDateOfFilling: () => cy.get("input#drp"),
+      locDateOfFilling: () => cy.get("input#drp",{ timeout: 10000 }).should('be.visible'),
 
-      locAllDaysCheckbox: () => Cy.xpath("//input[@type='checkbox']"),
+      locAllDaysCheckbox: () => Cy.xpath("//input[@type='checkbox']",{ timeout: 10000 }).should('be.visible'),
 
-      locNotifications: () => cy.xpath("//ul //li //div //a [@aria-label='Close']"),
+      locNotifications: () => cy.xpath("//ul //li //div //a [@aria-label='Close']",{ timeout: 10000 }).should('be.visible'),
 
-      locMeetingLink: () => cy.xpath("//input[@id='meeting-link']"),
+      locMeetingLink: () => cy.xpath("//input[@id='meeting-link']",{ timeout: 10000 }).should('be.visible'),
 
-      locDialinNumber: () => cy.xpath("//input[@id='number']"),
+      locDialinNumber: () => cy.xpath("//input[@id='number']",{ timeout: 10000 }).should('be.visible'),
 
-      locLocation: () => cy.xpath("//input[@id='location']"),
+      locLocation: () => cy.xpath("//input[@id='location']",{ timeout: 10000 }).should('be.visible'),
 
-      locMeetingAgenda: () => cy.xpath("//textarea[@name='meeting-agenda']"),
+      locMeetingAgenda: () => cy.xpath("//textarea[@name='meeting-agenda']",{ timeout: 10000 }).should('be.visible'),
 
-      locAddTeamMember: () => cy.xpath("//input[@list='browsers']"),
+      locAddTeamMember: () => cy.xpath("//input[@list='browsers']",{ timeout: 10000 }).should('be.visible'),
 
-      locButtonAddTM: () => cy.xpath("(//input[@value='ADD'])[1]"),
+      locButtonAddTM: () => cy.xpath("(//input[@value='ADD'])[1]",{ timeout: 10000 }).should('be.visible'),
 
-      locExternalTeamMember: () => cy.xpath("//input[@placeholder='Search External Counsel']"),
+      locExternalTeamMember: () => cy.xpath("//input[@placeholder='Search External Counsel']",{ timeout: 10000 }).should('be.visible'),
 
-      locButtonAddExternalTM: () => cy.xpath("(//input[@value='ADD'])[2]"),
+      locButtonAddExternalTM: () => cy.xpath("(//input[@value='ADD'])[2]",{ timeout: 10000 }).should('be.visible'),
 
-      locdocument: () => cy.xpath("//input[@placeholder='Search Document']"),
+      locdocument: () => cy.xpath("//input[@placeholder='Search Document']",{ timeout: 10000 }).should('be.visible'),
 
-      locButtonAddDoc: () => cy.xpath("//input[@value='Attach']"),
+      locButtonAddDoc: () => cy.xpath("//input[@value='Attach']",{ timeout: 10000 }).should('be.visible'),
 
-      locButtonSave: () => cy.xpath("//div //button[text()='Save']"),
+      locButtonSave: () => cy.xpath("//div //button[text()='Save']",{ timeout: 10000 }).should('be.visible'),
 
-      locButtonCancel: () => cy.xpath("//div //button[text()='Cancel']"),
+      locButtonCancel: () => cy.xpath("//div //button[text()='Cancel']",{ timeout: 10000 }).should('be.visible'),
 
-      locAlertPopupViewChanges: () => cy.xpath("//div //button[text()='View Changes']")
+      locAlertPopupViewChanges: () => cy.xpath("//div //button[text()='View Changes']",{ timeout: 10000 }).should('be.visible')
 
    }
 
    // Left Side Meeting Menu
    leftsideMeetingMenu() {
-      cy.wait(1000);
       this.elements.locLeftSideMeetingMenu().click();
    }
 
    // Create Tab 
 
    createTab() {
-      cy.wait(1000);
       this.elements.locCreateTab().click();
    }
 
    // Event Type
 
    legalEventTypeSelect() {
-      cy.wait(1000);
       this.elements.locLegalEventRadiobutton().click();
    }
 
@@ -69,7 +66,7 @@ class createMeetingPOM {
 
    selectMatterName(name) {
       if (name !== "") {
-         cy.wait(1000);
+        cy.wait(2000);
          cy.xpath("//select[@formcontrolname='matter_id']").select(name);
       }
    }
@@ -90,9 +87,8 @@ class createMeetingPOM {
 
    // Choose Date
    selectDate(date) {
-
-      cy.wait(500);
-      cy.xpath("//span[text()='" + date + "']").click({ multiple: true });
+      cy.wait(1500);
+      cy.xpath("(//span[text()='" + date + "'])[1]").click();
    }
 
 
@@ -118,7 +114,7 @@ class createMeetingPOM {
 
    selectTimeZone(name) {
       if (name !== "") {
-         cy.wait(1000);
+         cy.wait(500);
          cy.xpath("//select[@formcontrolname='timezone_location']").select(name);
       }
    }
@@ -127,7 +123,7 @@ class createMeetingPOM {
 
    selectReptition(name) {
       if (name !== "") {
-         cy.wait(1000);
+         cy.wait(500);
          cy.xpath("//select[@formcontrolname='repeat_interval']").select(name);
       }
    }
@@ -135,16 +131,16 @@ class createMeetingPOM {
    // All Day
 
    checkboxAllDay() {
-      cy.wait(1000);
+     // cy.wait(500);
       this.elements.locAllDaysCheckbox().click();
    }
 
    // Notifications
 
    removeNotifications() {
-      cy.wait(1000);
+    //  cy.wait(500);
       this.elements.locNotifications().click();
-      cy.wait(500);
+   //   cy.wait(500);
    }
 
 
@@ -152,7 +148,7 @@ class createMeetingPOM {
 
    meetingLinkText(name) {
       if (name !== "") {
-         cy.wait(1000);
+      //   cy.wait(1000);
          this.elements.locMeetingLink().type(name);
       }
    }
@@ -161,7 +157,7 @@ class createMeetingPOM {
 
    dialinNumText(name) {
       if (name !== "") {
-         cy.wait(1000);
+       //  cy.wait(1000);
          this.elements.locDialinNumber().type(name);
       }
    }
@@ -170,7 +166,7 @@ class createMeetingPOM {
 
    locationText(name) {
       if (name !== "") {
-         cy.wait(1000);
+       //  cy.wait(1000);
          this.elements.locLocation().type(name);
       }
    }
@@ -179,7 +175,7 @@ class createMeetingPOM {
 
    meetingAgendaText(name) {
       if (name !== "") {
-         cy.wait(1000);
+       //  cy.wait(1000);
          this.elements.locMeetingAgenda().type(name);
       }
 
@@ -189,9 +185,9 @@ class createMeetingPOM {
 
    addTeamMember(name) {
       if (name !== "") {
-         cy.wait(1000);
+        cy.wait(1000);
          this.elements.locAddTeamMember().type(name);
-         cy.wait(100);
+      //   cy.wait(100);
          this.elements.locButtonAddTM().click();
       }
    }
@@ -211,7 +207,7 @@ class createMeetingPOM {
       if (name !== "") {
          cy.wait(1000);
          this.elements.locExternalTeamMember().type(name);
-         cy.wait(100);
+       //  cy.wait(100);
          this.elements.locButtonAddExternalTM().click();
       }
    }
@@ -222,7 +218,7 @@ class createMeetingPOM {
       if (name !== "") {
          cy.wait(1000);
          this.elements.locdocument().type(name);
-         cy.wait(100);
+     //    cy.wait(100);
          this.elements.locButtonAddDoc().click();
       }
    }
@@ -242,7 +238,7 @@ class createMeetingPOM {
    // View Changes
 
    successPopupViewChanges() {
-      cy.wait(2000);
+     // cy.wait(2000);
       this.elements.locAlertPopupViewChanges().click();
    }
 
@@ -258,13 +254,25 @@ class createMeetingPOM {
       cy.wait(1000);
    }
 
+    dateTrim(text) {
+      cy.wait(1000);
+      const string = text.split(",")[1].substring(1) + "," + text.split(",")[2];
+      return dateTrim;
+   }
+   
+    dateParse(text) {
+      cy.wait(1000);
+      const formatter = new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+      const date = new Date(text);
+      return formatter.format(date);
+   }
 
    viewDay(string) {
 
       cy.wait(1000);
       let text = cy.xpath("//label[@class='tdate']").invoke('text');
-      let date = dateParse(dateTrim(text));
-      let date1 = dateParse(string);
+      let date = this.dateParse(this.dateTrim(text));
+      let date1 = this.dateParse(string);
 
       let diff = (date1 - date) / (1000 * 60 * 60 * 24);
       let flag = 1;
@@ -285,24 +293,8 @@ class createMeetingPOM {
       }
    }
 
-
-
-
 }
 
-function dateTrim(text) {
-
-   const string = text.split(",")[1].substring(1) + "," + text.split(",")[2];
-   return dateTrim;
-}
-
-// View Meetings 
-
-function dateParse(text) {
-   const formatter = new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
-   const date = new Date(text);
-   return formatter.format(date);
-}
 
 
 module.exports = new createMeetingPOM();
