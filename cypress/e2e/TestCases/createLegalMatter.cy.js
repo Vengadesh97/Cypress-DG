@@ -31,7 +31,6 @@ describe("Create Legal Matter Scenario", () => {
         legalMatters.leftSideMatterTab();
     });
 
-    
     it("1.Mandatory Fields with Cancel", () => {
         legalMatters.leftSideMatterTab();
         legalMatters.createTab();

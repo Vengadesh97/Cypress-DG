@@ -41,7 +41,15 @@ class createMeetingPOM {
 
       locButtonCancel: () => cy.xpath("//div //button[text()='Cancel']",{ timeout: 10000 }).should('be.visible'),
 
-      locAlertPopupViewChanges: () => cy.xpath("//div //button[text()='View Changes']",{ timeout: 10000 }).should('be.visible')
+      locAlertPopupViewChanges: () => cy.xpath("//div //button[text()='View Changes']",{ timeout: 10000 }).should('be.visible'),
+
+      // View Day 
+
+      locViewDay : () => cy.xpath("//div //a[text()='Day']",{ timeout: 10000 }).should('be.visible'),
+
+
+
+
 
    }
 
@@ -254,43 +262,16 @@ class createMeetingPOM {
       cy.wait(1000);
    }
 
-    dateTrim(text) {
+   scrollTop()
+   {
       cy.wait(1000);
-      const string = text.split(",")[1].substring(1) + "," + text.split(",")[2];
-      return dateTrim;
-   }
-   
-    dateParse(text) {
+      cy.scrollTo('top');
       cy.wait(1000);
-      const formatter = new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
-      const date = new Date(text);
-      return formatter.format(date);
    }
 
-   viewDay(string) {
-
-      cy.wait(1000);
-      let text = cy.xpath("//label[@class='tdate']").invoke('text');
-      let date = this.dateParse(this.dateTrim(text));
-      let date1 = this.dateParse(string);
-
-      let diff = (date1 - date) / (1000 * 60 * 60 * 24);
-      let flag = 1;
-      let dd = Math.round(diff);
-      if (dd < 0) {
-         flag = 0;
-         dd = -1 * dd;
-      }
-      for (let i = 0; i < dd; i++) {
-
-         if (flag === 0) {
-            cy.wait(500);
-            leftArrow.click();
-         } else {
-            cy.wait(500);
-            rightArrow.click();
-         }
-      }
+   viewDayTab()
+   {
+      this.elements.locViewDay().click();
    }
 
 }
@@ -298,3 +279,5 @@ class createMeetingPOM {
 
 
 module.exports = new createMeetingPOM();
+
+   

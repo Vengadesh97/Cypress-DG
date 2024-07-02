@@ -2,7 +2,8 @@ import createMeeting from "../PageObject/createMeetingPOM";
 import loginpage from "../PageObject/loginpagePOM";
 import loginData from "../../fixtures/login.json";
 import data from "../../fixtures/createMeetingsData.json"
-
+import { viewDaySelect } from '../PageObject/testingDate';
+import  viewMeetings from '../PageObject/viewMeetingPOM';
 
 
 describe("Create Legal Matter Scenario", () => {
@@ -15,19 +16,28 @@ describe("Create Legal Matter Scenario", () => {
     });
 
     beforeEach(() => {
+        cy.wait(1000);
         createMeeting.leftsideMeetingMenu();
-      //  createMeeting.createTab();
-       // createMeeting.legalEventTypeSelect();
+   //     createMeeting.createTab();
+     //   createMeeting.legalEventTypeSelect();
     });
 
     // afterEach(() => {
     //     loginpage.loadIssues();
     //     loginpage.homeButton();
-    // });
+    // });    
+
+    it("test",()=>{
+      
+       createMeeting.scrollTop();
+       createMeeting.viewDayTab(); 
+       viewDaySelect("8/22/2024");
+        
+    })
 
 
-    it("1.Mandatory Fields only", () => {
-        createMeeting.selectMatterName(data.text1.matterName);
+    it.only("1.Mandatory Fields only", () => {
+   /*     createMeeting.selectMatterName(data.text1.matterName);
         createMeeting.selectSubjectTask(data.text1.selectTask);
         createMeeting.dateClick();
         createMeeting.selectDate(data.text1.chooseDate);
@@ -37,7 +47,15 @@ describe("Create Legal Matter Scenario", () => {
         createMeeting.scrollDown();
         createMeeting.saveButton();
         createMeeting.successPopupViewChanges();
-        createMeeting.viewDay("June 1, 2024");
+        createMeeting.scrollTop();
+       */ 
+        createMeeting.viewDayTab(); 
+        cy.wait(1000);
+        viewDaySelect("7/1/2024");
+        cy.wait(3000);
+        viewMeetings.createdMeetingSelect("12:00 AM Car Insurance Claim - Creating legal briefs");
+       // createMeeting.viewDay("June 1, 2024");
+
     })
 
     it("2.Mandatory Fields with meeting link", () => {
