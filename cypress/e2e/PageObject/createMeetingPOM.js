@@ -95,8 +95,8 @@ class createMeetingPOM {
 
    // Choose Date
    selectDate(date) {
-      cy.wait(1500);
-      cy.xpath("(//span[text()='" + date + "'])[1]").click();
+     // cy.wait(1500);
+      cy.xpath("(//span[text()='" + date + "'])[1]",{ timeout: 10000 }).click();
    }
 
 
