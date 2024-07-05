@@ -74,7 +74,6 @@ class legalcaseMatter {
     {
         cy.wait(1000);
         this.elements.pomLeftsideMatterTab().click();
-    //    cy.xpath("/html/body/app-root/app-dashboard/div/div[2]/div[1]/div/div[2]/app-matter/app-viewlegalmatter/div[2]/ngx-spinner/div/div[1]/div", { timeout: 10000 }).should('be.visible');
     }
 
     legalMatterTab()

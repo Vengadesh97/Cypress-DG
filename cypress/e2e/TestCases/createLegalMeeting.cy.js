@@ -18,26 +18,17 @@ describe("Create Legal Matter Scenario", () => {
     beforeEach(() => {
         cy.wait(1000);
         createMeeting.leftsideMeetingMenu();
-   //     createMeeting.createTab();
-    //    createMeeting.legalEventTypeSelect();
+        createMeeting.createTab();
+        createMeeting.legalEventTypeSelect();
     });
 
     // afterEach(() => {
     //     loginpage.loadIssues();
     //     loginpage.homeButton();
-    // });    
+    // });   
 
-    it("test", () => {
-
-        createMeeting.scrollTop();
-        createMeeting.viewDayTab();
-        viewDaySelect("8/22/2024");
-
-    })
-
-
-    it.only("1.Mandatory Fields only", () => {
-    /*    createMeeting.selectMatterName(data.text1.matterName);
+    it("1.Mandatory Fields only", () => {
+        createMeeting.selectMatterName(data.text1.matterName);
         createMeeting.selectSubjectTask(data.text1.selectTask);
         createMeeting.dateClick();
         createMeeting.selectDate(data.text1.chooseDate);
@@ -48,22 +39,13 @@ describe("Create Legal Matter Scenario", () => {
         createMeeting.saveButton();
         createMeeting.successPopupViewChanges();
         createMeeting.scrollTop();
-       */ createMeeting.viewDayTab();
+        createMeeting.viewDayTab();
         cy.wait(1000);
         viewDaySelect(data.common.date);
-        viewMeetings.meetingClick("12:00 AM Car Insurance Claim - Case filling");
+        viewMeetings.meetingClick(data.text1.checkMeetingName);
         createMeeting.scrollTop();
-        viewMeetings.textVerifyMeetingName("Car Insurance Claim - Case filling");
-        viewMeetings.textVerifyDateandTime("Jul 01 2024 : 12:00 AM - 12:15 AM");
-        viewMeetings.textVerifyMeetingAgenda(data.text1.checkMeetingAgenda);
-        viewMeetings.textVerifyMeetingLink(data.text1.checkMeetingLink);
-        viewMeetings.textVerifyPhoneNumber(data.text1.checkPhoneNumber);
-        viewMeetings.textVerifyDocumentName(data.common.checkDocumentName);
-        viewMeetings.textverifyNameList(data.common.checkNameAddTM);
-        viewMeetings.textverifyNameList(data.common.checkNameAddTM1);
-        viewMeetings.textverifyNameList(data.common.checkNameClientFirm);
-        viewMeetings.textverifyNameList(data.common.checkNameClientTM);
-        viewMeetings.textverifyNameList(data.common.checkNameClientTM1);
+        viewMeetings.textVerifyMeetingName(data.text1.checkMeetingName1);
+        viewMeetings.textVerifyDateandTime(data.text1.checkDateAndTime);
     })
 
     it("2.Mandatory Fields with meeting link", () => {
@@ -87,9 +69,6 @@ describe("Create Legal Matter Scenario", () => {
         viewMeetings.textVerifyMeetingName(data.text2.checkMeetingName1);
         viewMeetings.textVerifyDateandTime(data.text2.checkDateAndTime);
         viewMeetings.textVerifyMeetingLink(data.text2.checkMeetingLink);
-
-
-
     })
 
     it("3.Mandatory Fields with Dial Num", () => {
@@ -615,7 +594,7 @@ describe("Create Legal Matter Scenario", () => {
         viewMeetings.textverifyNameList(data.common.checkNameAddTM);
     })
 
-    it("26.Mandatory with Dial Num  and Clients", () => {
+    it("26.Mandatory with Dial Num and Clients", () => {
         createMeeting.selectMatterName(data.text26.matterName);
         createMeeting.selectSubjectTask(data.text26.selectTask);
         createMeeting.dateClick();
