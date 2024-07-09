@@ -234,6 +234,7 @@ class createMeetingPOM {
    // Cancel 
 
    cancelButton() {
+      cy.wait(500);
       this.elements.locButtonCancel().click();
    }
 

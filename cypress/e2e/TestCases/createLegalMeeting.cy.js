@@ -42,10 +42,21 @@ describe("Create Legal Matter Scenario", () => {
         createMeeting.viewDayTab();
         cy.wait(1000);
         viewDaySelect(data.common.date);
+        createMeeting.scrollTop();
         viewMeetings.meetingClick(data.text1.checkMeetingName);
         createMeeting.scrollTop();
         viewMeetings.textVerifyMeetingName(data.text1.checkMeetingName1);
         viewMeetings.textVerifyDateandTime(data.text1.checkDateAndTime);
+        viewMeetings.editMeetings();
+        cy.wait(1000);
+        viewMeetings.verifyMatterNames(data.valid.nameMatter);
+        viewMeetings.verifyMatterTask(data.valid.nameTask);
+        viewMeetings.veirfyDate(data.valid.date);
+        viewMeetings.verifyStartTime(data.text1.nameStartTime);
+        viewMeetings.verifyEndTime(data.text1.nameEndTime);
+        viewMeetings.verifyTimeZone(data.valid.nameTimezone);
+        createMeeting.scrollDown();
+        createMeeting.cancelButton();
     })
 
     it("2.Mandatory Fields with meeting link", () => {
@@ -69,6 +80,18 @@ describe("Create Legal Matter Scenario", () => {
         viewMeetings.textVerifyMeetingName(data.text2.checkMeetingName1);
         viewMeetings.textVerifyDateandTime(data.text2.checkDateAndTime);
         viewMeetings.textVerifyMeetingLink(data.text2.checkMeetingLink);
+        viewMeetings.editMeetings();
+        cy.wait(1000);
+        viewMeetings.verifyMatterNames(data.valid.nameMatter);
+        viewMeetings.verifyMatterTask(data.valid.nameTask);
+        viewMeetings.veirfyDate(data.valid.date);
+        viewMeetings.verifyStartTime(data.text2.nameStartTime);
+        viewMeetings.verifyEndTime(data.text2.nameEndTime);
+        viewMeetings.verifyTimeZone(data.valid.nameTimezone);
+        viewMeetings.verifyMeetingLink(data.text2.nameMeetingLink);
+        createMeeting.scrollDown();
+        createMeeting.cancelButton();
+
     })
 
     it("3.Mandatory Fields with Dial Num", () => {
@@ -92,6 +115,17 @@ describe("Create Legal Matter Scenario", () => {
         viewMeetings.textVerifyMeetingName(data.text3.checkMeetingName1);
         viewMeetings.textVerifyDateandTime(data.text3.checkDateAndTime);
         viewMeetings.textVerifyPhoneNumber(data.text3.checkPhoneNumber);
+        viewMeetings.editMeetings();
+        cy.wait(1000);
+        viewMeetings.verifyMatterNames(data.valid.nameMatter);
+        viewMeetings.verifyMatterTask(data.valid.nameTask);
+        viewMeetings.veirfyDate(data.valid.date);
+        viewMeetings.verifyStartTime(data.text3.nameStartTime);
+        viewMeetings.verifyEndTime(data.text3.nameEndTime);
+        viewMeetings.verifyTimeZone(data.valid.nameTimezone);
+        viewMeetings.verifyDialNumber(data.text3.nameDialNum);
+        createMeeting.scrollDown();
+        createMeeting.cancelButton();
     })
 
     it("4.Mandatory Fields with location", () => {
@@ -114,6 +148,16 @@ describe("Create Legal Matter Scenario", () => {
         createMeeting.scrollTop();
         viewMeetings.textVerifyMeetingName(data.text4.checkMeetingName1);
         viewMeetings.textVerifyDateandTime(data.text4.checkDateAndTime);
+        viewMeetings.editMeetings();
+        cy.wait(1000);
+        viewMeetings.verifyMatterNames(data.valid.nameMatter);
+        viewMeetings.verifyMatterTask(data.valid.nameTask);
+        viewMeetings.veirfyDate(data.valid.date);
+        viewMeetings.verifyStartTime(data.text4.nameStartTime);
+        viewMeetings.verifyEndTime(data.text4.nameEndTime);
+        viewMeetings.verifyTimeZone(data.valid.nameTimezone);
+        createMeeting.scrollDown();
+        createMeeting.cancelButton();
     })
 
     it("5.Mandatory Fields with meeting agenda", () => {
@@ -137,6 +181,17 @@ describe("Create Legal Matter Scenario", () => {
         viewMeetings.textVerifyMeetingName(data.text5.checkMeetingName1);
         viewMeetings.textVerifyDateandTime(data.text5.checkDateAndTime);
         viewMeetings.textVerifyMeetingAgenda(data.text5.checkMeetingAgenda);
+        viewMeetings.editMeetings();
+        cy.wait(1000);
+        viewMeetings.verifyMatterNames(data.valid.nameMatter);
+        viewMeetings.verifyMatterTask(data.valid.nameTask);
+        viewMeetings.veirfyDate(data.valid.date);
+        viewMeetings.verifyStartTime(data.text5.nameStartTime);
+        viewMeetings.verifyEndTime(data.text5.nameEndTime);
+        viewMeetings.verifyTimeZone(data.valid.nameTimezone);
+        viewMeetings.verifyMeetingAgenda(data.text5.nameMeetingAgenda);
+        createMeeting.scrollDown();
+        createMeeting.cancelButton();
     })
 
     it("6.Mandatory Fields with TM", () => {
@@ -159,6 +214,17 @@ describe("Create Legal Matter Scenario", () => {
         viewMeetings.textVerifyMeetingName(data.text6.checkMeetingName1);
         viewMeetings.textVerifyDateandTime(data.text6.checkDateAndTime);
         viewMeetings.textverifyNameList(data.common.checkNameAddTM);
+        viewMeetings.editMeetings();
+        cy.wait(1000);
+        viewMeetings.verifyMatterNames(data.valid.nameMatter);
+        viewMeetings.verifyMatterTask(data.valid.nameTask);
+        viewMeetings.veirfyDate(data.valid.date);
+        viewMeetings.verifyStartTime(data.text6.nameStartTime);
+        viewMeetings.verifyEndTime(data.text6.nameEndTime);
+        viewMeetings.verifyTimeZone(data.valid.nameTimezone);
+        viewMeetings.verifyTeamMember(data.valid.nameTM);
+        createMeeting.scrollDown();
+        createMeeting.cancelButton();
     })
 
     it("7.Mandatory Fields with Clients", () => {
@@ -183,6 +249,17 @@ describe("Create Legal Matter Scenario", () => {
         viewMeetings.textVerifyDateandTime(data.text7.checkDateAndTime);
         viewMeetings.textverifyNameList(data.common.checkNameClientFirm);
         viewMeetings.textverifyNameList(data.common.checkNameClientTM);
+        viewMeetings.editMeetings();
+        cy.wait(1000);
+        viewMeetings.verifyMatterNames(data.valid.nameMatter);
+        viewMeetings.verifyMatterTask(data.valid.nameTask);
+        viewMeetings.veirfyDate(data.valid.date);
+        viewMeetings.verifyStartTime(data.text7.nameStartTime);
+        viewMeetings.verifyEndTime(data.text7.nameEndTime);
+        viewMeetings.verifyTimeZone(data.valid.nameTimezone);
+        viewMeetings.verifyTeamMember(data.valid.nameClientTM);
+        createMeeting.scrollDown();
+        createMeeting.cancelButton();
     })
 
     it("8.Mandatory Fields with Documents", () => {
@@ -197,7 +274,7 @@ describe("Create Legal Matter Scenario", () => {
         createMeeting.addDocument(data.common.addDocum);
         createMeeting.saveButton();
         createMeeting.successPopupViewChanges();
-        createMeeting.viewDayTab();
+       createMeeting.viewDayTab();
         cy.wait(1000);
         viewDaySelect(data.common.date);
         viewMeetings.meetingClick(data.text8.checkMeetingName);
@@ -205,6 +282,17 @@ describe("Create Legal Matter Scenario", () => {
         viewMeetings.textVerifyMeetingName(data.text8.checkMeetingName1);
         viewMeetings.textVerifyDateandTime(data.text8.checkDateAndTime);
         viewMeetings.textVerifyDocumentName(data.common.checkDocumentName);
+        viewMeetings.editMeetings();
+        cy.wait(1000);
+        viewMeetings.verifyMatterNames(data.valid.nameMatter);
+        viewMeetings.verifyMatterTask(data.valid.nameTask);
+        viewMeetings.veirfyDate(data.valid.date);
+        viewMeetings.verifyStartTime(data.text8.nameStartTime);
+        viewMeetings.verifyEndTime(data.text8.nameEndTime);
+        viewMeetings.verifyTimeZone(data.valid.nameTimezone);
+        createMeeting.scrollDown();
+        viewMeetings.verifyDocumentName(data.valid.nameDoc);
+        createMeeting.cancelButton();
     })
 
     it("9.Mandatory with Notifications", () => {
@@ -224,6 +312,16 @@ describe("Create Legal Matter Scenario", () => {
         createMeeting.scrollTop();
         viewMeetings.textVerifyMeetingName(data.text9.checkMeetingName1);
         viewMeetings.textVerifyDateandTime(data.text9.checkDateAndTime);
+        viewMeetings.editMeetings();
+        cy.wait(1000);
+        viewMeetings.verifyMatterNames(data.valid.nameMatter);
+        viewMeetings.verifyMatterTask(data.valid.nameTask);
+        viewMeetings.veirfyDate(data.valid.date);
+        viewMeetings.verifyStartTime(data.text9.nameStartTime);
+        viewMeetings.verifyEndTime(data.text9.nameEndTime);
+        viewMeetings.verifyTimeZone(data.valid.nameTimezone);
+        createMeeting.scrollDown();
+        createMeeting.cancelButton();
     })
 
     it("10.Mandatory with Notifications and Meeting Link", () => {
@@ -246,6 +344,17 @@ describe("Create Legal Matter Scenario", () => {
         viewMeetings.textVerifyMeetingName(data.text10.checkMeetingName1);
         viewMeetings.textVerifyDateandTime(data.text10.checkDateAndTime);
         viewMeetings.textVerifyMeetingLink(data.text10.checkMeetingLink);
+        viewMeetings.editMeetings();
+        cy.wait(1000);
+        viewMeetings.verifyMatterNames(data.valid.nameMatter);
+        viewMeetings.verifyMatterTask(data.valid.nameTask);
+        viewMeetings.veirfyDate(data.valid.date);
+        viewMeetings.verifyStartTime(data.text10.nameStartTime);
+        viewMeetings.verifyEndTime(data.text10.nameEndTime);
+        viewMeetings.verifyTimeZone(data.valid.nameTimezone);
+        viewMeetings.verifyMeetingLink(data.text10.nameMeetingLink);
+        createMeeting.scrollDown();
+        createMeeting.cancelButton();
     })
 
     it("11.Mandatory with Notifications and Dial Num", () => {
@@ -268,6 +377,17 @@ describe("Create Legal Matter Scenario", () => {
         viewMeetings.textVerifyMeetingName(data.text11.checkMeetingName1);
         viewMeetings.textVerifyDateandTime(data.text11.checkDateAndTime);
         viewMeetings.textVerifyPhoneNumber(data.text11.checkPhoneNumber);
+        viewMeetings.editMeetings();
+        cy.wait(1000);
+        viewMeetings.verifyMatterNames(data.valid.nameMatter);
+        viewMeetings.verifyMatterTask(data.valid.nameTask);
+        viewMeetings.veirfyDate(data.valid.date);
+        viewMeetings.verifyStartTime(data.text11.nameStartTime);
+        viewMeetings.verifyEndTime(data.text11.nameEndTime);
+        viewMeetings.verifyTimeZone(data.valid.nameTimezone);
+        viewMeetings.verifyDialNumber(data.text11.nameDialNum);
+        createMeeting.scrollDown();
+        createMeeting.cancelButton();
     })
 
     it("12.Mandatory with Notifications and Loc", () => {
@@ -289,6 +409,16 @@ describe("Create Legal Matter Scenario", () => {
         createMeeting.scrollTop();
         viewMeetings.textVerifyMeetingName(data.text12.checkMeetingName1);
         viewMeetings.textVerifyDateandTime(data.text12.checkDateAndTime);
+        viewMeetings.editMeetings();
+        cy.wait(1000);
+        viewMeetings.verifyMatterNames(data.valid.nameMatter);
+        viewMeetings.verifyMatterTask(data.valid.nameTask);
+        viewMeetings.veirfyDate(data.valid.date);
+        viewMeetings.verifyStartTime(data.text12.nameStartTime);
+        viewMeetings.verifyEndTime(data.text12.nameEndTime);
+        viewMeetings.verifyTimeZone(data.valid.nameTimezone);
+        createMeeting.scrollDown();
+        createMeeting.cancelButton();
     })
 
     it("13.Mandatory with Notifications and Meeting Agenda", () => {
@@ -311,6 +441,17 @@ describe("Create Legal Matter Scenario", () => {
         viewMeetings.textVerifyMeetingName(data.text13.checkMeetingName1);
         viewMeetings.textVerifyDateandTime(data.text13.checkDateAndTime);
         viewMeetings.textVerifyMeetingAgenda(data.text13.checkMeetingAgenda);
+        viewMeetings.editMeetings();
+        cy.wait(1000);
+        viewMeetings.verifyMatterNames(data.valid.nameMatter);
+        viewMeetings.verifyMatterTask(data.valid.nameTask);
+        viewMeetings.veirfyDate(data.valid.date);
+        viewMeetings.verifyStartTime(data.text13.nameStartTime);
+        viewMeetings.verifyEndTime(data.text13.nameEndTime);
+        viewMeetings.verifyTimeZone(data.valid.nameTimezone);
+        viewMeetings.verifyMeetingAgenda(data.text13.nameMeetingAgenda);
+        createMeeting.scrollDown();
+        createMeeting.cancelButton();
     })
 
     it("14.Mandatory with Notifications and TM", () => {
@@ -332,6 +473,17 @@ describe("Create Legal Matter Scenario", () => {
         viewMeetings.textVerifyMeetingName(data.text14.checkMeetingName1);
         viewMeetings.textVerifyDateandTime(data.text14.checkDateAndTime);
         viewMeetings.textverifyNameList(data.common.checkNameAddTM);
+        viewMeetings.editMeetings();
+        cy.wait(1000);
+        viewMeetings.verifyMatterNames(data.valid.nameMatter);
+        viewMeetings.verifyMatterTask(data.valid.nameTask);
+        viewMeetings.veirfyDate(data.valid.date);
+        viewMeetings.verifyStartTime(data.text14.nameStartTime);
+        viewMeetings.verifyEndTime(data.text14.nameEndTime);
+        viewMeetings.verifyTimeZone(data.valid.nameTimezone);
+        viewMeetings.verifyTeamMember(data.valid.nameTM);
+        createMeeting.scrollDown();
+        createMeeting.cancelButton();
     })
 
     it("15.Mandatory with Notifications and Clients", () => {
@@ -355,6 +507,17 @@ describe("Create Legal Matter Scenario", () => {
         viewMeetings.textVerifyDateandTime(data.text15.checkDateAndTime);
         viewMeetings.textverifyNameList(data.common.checkNameClientFirm);
         viewMeetings.textverifyNameList(data.common.checkNameClientTM);
+        viewMeetings.editMeetings();
+        cy.wait(1000);
+        viewMeetings.verifyMatterNames(data.valid.nameMatter);
+        viewMeetings.verifyMatterTask(data.valid.nameTask);
+        viewMeetings.veirfyDate(data.valid.date);
+        viewMeetings.verifyStartTime(data.text15.nameStartTime);
+        viewMeetings.verifyEndTime(data.text15.nameEndTime);
+        viewMeetings.verifyTimeZone(data.valid.nameTimezone);
+        viewMeetings.verifyTeamMember(data.valid.nameClientTM);
+        createMeeting.scrollDown();
+        createMeeting.cancelButton();
     })
 
     it("16.Mandatory with Notifications and Docum", () => {
@@ -376,6 +539,17 @@ describe("Create Legal Matter Scenario", () => {
         viewMeetings.textVerifyMeetingName(data.text16.checkMeetingName1);
         viewMeetings.textVerifyDateandTime(data.text16.checkDateAndTime);
         viewMeetings.textVerifyDocumentName(data.common.checkDocumentName);
+        viewMeetings.editMeetings();
+        cy.wait(1000);
+        viewMeetings.verifyMatterNames(data.valid.nameMatter);
+        viewMeetings.verifyMatterTask(data.valid.nameTask);
+        viewMeetings.veirfyDate(data.valid.date);
+        viewMeetings.verifyStartTime(data.text16.nameStartTime);
+        viewMeetings.verifyEndTime(data.text16.nameEndTime);
+        viewMeetings.verifyTimeZone(data.valid.nameTimezone);
+        createMeeting.scrollDown();
+        viewMeetings.verifyDocumentName(data.valid.nameDoc);
+        createMeeting.cancelButton();
     })
 
     it("17.Mandatory with Meeting and Dial Num", () => {
@@ -400,6 +574,18 @@ describe("Create Legal Matter Scenario", () => {
         viewMeetings.textVerifyDateandTime(data.text17.checkDateAndTime);
         viewMeetings.textVerifyMeetingLink(data.text17.checkMeetingLink);
         viewMeetings.textVerifyPhoneNumber(data.text17.checkPhoneNumber);
+        viewMeetings.editMeetings();
+        cy.wait(1000);
+        viewMeetings.verifyMatterNames(data.valid.nameMatter);
+        viewMeetings.verifyMatterTask(data.valid.nameTask);
+        viewMeetings.veirfyDate(data.valid.date);
+        viewMeetings.verifyStartTime(data.text17.nameStartTime);
+        viewMeetings.verifyEndTime(data.text17.nameEndTime);
+        viewMeetings.verifyTimeZone(data.valid.nameTimezone);
+        viewMeetings.verifyMeetingLink(data.text17.nameMeetingLink);
+        viewMeetings.verifyDialNumber(data.text17.nameDialNum);
+        createMeeting.scrollDown();
+        createMeeting.cancelButton();
     })
 
     it("18.Mandatory with Meeting and Loc", () => {
@@ -423,6 +609,17 @@ describe("Create Legal Matter Scenario", () => {
         viewMeetings.textVerifyMeetingName(data.text18.checkMeetingName1);
         viewMeetings.textVerifyDateandTime(data.text18.checkDateAndTime);
         viewMeetings.textVerifyMeetingLink(data.text18.checkMeetingLink);
+        viewMeetings.editMeetings();
+        cy.wait(1000);
+        viewMeetings.verifyMatterNames(data.valid.nameMatter);
+        viewMeetings.verifyMatterTask(data.valid.nameTask);
+        viewMeetings.veirfyDate(data.valid.date);
+        viewMeetings.verifyStartTime(data.text18.nameStartTime);
+        viewMeetings.verifyEndTime(data.text18.nameEndTime);
+        viewMeetings.verifyTimeZone(data.valid.nameTimezone);
+        viewMeetings.verifyMeetingLink(data.text18.nameMeetingLink);
+        createMeeting.scrollDown();
+        createMeeting.cancelButton();
     })
 
     it("19.Mandatory with Meeting and Meeting agenda", () => {
@@ -447,6 +644,18 @@ describe("Create Legal Matter Scenario", () => {
         viewMeetings.textVerifyDateandTime(data.text19.checkDateAndTime);
         viewMeetings.textVerifyMeetingLink(data.text19.checkMeetingLink);
         viewMeetings.textVerifyMeetingAgenda(data.text19.checkMeetingAgenda);
+        viewMeetings.editMeetings();
+        cy.wait(1000);
+        viewMeetings.verifyMatterNames(data.valid.nameMatter);
+        viewMeetings.verifyMatterTask(data.valid.nameTask);
+        viewMeetings.veirfyDate(data.valid.date);
+        viewMeetings.verifyStartTime(data.text19.nameStartTime);
+        viewMeetings.verifyEndTime(data.text19.nameEndTime);
+        viewMeetings.verifyTimeZone(data.valid.nameTimezone);
+        viewMeetings.verifyMeetingLink(data.text19.nameMeetingLink);
+        viewMeetings.verifyMeetingAgenda(data.text19.nameMeetingAgenda);
+        createMeeting.scrollDown();
+        createMeeting.cancelButton();
     })
 
     it("20.Mandatory with Meeting and TM", () => {
@@ -471,6 +680,18 @@ describe("Create Legal Matter Scenario", () => {
         viewMeetings.textVerifyDateandTime(data.text20.checkDateAndTime);
         viewMeetings.textVerifyMeetingLink(data.text20.checkMeetingLink);
         viewMeetings.textverifyNameList(data.common.checkNameAddTM);
+        viewMeetings.editMeetings();
+        cy.wait(1000);
+        viewMeetings.verifyMatterNames(data.valid.nameMatter);
+        viewMeetings.verifyMatterTask(data.valid.nameTask);
+        viewMeetings.veirfyDate(data.valid.date);
+        viewMeetings.verifyStartTime(data.text20.nameStartTime);
+        viewMeetings.verifyEndTime(data.text20.nameEndTime);
+        viewMeetings.verifyTimeZone(data.valid.nameTimezone);
+        viewMeetings.verifyMeetingLink(data.text20.nameMeetingLink);
+        viewMeetings.verifyTeamMember(data.valid.nameTM);
+        createMeeting.scrollDown();
+        createMeeting.cancelButton();
     })
 
     it("21.Mandatory with Meeting and Clients", () => {
@@ -497,6 +718,18 @@ describe("Create Legal Matter Scenario", () => {
         viewMeetings.textVerifyMeetingLink(data.text21.checkMeetingLink);
         viewMeetings.textverifyNameList(data.common.checkNameClientFirm);
         viewMeetings.textverifyNameList(data.common.checkNameClientTM);
+        viewMeetings.editMeetings();
+        cy.wait(1000);
+        viewMeetings.verifyMatterNames(data.valid.nameMatter);
+        viewMeetings.verifyMatterTask(data.valid.nameTask);
+        viewMeetings.veirfyDate(data.valid.date);
+        viewMeetings.verifyStartTime(data.text21.nameStartTime);
+        viewMeetings.verifyEndTime(data.text21.nameEndTime);
+        viewMeetings.verifyTimeZone(data.valid.nameTimezone);
+        viewMeetings.verifyMeetingLink(data.text21.nameMeetingLink);
+        viewMeetings.verifyTeamMember(data.valid.nameClientTM);
+        createMeeting.scrollDown();
+        createMeeting.cancelButton();
     })
 
     it("22.Mandatory with Meeting and Documents", () => {
@@ -521,6 +754,18 @@ describe("Create Legal Matter Scenario", () => {
         viewMeetings.textVerifyDateandTime(data.text22.checkDateAndTime);
         viewMeetings.textVerifyMeetingLink(data.text22.checkMeetingLink);
         viewMeetings.textVerifyDocumentName(data.common.checkDocumentName);
+        viewMeetings.editMeetings();
+        cy.wait(1000);
+        viewMeetings.verifyMatterNames(data.valid.nameMatter);
+        viewMeetings.verifyMatterTask(data.valid.nameTask);
+        viewMeetings.veirfyDate(data.valid.date);
+        viewMeetings.verifyStartTime(data.text22.nameStartTime);
+        viewMeetings.verifyEndTime(data.text22.nameEndTime);
+        viewMeetings.verifyTimeZone(data.valid.nameTimezone);
+        viewMeetings.verifyMeetingLink(data.text22.nameMeetingLink);
+        createMeeting.scrollDown();
+        viewMeetings.verifyDocumentName(data.valid.nameDoc);
+        createMeeting.cancelButton();
     })
 
     it("23.Mandatory with Dial Num and Loc", () => {
@@ -544,6 +789,17 @@ describe("Create Legal Matter Scenario", () => {
         viewMeetings.textVerifyMeetingName(data.text23.checkMeetingName1);
         viewMeetings.textVerifyDateandTime(data.text23.checkDateAndTime);
         viewMeetings.textVerifyPhoneNumber(data.text23.checkPhoneNumber);
+        viewMeetings.editMeetings();
+        cy.wait(1000);
+        viewMeetings.verifyMatterNames(data.valid.nameMatter);
+        viewMeetings.verifyMatterTask(data.valid.nameTask);
+        viewMeetings.veirfyDate(data.valid.date);
+        viewMeetings.verifyStartTime(data.text23.nameStartTime);
+        viewMeetings.verifyEndTime(data.text23.nameEndTime);
+        viewMeetings.verifyTimeZone(data.valid.nameTimezone);
+        viewMeetings.verifyDialNumber(data.text23.nameDialNum);
+        createMeeting.scrollDown();
+        createMeeting.cancelButton();
     })
 
     it("24.Mandatory with Dial Num and Meeting agenda", () => {
@@ -568,6 +824,19 @@ describe("Create Legal Matter Scenario", () => {
         viewMeetings.textVerifyDateandTime(data.text24.checkDateAndTime);
         viewMeetings.textVerifyMeetingAgenda(data.text24.checkMeetingAgenda);
         viewMeetings.textVerifyPhoneNumber(data.text24.checkPhoneNumber);
+        viewMeetings.editMeetings();
+        cy.wait(1000);
+        viewMeetings.verifyMatterNames(data.valid.nameMatter);
+        viewMeetings.verifyMatterTask(data.valid.nameTask);
+        viewMeetings.veirfyDate(data.valid.date);
+        viewMeetings.verifyStartTime(data.text24.nameStartTime);
+        viewMeetings.verifyEndTime(data.text24.nameEndTime);
+        viewMeetings.verifyTimeZone(data.valid.nameTimezone);
+        viewMeetings.verifyDialNumber(data.text24.nameDialNum);
+        viewMeetings.verifyMeetingAgenda(data.text24.nameMeetingAgenda);
+        createMeeting.scrollDown();
+        createMeeting.cancelButton();
+
     })
 
     it("25.Mandatory with Dial Num and TM", () => {
@@ -592,6 +861,18 @@ describe("Create Legal Matter Scenario", () => {
         viewMeetings.textVerifyDateandTime(data.text25.checkDateAndTime);
         viewMeetings.textVerifyPhoneNumber(data.text25.checkPhoneNumber);
         viewMeetings.textverifyNameList(data.common.checkNameAddTM);
+        viewMeetings.editMeetings();
+        cy.wait(1000);
+        viewMeetings.verifyMatterNames(data.valid.nameMatter);
+        viewMeetings.verifyMatterTask(data.valid.nameTask);
+        viewMeetings.veirfyDate(data.valid.date);
+        viewMeetings.verifyStartTime(data.text25.nameStartTime);
+        viewMeetings.verifyEndTime(data.text25.nameEndTime);
+        viewMeetings.verifyTimeZone(data.valid.nameTimezone);
+        viewMeetings.verifyDialNumber(data.text25.nameDialNum);
+        viewMeetings.verifyTeamMember(data.text25.nameTM);
+        createMeeting.scrollDown();
+        createMeeting.cancelButton();
     })
 
     it("26.Mandatory with Dial Num and Clients", () => {
@@ -618,6 +899,18 @@ describe("Create Legal Matter Scenario", () => {
         viewMeetings.textVerifyPhoneNumber(data.text26.checkPhoneNumber);
         viewMeetings.textverifyNameList(data.common.checkNameClientFirm);
         viewMeetings.textverifyNameList(data.common.checkNameClientTM);
+        viewMeetings.editMeetings();
+        cy.wait(1000);
+        viewMeetings.verifyMatterNames(data.valid.nameMatter);
+        viewMeetings.verifyMatterTask(data.valid.nameTask);
+        viewMeetings.veirfyDate(data.valid.date);
+        viewMeetings.verifyStartTime(data.text26.nameStartTime);
+        viewMeetings.verifyEndTime(data.text26.nameEndTime);
+        viewMeetings.verifyTimeZone(data.valid.nameTimezone);
+        viewMeetings.verifyDialNumber(data.text26.nameDialNum);
+        viewMeetings.verifyTeamMember(data.valid.nameClientTM);
+        createMeeting.scrollDown();
+        createMeeting.cancelButton();
     })
 
     it("27.Mandatory with Dial Num and Documents", () => {
@@ -642,6 +935,18 @@ describe("Create Legal Matter Scenario", () => {
         viewMeetings.textVerifyDateandTime(data.text27.checkDateAndTime);
         viewMeetings.textVerifyPhoneNumber(data.text27.checkPhoneNumber);
         viewMeetings.textVerifyDocumentName(data.common.checkDocumentName);
+        viewMeetings.editMeetings();
+        cy.wait(1000);
+        viewMeetings.verifyMatterNames(data.valid.nameMatter);
+        viewMeetings.verifyMatterTask(data.valid.nameTask);
+        viewMeetings.veirfyDate(data.valid.date);
+        viewMeetings.verifyStartTime(data.text27.nameStartTime);
+        viewMeetings.verifyEndTime(data.text27.nameEndTime);
+        viewMeetings.verifyTimeZone(data.valid.nameTimezone);
+        viewMeetings.verifyDialNumber(data.text27.nameDialNum);
+        createMeeting.scrollDown();
+        viewMeetings.verifyDocumentName(data.valid.nameDoc);
+        createMeeting.cancelButton();
     })
 
 });

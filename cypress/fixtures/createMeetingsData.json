@@ -14,6 +14,19 @@
         "checkNameClientTM1":"Team Member - B ",
         "date":"7/1/2024"
     },
+    "valid" : {
+        "nameMatter":"Car Insurance Claim ",
+        "nameTask":"Case filling ",
+        "date":"07/01/2024",
+        "nameTimezone":"(GMT+05:30) India Standard Time - Kolkata ",
+        "nameTM":"Anderson",
+        "nameTM1":"",
+        "nameClientTM":"Team Member - A",
+        "nameClientTM1":"",
+        "nameDoc":"Files DG",
+        "nameDoc1":""
+    },
+
     "text1": {
         "Comment": "1.Mandatory Fields only",
         "matterName": "Car Insurance Claim",
@@ -23,7 +36,9 @@
         "EndTime": "00:15",
         "checkMeetingName" : "12:00 AM Car Insurance Claim - Case filling",
         "checkMeetingName1" : "Car Insurance Claim - Case filling",
-        "checkDateAndTime" : "Jul 01 2024 : 12:00 AM - 12:15 AM"
+        "checkDateAndTime" : "Jul 01 2024 : 12:00 AM - 12:15 AM",
+        "nameStartTime":" 00:00 ",
+        "nameEndTime":" 00:15 "
     },
     "text2": {
         "Comment": "2.Mandatory Fields with meeting link",
@@ -36,7 +51,10 @@
         "checkMeetingName" : "12:15 AM Car Insurance Claim - Case filling",
         "checkMeetingName1" : "Car Insurance Claim - Case filling",
         "checkDateAndTime" : "Jul 01 2024 : 12:15 AM - 12:30 AM",
-        "checkMeetingLink":" https://www.uplead.com/meeting-request-emails/"
+        "checkMeetingLink":" https://www.uplead.com/meeting-request-emails/",
+        "nameStartTime":" 00:15 ",
+        "nameEndTime":" 00:30 ",
+        "nameMeetingLink":"https://www.uplead.com/meeting-request-emails/"
         
     },
     "text3": {
@@ -50,7 +68,11 @@
         "checkMeetingName" : "12:30 AM Car Insurance Claim - Case filling",
         "checkMeetingName1" : "Car Insurance Claim - Case filling",
         "checkDateAndTime" : "Jul 01 2024 : 12:30 AM - 12:45 AM",
-        "checkPhoneNumber":" 4622595648"
+        "checkPhoneNumber":" 4622595648",
+        "nameStartTime":" 00:30 ",
+        "nameEndTime":" 00:45 ",
+        "nameDialNum":"4622595648"
+        
     },
     "text4": {
         "Comment": "4.Mandatory Fields with location",
@@ -62,7 +84,9 @@
         "location": "Cuddalore",
         "checkMeetingName" : "12:45 AM Car Insurance Claim - Case filling",
         "checkMeetingName1" : "Car Insurance Claim - Case filling",
-        "checkDateAndTime" : "Jul 01 2024 : 12:45 AM - 1:00 AM"
+        "checkDateAndTime" : "Jul 01 2024 : 12:45 AM - 1:00 AM",
+        "nameStartTime":" 00:45 ",
+        "nameEndTime":" 01:00 "
     },
     "text5": {
         "Comment": "5.Mandatory Fields with meeting agenda",
@@ -75,7 +99,10 @@
         "checkMeetingName" : "1:00 AM Car Insurance Claim - Case filling",
         "checkMeetingName1" : "Car Insurance Claim - Case filling",
         "checkDateAndTime" : "Jul 01 2024 : 1:00 AM - 1:15 AM",
-        "checkMeetingAgenda":" Discuss about the cases"
+        "checkMeetingAgenda":" Discuss about the cases",
+        "nameStartTime":" 01:00 ",
+        "nameEndTime":" 01:15 ",
+        "nameMeetingAgenda":"Discuss about the cases"
     },
     "text6": {
         "Comment": "6.Mandatory Fields with TM",
@@ -86,7 +113,9 @@
         "EndTime": "01:30",
         "checkMeetingName" : "1:15 AM Car Insurance Claim - Case filling",
         "checkMeetingName1" : "Car Insurance Claim - Case filling",
-        "checkDateAndTime" : "Jul 01 2024 : 1:15 AM - 1:30 AM"
+        "checkDateAndTime" : "Jul 01 2024 : 1:15 AM - 1:30 AM",
+        "nameStartTime":" 01:15 ",
+        "nameEndTime":" 01:30 "
     },
     "text7": {
         "Comment": "7.Mandatory Fields with Clients",
@@ -97,7 +126,9 @@
         "EndTime": "01:45",
         "checkMeetingName" : "1:30 AM Car Insurance Claim - Case filling",
         "checkMeetingName1" : "Car Insurance Claim - Case filling",
-        "checkDateAndTime" : "Jul 01 2024 : 1:30 AM - 1:45 AM"
+        "checkDateAndTime" : "Jul 01 2024 : 1:30 AM - 1:45 AM",
+        "nameStartTime":" 01:30 ",
+        "nameEndTime":" 01:45 "
     },
     "text8": {
         "Comment": "8.Mandatory Fields with Documents",
@@ -108,7 +139,9 @@
         "EndTime": "02:00",
         "checkMeetingName" : "1:45 AM Car Insurance Claim - Case filling",
         "checkMeetingName1" : "Car Insurance Claim - Case filling",
-        "checkDateAndTime" : "Jul 01 2024 : 1:45 AM - 2:00 AM"
+        "checkDateAndTime" : "Jul 01 2024 : 1:45 AM - 2:00 AM",
+        "nameStartTime":" 01:45 ",
+        "nameEndTime":" 02:00 "
     },
     "text9": {
         "Comment": "9.Mandatory with Notifications",
@@ -119,7 +152,9 @@
         "EndTime": "02:15",
         "checkMeetingName" : "2:00 AM Car Insurance Claim - Case filling",
         "checkMeetingName1" : "Car Insurance Claim - Case filling",
-        "checkDateAndTime" : "Jul 01 2024 : 2:00 AM - 2:15 AM"
+        "checkDateAndTime" : "Jul 01 2024 : 2:00 AM - 2:15 AM" ,
+        "nameStartTime":" 02:00 ",
+        "nameEndTime":" 02:15 "
     },
     "text10": {
         "Comment": "10.Mandatory with Notifications and Meeting Link",
@@ -132,7 +167,10 @@
         "checkMeetingName" : "2:15 AM Car Insurance Claim - Case filling",
         "checkMeetingName1" : "Car Insurance Claim - Case filling",
         "checkDateAndTime" : "Jul 01 2024 : 2:15 AM - 2:30 AM",
-        "checkMeetingLink":" https://www.uplead.com/meeting-request-emails/"
+        "checkMeetingLink":" https://www.uplead.com/meeting-request-emails/" ,
+        "nameStartTime":" 02:15 ",
+        "nameEndTime":" 02:30 ",
+        "nameMeetingLink":"https://www.uplead.com/meeting-request-emails/"
     },
     "text11": {
         "Comment": "11.Mandatory with Notifications and Dial Num",
@@ -145,7 +183,10 @@
         "checkMeetingName" : "2:30 AM Car Insurance Claim - Case filling",
         "checkMeetingName1" : "Car Insurance Claim - Case filling",
         "checkDateAndTime" : "Jul 01 2024 : 2:30 AM - 2:45 AM",
-        "checkPhoneNumber":" 4622595648"
+        "checkPhoneNumber":" 4622595648",
+        "nameStartTime":" 02:30 ",
+        "nameEndTime":" 02:45 ",
+        "nameDialNum":"4622595648"
     },
     "text12": {
         "Comment": "12.Mandatory with Notifications and Loc",
@@ -157,7 +198,9 @@
         "location": "Cuddalore",
         "checkMeetingName" : "2:45 AM Car Insurance Claim - Case filling",
         "checkMeetingName1" : "Car Insurance Claim - Case filling",
-        "checkDateAndTime" : "Jul 01 2024 : 2:45 AM - 3:00 AM"
+        "checkDateAndTime" : "Jul 01 2024 : 2:45 AM - 3:00 AM",
+        "nameStartTime":" 02:45 ",
+        "nameEndTime":" 03:00 "
     },
     "text13": {
         "Comment": "13.Mandatory with Notifications and Meeting Agenda",
@@ -170,7 +213,10 @@
         "checkMeetingName" : "3:00 AM Car Insurance Claim - Case filling",
         "checkMeetingName1" : "Car Insurance Claim - Case filling",
         "checkDateAndTime" : "Jul 01 2024 : 3:00 AM - 3:15 AM",
-        "checkMeetingAgenda":" Discuss about the cases"
+        "checkMeetingAgenda":" Discuss about the cases",
+        "nameStartTime":" 03:00 ",
+        "nameEndTime":" 03:15 ",
+        "nameMeetingAgenda":"Discuss about the cases"
     },
     "text14": {
         "Comment": "14.Mandatory with Notifications and TM",
@@ -181,7 +227,9 @@
         "EndTime": "03:30",
         "checkMeetingName" : "3:15 AM Car Insurance Claim - Case filling",
         "checkMeetingName1" : "Car Insurance Claim - Case filling",
-        "checkDateAndTime" : "Jul 01 2024 : 3:15 AM - 3:30 AM"
+        "checkDateAndTime" : "Jul 01 2024 : 3:15 AM - 3:30 AM",
+        "nameStartTime":" 03:00 ",
+        "nameEndTime":" 03:15 "
     },
     "text15": {
         "Comment": "15.Mandatory with Notifications and Clients",
@@ -192,7 +240,9 @@
         "EndTime": "03:45",
         "checkMeetingName" : "3:30 AM Car Insurance Claim - Case filling",
         "checkMeetingName1" : "Car Insurance Claim - Case filling",
-        "checkDateAndTime" : "Jul 01 2024 : 3:30 AM - 3:45 AM"
+        "checkDateAndTime" : "Jul 01 2024 : 3:30 AM - 3:45 AM",
+        "nameStartTime":" 03:30 ",
+        "nameEndTime":" 03:45 "
     },
     "text16": {
         "Comment": "16.Mandatory with Notifications and Docum",
@@ -203,7 +253,9 @@
         "EndTime": "04:00",
         "checkMeetingName" : "3:45 AM Car Insurance Claim - Case filling",
         "checkMeetingName1" : "Car Insurance Claim - Case filling",
-        "checkDateAndTime" : "Jul 01 2024 : 3:45 AM - 4:00 AM"
+        "checkDateAndTime" : "Jul 01 2024 : 3:45 AM - 4:00 AM",
+        "nameStartTime":" 03:45 ",
+        "nameEndTime":" 04:00 "
     },
     "text17": {
         "Comment": "17.Mandatory with Meeting and Dial Num",
@@ -218,7 +270,11 @@
         "checkMeetingName1" : "Car Insurance Claim - Case filling",
         "checkDateAndTime" : "Jul 01 2024 : 4:00 AM - 4:15 AM",
         "checkMeetingLink":" https://www.uplead.com/meeting-request-/",
-        "checkPhoneNumber":" 4622595648"
+        "checkPhoneNumber":" 4622595648",
+        "nameStartTime":" 04:00 ",
+        "nameEndTime":" 04:15 ",
+        "nameMeetingLink":"https://www.uplead.com/meeting-request-/",
+        "nameDialNum":"4622595648"
     },
     "text18": {
         "Comment": "18.Mandatory with Meeting and Loc",
@@ -232,7 +288,10 @@
         "checkMeetingName" : "4:15 AM Car Insurance Claim - Case filling",
         "checkMeetingName1" : "Car Insurance Claim - Case filling",
         "checkDateAndTime" : "Jul 01 2024 : 4:15 AM - 4:30 AM",
-        "checkMeetingLink":" https://w.uplead.com/meeting-request-emails/"
+        "checkMeetingLink":" https://w.uplead.com/meeting-request-emails/",
+        "nameStartTime":" 04:15 ",
+        "nameEndTime":" 04:30 ",
+        "nameMeetingLink":"https://w.uplead.com/meeting-request-emails/"
     },
     "text19": {
         "Comment": "19.Mandatory with Meeting and Meeting agenda",
@@ -247,7 +306,11 @@
         "checkMeetingName1" : "Car Insurance Claim - Case filling",
         "checkDateAndTime" : "Jul 01 2024 : 4:30 AM - 4:45 AM",
         "checkMeetingAgenda":" Discuss about the cases",
-        "checkMeetingLink":" htt://www.uplead.com/meeting-request-emails/"
+        "checkMeetingLink":" htt://www.uplead.com/meeting-request-emails/",
+        "nameStartTime":" 04:30 ",
+        "nameEndTime":" 04:45 ",
+        "nameMeetingLink":"htt://www.uplead.com/meeting-request-emails/",
+        "nameMeetingAgenda":"Discuss about the cases"
     },
     "text20": {
         "Comment": "20.Mandatory with Meeting and TM",
@@ -260,7 +323,10 @@
         "checkMeetingName" : "4:45 AM Car Insurance Claim - Case filling",
         "checkMeetingName1" : "Car Insurance Claim - Case filling",
         "checkDateAndTime" : "Jul 01 2024 : 4:45 AM - 5:00 AM",
-        "checkMeetingLink":" https://www.uead.com/meeting-request-emails/"
+        "checkMeetingLink":" https://www.uead.com/meeting-request-emails/",
+        "nameStartTime":" 04:45 ",
+        "nameEndTime":" 05:00 ",
+        "nameMeetingLink":"https://www.uead.com/meeting-request-emails/"
     },
     "text21": {
         "Comment": "21.Mandatory with Meeting and Clients",
@@ -273,7 +339,10 @@
         "checkMeetingName" : "5:00 AM Car Insurance Claim - Case filling",
         "checkMeetingName1" : "Car Insurance Claim - Case filling",
         "checkDateAndTime" : "Jul 01 2024 : 5:00 AM - 5:15 AM",
-        "checkMeetingLink":" https://www.uplead.com/-request-emails/"
+        "checkMeetingLink":" https://www.uplead.com/-request-emails/",
+        "nameStartTime":" 05:00 ",
+        "nameEndTime":" 05:15 ",
+        "nameMeetingLink":"https://www.uplead.com/-request-emails/"
     },
     "text22": {
         "Comment": "22.Mandatory with Meeting and Documents",
@@ -286,7 +355,10 @@
         "checkMeetingName" : "5:15 AM Car Insurance Claim - Case filling",
         "checkMeetingName1" : "Car Insurance Claim - Case filling",
         "checkDateAndTime" : "Jul 01 2024 : 5:15 AM - 5:30 AM",
-        "checkMeetingLink":" https://www.uplead.com/meeting-emails/"
+        "checkMeetingLink":" https://www.uplead.com/meeting-emails/",
+        "nameStartTime":" 05:15 ",
+        "nameEndTime":" 05:30 ",
+        "nameMeetingLink":"https://www.uplead.com/meeting-emails/"
     },
     "text23": {
         "Comment": "23.Mandatory with Dial Num and Loc",
@@ -300,7 +372,10 @@
         "checkMeetingName" : "5:30 AM Car Insurance Claim - Case filling",
         "checkMeetingName1" : "Car Insurance Claim - Case filling",
         "checkDateAndTime" : "Jul 01 2024 : 5:30 AM - 5:45 AM",
-        "checkPhoneNumber":" 462259564128"
+        "checkPhoneNumber":" 462259564128",
+        "nameStartTime":" 05:30 ",
+        "nameEndTime":" 05:45 ",
+        "nameDialNum":"462259564128"
     },
     "text24": {
         "Comment": "24.Mandatory with Dial Num and Meeting agenda",
@@ -315,7 +390,11 @@
         "checkMeetingName1" : "Car Insurance Claim - Case filling",
         "checkDateAndTime" : "Jul 01 2024 : 5:45 AM - 6:00 AM",
         "checkMeetingAgenda":" Discuss about the Matter related cases",
-        "checkPhoneNumber":" 4659564128"
+        "checkPhoneNumber":" 4659564128",
+        "nameStartTime":" 05:45 ",
+        "nameEndTime":" 06:00 ",
+        "nameDialNum":"4659564128",
+        "nameMeetingAgenda":"Discuss about the Matter related cases"
     },
     "text25": {
         "Comment": "25.Mandatory with Dial Num and TM",
@@ -328,7 +407,10 @@
         "checkMeetingName" : "6:00 AM Car Insurance Claim - Case filling",
         "checkMeetingName1" : "Car Insurance Claim - Case filling",
         "checkDateAndTime" : "Jul 01 2024 : 6:00 AM - 6:15 AM",
-        "checkPhoneNumber":" 4629564128"
+        "checkPhoneNumber":" 4629564128",
+        "nameStartTime":" 06:00 ",
+        "nameEndTime":" 06:15 ",
+        "nameDialNum":"4629564128"
     },
     "text26": {
         "Comment": "26.Mandatory with Dial Num and Clients",
@@ -341,7 +423,11 @@
         "checkMeetingName" : "6:15 AM Car Insurance Claim - Case filling",
         "checkMeetingName1" : "Car Insurance Claim - Case filling",
         "checkDateAndTime" : "Jul 01 2024 : 6:15 AM - 6:30 AM",
-        "checkPhoneNumber":" 4622595641"
+        "checkPhoneNumber":" 4622595641",
+        "nameStartTime":" 06:15 ",
+        "nameEndTime":" 06:30 ",
+        "nameDialNum":"4622595641"
+       
     },
     "text27": {
         "Comment": "17.Mandatory with Dial Num and Documents",
@@ -354,6 +440,9 @@
         "checkMeetingName" : "6:30 AM Car Insurance Claim - Case filling",
         "checkMeetingName1" : "Car Insurance Claim - Case filling",
         "checkDateAndTime" : "Jul 01 2024 : 6:30 AM - 6:45 AM",
-        "checkPhoneNumber":" 462259568"
+        "checkPhoneNumber":" 462259568",
+        "nameStartTime":" 06:30 ",
+        "nameEndTime":" 06:45 ",
+        "nameDialNum":"462259568"
     }
 }
