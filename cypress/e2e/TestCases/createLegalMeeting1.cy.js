@@ -15,18 +15,10 @@ describe("Create with Meeting on Test Case 2", () => {
         logInPage.loginButton();
     })
 
-    beforeEach("Each Test case this block will run", () => {
-
-        //  cy.wait(1000);
-        // createMeeting.leftsideMeetingMenu();
-        //  createMeeting.createTab();
-        //  createMeeting.legalEventTypeSelect();
-
-    })
-
-    it("Normal checking", () => {
+    it("Meeting Creating on Legal ", () => {
         cy.fixture("createMeetingsData1").then((inputs) => {
             inputs.forEach((input) => {
+                //Create Meeting on Legal
                 createMeeting.leftsideMeetingMenu();
                 createMeeting.createTab();
                 createMeeting.legalEventTypeSelect();
@@ -48,9 +40,12 @@ describe("Create with Meeting on Test Case 2", () => {
                 createMeeting.addDocument(input.addDocum);
                 createMeeting.saveButton();
                 createMeeting.successPopupViewChanges();
+                //View Tab
                 createMeeting.viewDayTab();
                 cy.wait(1000);
+                //Select Date
                 viewDaySelect(input.viewDate);
+                // After Clicking on the Meeting to verify the text
                 viewMeetings.meetingClick(input.checkMeetingName);
                 createMeeting.scrollTop();
                 viewMeetings.textVerifyMeetingName(input.checkMeetingName1);
@@ -62,6 +57,7 @@ describe("Create with Meeting on Test Case 2", () => {
                 viewMeetings.textverifyNameList(input.checkNameClientFirm);
                 viewMeetings.textverifyNameList(input.checkNameClientTM);
                 viewMeetings.textVerifyDocumentName(input.checkDocumentName);
+                // Click on Edit Button Meetings and Verify the text
                 viewMeetings.editMeetings();
                 cy.wait(1000);
                 viewMeetings.verifyMatterNames(input.nameMatter);
@@ -70,13 +66,13 @@ describe("Create with Meeting on Test Case 2", () => {
                 viewMeetings.verifyStartTime(input.nameStartTime);
                 viewMeetings.verifyEndTime(input.nameEndTime);
                 viewMeetings.verifyTimeZone(input.nameTimezone);
-                viewMeetings.verifyMeetingAgenda(input.nameMeetingAgenda);
-                viewMeetings.verifyMeetingLink(input.nameMeetingLink);
-                viewMeetings.verifyDialNumber(input.nameDialNum);
+                viewMeetings.verifyMeetingAgenda(input.meetingAgenda);
+                viewMeetings.verifyMeetingLink(input.meetingLink);
+                viewMeetings.verifyDialNumber(input.dial);
                 createMeeting.scrollDown();
-                viewMeetings.verifyTeamMember(input.nameTM);
-                viewMeetings.verifyTeamMember(input.nameClientTM);
-                viewMeetings.verifyDocumentName(input.nameDoc);
+                viewMeetings.verifyTeamMember(input.addTM);
+                viewMeetings.verifyTeamMember(input.addClientTM);
+                viewMeetings.verifyDocumentName(input.addDocum);
                 createMeeting.cancelButton();
 
             })
