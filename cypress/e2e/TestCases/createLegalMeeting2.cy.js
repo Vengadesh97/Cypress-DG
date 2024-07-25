@@ -3,6 +3,7 @@ import loginPage from "../PageObject/loginpagePOM"
 import createMeeting from "../PageObject/createMeetingPOM"
 import viewMeetings from "../PageObject/viewMeetingPOM"
 import meetings from "../../fixtures/createMeetingsData1.json"
+import { viewDaySelect } from '../PageObject/testingDate';
 
 
 
@@ -70,14 +71,14 @@ describe("Create Meeting for Legal", () => {
             createMeeting.leftsideMeetingMenu();
             createMeeting.createTab();
             createMeeting.legalEventTypeSelect();
-            createMeeting.selectMatterName(meetings.data.matterName);
-            createMeeting.selectSubjectTask(meetings.data.selectTask);
+            createMeeting.selectMatterName(meetings.data1.matterName);
+            createMeeting.selectSubjectTask(meetings.data1.selectTask);
             createMeeting.dateClick();
-            createMeeting.selectDate(meetings.data.chooseDate);
-            createMeeting.selectStartTime(meetings.data.startTime);
-            createMeeting.selectEndTime(meetings.data.endTime);
+            createMeeting.selectDate(meetings.data1.chooseDate);
+            createMeeting.selectStartTime(meetings.data1.startTime);
+            createMeeting.selectEndTime(meetings.data1.endTime);
             createMeeting.scrollCenter();
-            createMeeting.locationText(meetings.data.location);
+            createMeeting.locationText(meetings.data1.location);
             createMeeting.scrollDown();
             createMeeting.addTeamMember(meetings.common.addTM);
             createMeeting.saveButton();
@@ -88,19 +89,19 @@ describe("Create Meeting for Legal", () => {
             //Select Date
             viewDaySelect(meetings.common.viewDate);
             // After Clicking on the Meeting to verify the text
-            viewMeetings.meetingClick(meetings.data.checkMeetingName);
+            viewMeetings.meetingClick(meetings.data1.checkMeetingName);
             createMeeting.scrollTop();
-            viewMeetings.textVerifyMeetingName(meetings.data.checkMeetingName1);
+            viewMeetings.textVerifyMeetingName(meetings.data1.checkMeetingName1);
             // viewMeetings.textVerifyDateandTime(input.checkDateAndTime);
             viewMeetings.textverifyNameList(meetings.common.checkNameAddTM);
             // Click on Edit Button Meetings and Verify the text
             viewMeetings.editMeetings();
             cy.wait(1000);
-            viewMeetings.verifyMatterNames(meetings.data.nameMatter);
-            viewMeetings.verifyMatterTask(meetings.data.nameTask);
+            viewMeetings.verifyMatterNames(meetings.data1.nameMatter);
+            viewMeetings.verifyMatterTask(meetings.data1.nameTask);
             viewMeetings.veirfyDate(meetings.common.nameDate);
-            viewMeetings.verifyStartTime(meetings.data.nameStartTime);
-            viewMeetings.verifyEndTime(meetings.data.nameEndTime);
+            viewMeetings.verifyStartTime(meetings.data1.nameStartTime);
+            viewMeetings.verifyEndTime(meetings.data1.nameEndTime);
             viewMeetings.verifyTimeZone(meetings.common.nameTimezone);
             createMeeting.scrollDown();
             viewMeetings.verifyTeamMember(meetings.common.addTM);
@@ -113,14 +114,14 @@ describe("Create Meeting for Legal", () => {
             createMeeting.leftsideMeetingMenu();
             createMeeting.createTab();
             createMeeting.legalEventTypeSelect();
-            createMeeting.selectMatterName(meetings.data.matterName);
-            createMeeting.selectSubjectTask(meetings.data.selectTask);
+            createMeeting.selectMatterName(meetings.data2.matterName);
+            createMeeting.selectSubjectTask(meetings.data2.selectTask);
             createMeeting.dateClick();
-            createMeeting.selectDate(meetings.data.chooseDate);
-            createMeeting.selectStartTime(meetings.data.startTime);
-            createMeeting.selectEndTime(meetings.data.endTime);
+            createMeeting.selectDate(meetings.data2.chooseDate);
+            createMeeting.selectStartTime(meetings.data2.startTime);
+            createMeeting.selectEndTime(meetings.data2.endTime);
             createMeeting.scrollCenter();
-            createMeeting.locationText(meetings.data.location);
+            createMeeting.locationText(meetings.data2.location);
             createMeeting.scrollDown();
             createMeeting.addExternalCounselSelect(meetings.common.selectClient);
             createMeeting.addExternalTeamMember(meetings.common.addClientTM);
@@ -132,20 +133,20 @@ describe("Create Meeting for Legal", () => {
             //Select Date
             viewDaySelect(meetings.common.viewDate);
             // After Clicking on the Meeting to verify the text
-            viewMeetings.meetingClick(meetings.data.checkMeetingName);
+            viewMeetings.meetingClick(meetings.data2.checkMeetingName);
             createMeeting.scrollTop();
-            viewMeetings.textVerifyMeetingName(meetings.data.checkMeetingName1);
+            viewMeetings.textVerifyMeetingName(meetings.data2.checkMeetingName1);
             // viewMeetings.textVerifyDateandTime(input.checkDateAndTime);
             viewMeetings.textverifyNameList(meetings.common.checkNameClientFirm);
             viewMeetings.textverifyNameList(meetings.common.checkNameClientTM);
             // Click on Edit Button Meetings and Verify the text
             viewMeetings.editMeetings();
             cy.wait(1000);
-            viewMeetings.verifyMatterNames(meetings.data.nameMatter);
-            viewMeetings.verifyMatterTask(meetings.data.nameTask);
+            viewMeetings.verifyMatterNames(meetings.data2.nameMatter);
+            viewMeetings.verifyMatterTask(meetings.data2.nameTask);
             viewMeetings.veirfyDate(meetings.common.nameDate);
-            viewMeetings.verifyStartTime(meetings.data.nameStartTime);
-            viewMeetings.verifyEndTime(meetings.data.nameEndTime);
+            viewMeetings.verifyStartTime(meetings.data2.nameStartTime);
+            viewMeetings.verifyEndTime(meetings.data2.nameEndTime);
             viewMeetings.verifyTimeZone(meetings.common.nameTimezone);
             createMeeting.scrollDown();
             viewMeetings.verifyTeamMember(meetings.common.addClientTM);
@@ -158,14 +159,14 @@ describe("Create Meeting for Legal", () => {
             createMeeting.leftsideMeetingMenu();
             createMeeting.createTab();
             createMeeting.legalEventTypeSelect();
-            createMeeting.selectMatterName(meetings.data.matterName);
-            createMeeting.selectSubjectTask(meetings.data.selectTask);
+            createMeeting.selectMatterName(meetings.data3.matterName);
+            createMeeting.selectSubjectTask(meetings.data3.selectTask);
             createMeeting.dateClick();
-            createMeeting.selectDate(meetings.data.chooseDate);
-            createMeeting.selectStartTime(meetings.data.startTime);
-            createMeeting.selectEndTime(meetings.data.endTime);
+            createMeeting.selectDate(meetings.data3.chooseDate);
+            createMeeting.selectStartTime(meetings.data3.startTime);
+            createMeeting.selectEndTime(meetings.data3.endTime);
             createMeeting.scrollCenter();
-            createMeeting.locationText(meetings.data.location);
+            createMeeting.locationText(meetings.data3.location);
             createMeeting.scrollDown();
             createMeeting.addDocument(meetings.common.addDocum);
             createMeeting.saveButton();
@@ -176,19 +177,19 @@ describe("Create Meeting for Legal", () => {
             //Select Date
             viewDaySelect(meetings.common.viewDate);
             // After Clicking on the Meeting to verify the text
-            viewMeetings.meetingClick(meetings.data.checkMeetingName);
+            viewMeetings.meetingClick(meetings.data3.checkMeetingName);
             createMeeting.scrollTop();
-            viewMeetings.textVerifyMeetingName(meetings.data.checkMeetingName1);
+            viewMeetings.textVerifyMeetingName(meetings.data3.checkMeetingName1);
             // viewMeetings.textVerifyDateandTime(input.checkDateAndTime);
             viewMeetings.textVerifyDocumentName(meetings.common.checkDocumentName);
             // Click on Edit Button Meetings and Verify the text
             viewMeetings.editMeetings();
             cy.wait(1000);
-            viewMeetings.verifyMatterNames(meetings.data.nameMatter);
-            viewMeetings.verifyMatterTask(meetings.data.nameTask);
+            viewMeetings.verifyMatterNames(meetings.data3.nameMatter);
+            viewMeetings.verifyMatterTask(meetings.data3.nameTask);
             viewMeetings.veirfyDate(meetings.common.nameDate);
-            viewMeetings.verifyStartTime(meetings.data.nameStartTime);
-            viewMeetings.verifyEndTime(meetings.data.nameEndTime);
+            viewMeetings.verifyStartTime(meetings.data3.nameStartTime);
+            viewMeetings.verifyEndTime(meetings.data3.nameEndTime);
             viewMeetings.verifyTimeZone(meetings.common.nameTimezone);
             createMeeting.scrollDown();
             viewMeetings.verifyDocumentName(meetings.common.addDocum);
@@ -201,14 +202,14 @@ describe("Create Meeting for Legal", () => {
             createMeeting.leftsideMeetingMenu();
             createMeeting.createTab();
             createMeeting.legalEventTypeSelect();
-            createMeeting.selectMatterName(meetings.data.matterName);
-            createMeeting.selectSubjectTask(meetings.data.selectTask);
+            createMeeting.selectMatterName(meetings.data4.matterName);
+            createMeeting.selectSubjectTask(meetings.data4.selectTask);
             createMeeting.dateClick();
-            createMeeting.selectDate(meetings.data.chooseDate);
-            createMeeting.selectStartTime(meetings.data.startTime);
-            createMeeting.selectEndTime(meetings.data.endTime);
+            createMeeting.selectDate(meetings.data4.chooseDate);
+            createMeeting.selectStartTime(meetings.data4.startTime);
+            createMeeting.selectEndTime(meetings.data4.endTime);
             createMeeting.scrollCenter();
-            createMeeting.meetingAgendaText(meetings.data.meetingAgenda);
+            createMeeting.meetingAgendaText(meetings.data4.meetingAgenda);
             createMeeting.scrollDown();
             createMeeting.addTeamMember(meetings.common.addTM);
             createMeeting.saveButton();
@@ -219,22 +220,22 @@ describe("Create Meeting for Legal", () => {
             //Select Date
             viewDaySelect(meetings.common.viewDate);
             // After Clicking on the Meeting to verify the text
-            viewMeetings.meetingClick(meetings.data.checkMeetingName);
+            viewMeetings.meetingClick(meetings.data4.checkMeetingName);
             createMeeting.scrollTop();
-            viewMeetings.textVerifyMeetingName(meetings.data.checkMeetingName1);
+            viewMeetings.textVerifyMeetingName(meetings.data4.checkMeetingName1);
             // viewMeetings.textVerifyDateandTime(input.checkDateAndTime);
-            viewMeetings.textVerifyMeetingAgenda(meetings.data.checkMeetingAgenda);
+            viewMeetings.textVerifyMeetingAgenda(meetings.data4.checkMeetingAgenda);
             viewMeetings.textverifyNameList(meetings.common.checkNameAddTM);
             // Click on Edit Button Meetings and Verify the text
             viewMeetings.editMeetings();
             cy.wait(1000);
-            viewMeetings.verifyMatterNames(meetings.data.nameMatter);
-            viewMeetings.verifyMatterTask(meetings.data.nameTask);
+            viewMeetings.verifyMatterNames(meetings.data4.nameMatter);
+            viewMeetings.verifyMatterTask(meetings.data4.nameTask);
             viewMeetings.veirfyDate(meetings.common.nameDate);
-            viewMeetings.verifyStartTime(meetings.data.nameStartTime);
-            viewMeetings.verifyEndTime(meetings.data.nameEndTime);
+            viewMeetings.verifyStartTime(meetings.data4.nameStartTime);
+            viewMeetings.verifyEndTime(meetings.data4.nameEndTime);
             viewMeetings.verifyTimeZone(meetings.common.nameTimezone);
-            viewMeetings.verifyMeetingAgenda(meetings.data.meetingAgenda);
+            viewMeetings.verifyMeetingAgenda(meetings.data4.meetingAgenda);
             createMeeting.scrollDown();
             viewMeetings.verifyTeamMember(meetings.common.addTM);
             createMeeting.cancelButton();
@@ -245,14 +246,14 @@ describe("Create Meeting for Legal", () => {
             createMeeting.leftsideMeetingMenu();
             createMeeting.createTab();
             createMeeting.legalEventTypeSelect();
-            createMeeting.selectMatterName(meetings.data.matterName);
-            createMeeting.selectSubjectTask(meetings.data.selectTask);
+            createMeeting.selectMatterName(meetings.data5.matterName);
+            createMeeting.selectSubjectTask(meetings.data5.selectTask);
             createMeeting.dateClick();
-            createMeeting.selectDate(meetings.data.chooseDate);
-            createMeeting.selectStartTime(meetings.data.startTime);
-            createMeeting.selectEndTime(meetings.data.endTime);
+            createMeeting.selectDate(meetings.data5.chooseDate);
+            createMeeting.selectStartTime(meetings.data5.startTime);
+            createMeeting.selectEndTime(meetings.data5.endTime);
             createMeeting.scrollCenter();
-            createMeeting.meetingAgendaText(meetings.data.meetingAgenda);
+            createMeeting.meetingAgendaText(meetings.data5.meetingAgenda);
             createMeeting.scrollDown();
             createMeeting.addExternalCounselSelect(meetings.common.selectClient);
             createMeeting.addExternalTeamMember(meetings.common.addClientTM);
@@ -264,23 +265,23 @@ describe("Create Meeting for Legal", () => {
             //Select Date
             viewDaySelect(meetings.common.viewDate);
             // After Clicking on the Meeting to verify the text
-            viewMeetings.meetingClick(meetings.data.checkMeetingName);
+            viewMeetings.meetingClick(meetings.data5.checkMeetingName);
             createMeeting.scrollTop();
-            viewMeetings.textVerifyMeetingName(meetings.data.checkMeetingName1);
+            viewMeetings.textVerifyMeetingName(meetings.data5.checkMeetingName1);
             // viewMeetings.textVerifyDateandTime(input.checkDateAndTime);
-            viewMeetings.textVerifyMeetingAgenda(meetings.data.checkMeetingAgenda);
+            viewMeetings.textVerifyMeetingAgenda(meetings.data5.checkMeetingAgenda);
             viewMeetings.textverifyNameList(meetings.common.checkNameClientFirm);
             viewMeetings.textverifyNameList(meetings.common.checkNameClientTM);
             // Click on Edit Button Meetings and Verify the text
             viewMeetings.editMeetings();
             cy.wait(1000);
-            viewMeetings.verifyMatterNames(meetings.data.nameMatter);
-            viewMeetings.verifyMatterTask(meetings.data.nameTask);
+            viewMeetings.verifyMatterNames(meetings.data5.nameMatter);
+            viewMeetings.verifyMatterTask(meetings.data5.nameTask);
             viewMeetings.veirfyDate(meetings.common.nameDate);
-            viewMeetings.verifyStartTime(meetings.data.nameStartTime);
-            viewMeetings.verifyEndTime(meetings.data.nameEndTime);
+            viewMeetings.verifyStartTime(meetings.data5.nameStartTime);
+            viewMeetings.verifyEndTime(meetings.data5.nameEndTime);
             viewMeetings.verifyTimeZone(meetings.common.nameTimezone);
-            viewMeetings.verifyMeetingAgenda(meetings.data.meetingAgenda);
+            viewMeetings.verifyMeetingAgenda(meetings.data5.meetingAgenda);
             createMeeting.scrollDown();
             viewMeetings.verifyTeamMember(meetings.common.addClientTM);
             createMeeting.cancelButton();
@@ -292,14 +293,14 @@ describe("Create Meeting for Legal", () => {
             createMeeting.leftsideMeetingMenu();
             createMeeting.createTab();
             createMeeting.legalEventTypeSelect();
-            createMeeting.selectMatterName(meetings.data.matterName);
-            createMeeting.selectSubjectTask(meetings.data.selectTask);
+            createMeeting.selectMatterName(meetings.data6.matterName);
+            createMeeting.selectSubjectTask(meetings.data6.selectTask);
             createMeeting.dateClick();
-            createMeeting.selectDate(meetings.data.chooseDate);
-            createMeeting.selectStartTime(meetings.data.startTime);
-            createMeeting.selectEndTime(meetings.data.endTime);
+            createMeeting.selectDate(meetings.data6.chooseDate);
+            createMeeting.selectStartTime(meetings.data6.startTime);
+            createMeeting.selectEndTime(meetings.data6.endTime);
             createMeeting.scrollCenter();
-            createMeeting.meetingAgendaText(meetings.data.meetingAgenda);
+            createMeeting.meetingAgendaText(meetings.data6.meetingAgenda);
             createMeeting.scrollDown();
             createMeeting.addDocument(meetings.common.addDocum);
             createMeeting.saveButton();
@@ -310,22 +311,22 @@ describe("Create Meeting for Legal", () => {
             //Select Date
             viewDaySelect(meetings.common.viewDate);
             // After Clicking on the Meeting to verify the text
-            viewMeetings.meetingClick(meetings.data.checkMeetingName);
+            viewMeetings.meetingClick(meetings.data6.checkMeetingName);
             createMeeting.scrollTop();
-            viewMeetings.textVerifyMeetingName(meetings.data.checkMeetingName1);
+            viewMeetings.textVerifyMeetingName(meetings.data6.checkMeetingName1);
             // viewMeetings.textVerifyDateandTime(input.checkDateAndTime);
-            viewMeetings.textVerifyMeetingAgenda(meetings.data.checkMeetingAgenda);
+            viewMeetings.textVerifyMeetingAgenda(meetings.data6.checkMeetingAgenda);
             viewMeetings.textVerifyDocumentName(meetings.common.checkDocumentName);
             // Click on Edit Button Meetings and Verify the text
             viewMeetings.editMeetings();
             cy.wait(1000);
-            viewMeetings.verifyMatterNames(meetings.data.nameMatter);
-            viewMeetings.verifyMatterTask(meetings.data.nameTask);
+            viewMeetings.verifyMatterNames(meetings.data6.nameMatter);
+            viewMeetings.verifyMatterTask(meetings.data6.nameTask);
             viewMeetings.veirfyDate(meetings.common.nameDate);
-            viewMeetings.verifyStartTime(meetings.data.nameStartTime);
-            viewMeetings.verifyEndTime(meetings.data.nameEndTime);
+            viewMeetings.verifyStartTime(meetings.data6.nameStartTime);
+            viewMeetings.verifyEndTime(meetings.data6.nameEndTime);
             viewMeetings.verifyTimeZone(meetings.common.nameTimezone);
-            viewMeetings.verifyMeetingAgenda(meetings.data.meetingAgenda);
+            viewMeetings.verifyMeetingAgenda(meetings.data6.meetingAgenda);
             createMeeting.scrollDown();
             viewMeetings.verifyDocumentName(meetings.common.addDocum);
             createMeeting.cancelButton();
@@ -337,12 +338,12 @@ describe("Create Meeting for Legal", () => {
             createMeeting.leftsideMeetingMenu();
             createMeeting.createTab();
             createMeeting.legalEventTypeSelect();
-            createMeeting.selectMatterName(meetings.data.matterName);
-            createMeeting.selectSubjectTask(meetings.data.selectTask);
+            createMeeting.selectMatterName(meetings.data7.matterName);
+            createMeeting.selectSubjectTask(meetings.data7.selectTask);
             createMeeting.dateClick();
-            createMeeting.selectDate(meetings.data.chooseDate);
-            createMeeting.selectStartTime(meetings.data.startTime);
-            createMeeting.selectEndTime(meetings.data.endTime);
+            createMeeting.selectDate(meetings.data7.chooseDate);
+            createMeeting.selectStartTime(meetings.data7.startTime);
+            createMeeting.selectEndTime(meetings.data7.endTime);
             createMeeting.scrollDown();
             createMeeting.addTeamMember(meetings.common.addTM);
             createMeeting.addExternalCounselSelect(meetings.common.selectClient);
@@ -355,9 +356,9 @@ describe("Create Meeting for Legal", () => {
             //Select Date
             viewDaySelect(meetings.common.viewDate);
             // After Clicking on the Meeting to verify the text
-            viewMeetings.meetingClick(meetings.data.checkMeetingName);
+            viewMeetings.meetingClick(meetings.data7.checkMeetingName);
             createMeeting.scrollTop();
-            viewMeetings.textVerifyMeetingName(meetings.data.checkMeetingName1);
+            viewMeetings.textVerifyMeetingName(meetings.data7.checkMeetingName1);
             // viewMeetings.textVerifyDateandTime(input.checkDateAndTime);
             viewMeetings.textverifyNameList(meetings.common.checkNameAddTM);
             viewMeetings.textverifyNameList(meetings.common.checkNameClientFirm);
@@ -365,11 +366,11 @@ describe("Create Meeting for Legal", () => {
             // Click on Edit Button Meetings and Verify the text
             viewMeetings.editMeetings();
             cy.wait(1000);
-            viewMeetings.verifyMatterNames(meetings.data.nameMatter);
-            viewMeetings.verifyMatterTask(meetings.data.nameTask);
+            viewMeetings.verifyMatterNames(meetings.data7.nameMatter);
+            viewMeetings.verifyMatterTask(meetings.data7.nameTask);
             viewMeetings.veirfyDate(meetings.common.nameDate);
-            viewMeetings.verifyStartTime(meetings.data.nameStartTime);
-            viewMeetings.verifyEndTime(meetings.data.nameEndTime);
+            viewMeetings.verifyStartTime(meetings.data7.nameStartTime);
+            viewMeetings.verifyEndTime(meetings.data7.nameEndTime);
             viewMeetings.verifyTimeZone(meetings.common.nameTimezone);
             createMeeting.scrollDown();
             viewMeetings.verifyTeamMember(meetings.common.addTM);
@@ -383,12 +384,12 @@ describe("Create Meeting for Legal", () => {
             createMeeting.leftsideMeetingMenu();
             createMeeting.createTab();
             createMeeting.legalEventTypeSelect();
-            createMeeting.selectMatterName(meetings.data.matterName);
-            createMeeting.selectSubjectTask(meetings.data.selectTask);
+            createMeeting.selectMatterName(meetings.data8.matterName);
+            createMeeting.selectSubjectTask(meetings.data8.selectTask);
             createMeeting.dateClick();
-            createMeeting.selectDate(meetings.data.chooseDate);
-            createMeeting.selectStartTime(meetings.data.startTime);
-            createMeeting.selectEndTime(meetings.data.endTime);
+            createMeeting.selectDate(meetings.data8.chooseDate);
+            createMeeting.selectStartTime(meetings.data8.startTime);
+            createMeeting.selectEndTime(meetings.data8.endTime);
             createMeeting.scrollDown();
             createMeeting.addTeamMember(meetings.common.addTM);
             createMeeting.addDocument(meetings.common.addDocum);
@@ -400,20 +401,20 @@ describe("Create Meeting for Legal", () => {
             //Select Date
             viewDaySelect(meetings.common.viewDate);
             // After Clicking on the Meeting to verify the text
-            viewMeetings.meetingClick(meetings.data.checkMeetingName);
+            viewMeetings.meetingClick(meetings.data8.checkMeetingName);
             createMeeting.scrollTop();
-            viewMeetings.textVerifyMeetingName(meetings.data.checkMeetingName1);
+            viewMeetings.textVerifyMeetingName(meetings.data8.checkMeetingName1);
             // viewMeetings.textVerifyDateandTime(input.checkDateAndTime);
             viewMeetings.textverifyNameList(meetings.common.checkNameAddTM);
             viewMeetings.textVerifyDocumentName(meetings.common.checkDocumentName);
             // Click on Edit Button Meetings and Verify the text
             viewMeetings.editMeetings();
             cy.wait(1000);
-            viewMeetings.verifyMatterNames(meetings.data.nameMatter);
-            viewMeetings.verifyMatterTask(meetings.data.nameTask);
+            viewMeetings.verifyMatterNames(meetings.data8.nameMatter);
+            viewMeetings.verifyMatterTask(meetings.data8.nameTask);
             viewMeetings.veirfyDate(meetings.common.nameDate);
-            viewMeetings.verifyStartTime(meetings.data.nameStartTime);
-            viewMeetings.verifyEndTime(meetings.data.nameEndTime);
+            viewMeetings.verifyStartTime(meetings.data8.nameStartTime);
+            viewMeetings.verifyEndTime(meetings.data8.nameEndTime);
             viewMeetings.verifyTimeZone(meetings.common.nameTimezone);
             createMeeting.scrollDown();
             viewMeetings.verifyTeamMember(meetings.common.addTM);
@@ -427,12 +428,12 @@ describe("Create Meeting for Legal", () => {
             createMeeting.leftsideMeetingMenu();
             createMeeting.createTab();
             createMeeting.legalEventTypeSelect();
-            createMeeting.selectMatterName(meetings.data.matterName);
-            createMeeting.selectSubjectTask(meetings.data.selectTask);
+            createMeeting.selectMatterName(meetings.data9.matterName);
+            createMeeting.selectSubjectTask(meetings.data9.selectTask);
             createMeeting.dateClick();
-            createMeeting.selectDate(meetings.data.chooseDate);
-            createMeeting.selectStartTime(meetings.data.startTime);
-            createMeeting.selectEndTime(meetings.data.endTime);
+            createMeeting.selectDate(meetings.data9.chooseDate);
+            createMeeting.selectStartTime(meetings.data9.startTime);
+            createMeeting.selectEndTime(meetings.data9.endTime);
             createMeeting.scrollDown();
             createMeeting.addExternalCounselSelect(meetings.common.selectClient);
             createMeeting.addExternalTeamMember(meetings.common.addClientTM);
@@ -445,9 +446,9 @@ describe("Create Meeting for Legal", () => {
             //Select Date
             viewDaySelect(meetings.common.viewDate);
             // After Clicking on the Meeting to verify the text
-            viewMeetings.meetingClick(meetings.data.checkMeetingName);
+            viewMeetings.meetingClick(meetings.data9.checkMeetingName);
             createMeeting.scrollTop();
-            viewMeetings.textVerifyMeetingName(meetings.data.checkMeetingName1);
+            viewMeetings.textVerifyMeetingName(meetings.data9.checkMeetingName1);
             // viewMeetings.textVerifyDateandTime(input.checkDateAndTime);
             viewMeetings.textverifyNameList(meetings.common.checkNameClientFirm);
             viewMeetings.textverifyNameList(meetings.common.checkNameClientTM);
@@ -455,11 +456,11 @@ describe("Create Meeting for Legal", () => {
             // Click on Edit Button Meetings and Verify the text
             viewMeetings.editMeetings();
             cy.wait(1000);
-            viewMeetings.verifyMatterNames(meetings.data.nameMatter);
-            viewMeetings.verifyMatterTask(meetings.data.nameTask);
+            viewMeetings.verifyMatterNames(meetings.data9.nameMatter);
+            viewMeetings.verifyMatterTask(meetings.data9.nameTask);
             viewMeetings.veirfyDate(meetings.common.nameDate);
-            viewMeetings.verifyStartTime(meetings.data.nameStartTime);
-            viewMeetings.verifyEndTime(meetings.data.nameEndTime);
+            viewMeetings.verifyStartTime(meetings.data9.nameStartTime);
+            viewMeetings.verifyEndTime(meetings.data9.nameEndTime);
             viewMeetings.verifyTimeZone(meetings.common.nameTimezone);
             createMeeting.scrollDown();
             viewMeetings.verifyTeamMember(meetings.common.addClientTM);
@@ -467,6 +468,32 @@ describe("Create Meeting for Legal", () => {
             createMeeting.cancelButton();
 
       })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 })
 
 
