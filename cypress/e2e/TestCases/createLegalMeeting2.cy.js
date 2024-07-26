@@ -469,10 +469,7 @@ describe("Create Meeting for Legal", () => {
 
       })
 
-      ///  TC No : 38 Mandatory with Meeting , Dial and Loc
-
-
-      it("38.Mandatory with Meeting , Dial and Loc", () => {
+      it("11.Mandatory with Meeting link, Dial and Loc", () => {
             createMeeting.leftsideMeetingMenu();
             createMeeting.createTab();
             createMeeting.legalEventTypeSelect();
@@ -514,11 +511,11 @@ describe("Create Meeting for Legal", () => {
             viewMeetings.verifyDialNumber(meetings.data10.dial);
             createMeeting.scrollDown();
             createMeeting.cancelButton();
-  
+
       })
 
 
-      it("39.Mandatory with Meeting , Dial and Meeting agenda", () => {
+      it("12.Mandatory with Meeting link, Dial and Meeting agenda", () => {
             //Create Meeting on Legal
             createMeeting.leftsideMeetingMenu();
             createMeeting.createTab();
@@ -563,10 +560,10 @@ describe("Create Meeting for Legal", () => {
             viewMeetings.verifyDialNumber(meetings.data11.dial);
             createMeeting.scrollDown();
             createMeeting.cancelButton();
-  
+
       })
-  
-      it("40.Mandatory with Meeting , Dial and TM", () => {
+
+      it("13.Mandatory with Meeting link, Dial and TM", () => {
             //Create Meeting on Legal
             createMeeting.leftsideMeetingMenu();
             createMeeting.createTab();
@@ -611,15 +608,491 @@ describe("Create Meeting for Legal", () => {
             createMeeting.scrollDown();
             viewMeetings.verifyTeamMember(meetings.common.addTM);
       })
-      
+
+      it("14.Mandatory with Meeting link, Dial and Clients", () => {
+            //Create Meeting on Legal
+            createMeeting.leftsideMeetingMenu();
+            createMeeting.createTab();
+            createMeeting.legalEventTypeSelect();
+            createMeeting.selectMatterName(meetings.data13.matterName);
+            createMeeting.selectSubjectTask(meetings.data13.selectTask);
+            createMeeting.dateClick();
+            createMeeting.selectDate(meetings.data13.chooseDate);
+            createMeeting.selectStartTime(meetings.data13.startTime);
+            createMeeting.selectEndTime(meetings.data13.endTime);
+            createMeeting.scrollCenter();
+            createMeeting.meetingLinkText(meetings.data13.meetingLink);
+            createMeeting.dialinNumText(meetings.data13.dial);
+            createMeeting.scrollDown();
+            createMeeting.addExternalCounselSelect(meetings.common.selectClient);
+            createMeeting.addExternalTeamMember(meetings.common.addClientTM);
+            createMeeting.saveButton();
+            createMeeting.successPopupViewChanges();
+            //View Tab
+            createMeeting.viewDayTab();
+            cy.wait(1000);
+            //Select Date
+            viewDaySelect(meetings.common.viewDate);
+            // After Clicking on the Meeting to verify the text
+            viewMeetings.meetingClick(meetings.data13.checkMeetingName);
+            createMeeting.scrollTop();
+            viewMeetings.textVerifyMeetingName(meetings.data13.checkMeetingName1);
+            // viewMeetings.textVerifyDateandTime(input.checkDateAndTime);
+            viewMeetings.textVerifyMeetingLink(meetings.data13.checkMeetingLink);
+            viewMeetings.textVerifyPhoneNumber(meetings.data13.checkPhoneNumber);
+            viewMeetings.textverifyNameList(meetings.common.checkNameClientFirm);
+            viewMeetings.textverifyNameList(meetings.common.checkNameClientTM);
+            // Click on Edit Button Meetings and Verify the text
+            viewMeetings.editMeetings();
+            cy.wait(1000);
+            viewMeetings.verifyMatterNames(meetings.data13.nameMatter);
+            viewMeetings.verifyMatterTask(meetings.data13.nameTask);
+            viewMeetings.veirfyDate(meetings.common.nameDate);
+            viewMeetings.verifyStartTime(meetings.data13.nameStartTime);
+            viewMeetings.verifyEndTime(meetings.data13.nameEndTime);
+            viewMeetings.verifyTimeZone(meetings.common.nameTimezone);
+            viewMeetings.verifyMeetingLink(meetings.data13.meetingLink);
+            viewMeetings.verifyDialNumber(meetings.data13.dial);
+            createMeeting.scrollDown();
+            viewMeetings.verifyTeamMember(meetings.common.addClientTM);
+            createMeeting.cancelButton();
+
+      })
+
+      it("15.Mandatory with Meeting link, Dial and Documents", () => {
+            //Create Meeting on Legal
+            createMeeting.leftsideMeetingMenu();
+            createMeeting.createTab();
+            createMeeting.legalEventTypeSelect();
+            createMeeting.selectMatterName(meetings.data14.matterName);
+            createMeeting.selectSubjectTask(meetings.data14.selectTask);
+            createMeeting.dateClick();
+            createMeeting.selectDate(meetings.data14.chooseDate);
+            createMeeting.selectStartTime(meetings.data14.startTime);
+            createMeeting.selectEndTime(meetings.data14.endTime);
+            createMeeting.scrollCenter();
+            createMeeting.meetingLinkText(meetings.data14.meetingLink);
+            createMeeting.dialinNumText(meetings.data14.dial);
+            createMeeting.scrollDown();
+            createMeeting.addDocument(meetings.common.addDocum);
+            createMeeting.saveButton();
+            createMeeting.successPopupViewChanges();
+            //View Tab
+            createMeeting.viewDayTab();
+            cy.wait(1000);
+            //Select Date
+            viewDaySelect(meetings.common.viewDate);
+            // After Clicking on the Meeting to verify the text
+            viewMeetings.meetingClick(meetings.data14.checkMeetingName);
+            createMeeting.scrollTop();
+            viewMeetings.textVerifyMeetingName(meetings.data14.checkMeetingName1);
+            // viewMeetings.textVerifyDateandTime(input.checkDateAndTime);
+            viewMeetings.textVerifyMeetingLink(meetings.data14.checkMeetingLink);
+            viewMeetings.textVerifyPhoneNumber(meetings.data14.checkPhoneNumber);
+            viewMeetings.textVerifyDocumentName(meetings.common.checkDocumentName);
+            // Click on Edit Button Meetings and Verify the text
+            viewMeetings.editMeetings();
+            cy.wait(1000);
+            viewMeetings.verifyMatterNames(meetings.data14.nameMatter);
+            viewMeetings.verifyMatterTask(meetings.data14.nameTask);
+            viewMeetings.veirfyDate(meetings.common.nameDate);
+            viewMeetings.verifyStartTime(meetings.data14.nameStartTime);
+            viewMeetings.verifyEndTime(meetings.data14.nameEndTime);
+            viewMeetings.verifyTimeZone(meetings.common.nameTimezone);
+            viewMeetings.verifyMeetingLink(meetings.data14.meetingLink);
+            viewMeetings.verifyDialNumber(meetings.data14.dial);
+            createMeeting.scrollDown();
+            viewMeetings.verifyDocumentName(meetings.common.addDocum);
+            createMeeting.cancelButton();
+
+      })
+
+      it("16.Mandatory with Meeting link, Loc and Meeting agenda", () => {
+            //Create Meeting on Legal
+            createMeeting.leftsideMeetingMenu();
+            createMeeting.createTab();
+            createMeeting.legalEventTypeSelect();
+            createMeeting.selectMatterName(meetings.data15.matterName);
+            createMeeting.selectSubjectTask(meetings.data15.selectTask);
+            createMeeting.dateClick();
+            createMeeting.selectDate(meetings.data15.chooseDate);
+            createMeeting.selectStartTime(meetings.data15.startTime);
+            createMeeting.selectEndTime(meetings.data15.endTime);
+            createMeeting.scrollCenter();
+            createMeeting.meetingAgendaText(meetings.data15.meetingAgenda);
+            createMeeting.meetingLinkText(meetings.data15.meetingLink);
+            createMeeting.locationText(meetings.data15.location);
+            createMeeting.scrollDown();
+            createMeeting.saveButton();
+            createMeeting.successPopupViewChanges();
+            //View Tab
+            createMeeting.viewDayTab();
+            cy.wait(1000);
+            //Select Date
+            viewDaySelect(meetings.common.viewDate);
+            // After Clicking on the Meeting to verify the text
+            viewMeetings.meetingClick(meetings.data15.checkMeetingName);
+            createMeeting.scrollTop();
+            viewMeetings.textVerifyMeetingName(meetings.data15.checkMeetingName1);
+            // viewMeetings.textVerifyDateandTime(input.checkDateAndTime);
+            viewMeetings.textVerifyMeetingLink(meetings.data15.checkMeetingLink);
+            viewMeetings.textVerifyMeetingAgenda(meetings.data15.checkMeetingAgenda);
+            // Click on Edit Button Meetings and Verify the text
+            viewMeetings.editMeetings();
+            cy.wait(1000);
+            viewMeetings.verifyMatterNames(meetings.data15.nameMatter);
+            viewMeetings.verifyMatterTask(meetings.data15.nameTask);
+            viewMeetings.veirfyDate(meetings.common.nameDate);
+            viewMeetings.verifyStartTime(meetings.data15.nameStartTime);
+            viewMeetings.verifyEndTime(meetings.data15.nameEndTime);
+            viewMeetings.verifyTimeZone(meetings.common.nameTimezone);
+
+            viewMeetings.verifyMeetingAgenda(meetings.data15.meetingAgenda);
+            viewMeetings.verifyMeetingLink(meetings.data15.meetingLink);
+            createMeeting.scrollDown();
+            createMeeting.cancelButton();
+
+      })
+
+      it("17.Mandatory with Meeting link, Loc and TM", () => {
+            //Create Meeting on Legal
+            createMeeting.leftsideMeetingMenu();
+            createMeeting.createTab();
+            createMeeting.legalEventTypeSelect();
+            createMeeting.selectMatterName(meetings.data16.matterName);
+            createMeeting.selectSubjectTask(meetings.data16.selectTask);
+            createMeeting.dateClick();
+            createMeeting.selectDate(meetings.data16.chooseDate);
+            createMeeting.selectStartTime(meetings.data16.startTime);
+            createMeeting.selectEndTime(meetings.data16.endTime);
+            createMeeting.scrollCenter();
+            createMeeting.meetingLinkText(meetings.data16.meetingLink);
+            createMeeting.locationText(meetings.data16.location);
+            createMeeting.scrollDown();
+            createMeeting.addTeamMember(meetings.common.addTM);
+            createMeeting.saveButton();
+            createMeeting.successPopupViewChanges();
+            //View Tab
+            createMeeting.viewDayTab();
+            cy.wait(1000);
+            //Select Date
+            viewDaySelect(meetings.common.viewDate);
+            // After Clicking on the Meeting to verify the text
+            viewMeetings.meetingClick(meetings.data16.checkMeetingName);
+            createMeeting.scrollTop();
+            viewMeetings.textVerifyMeetingName(meetings.data16.checkMeetingName1);
+            // viewMeetings.textVerifyDateandTime(input.checkDateAndTime);
+            viewMeetings.textVerifyMeetingLink(meetings.data16.checkMeetingLink);
+            viewMeetings.textverifyNameList(meetings.common.checkNameAddTM);
+            // Click on Edit Button Meetings and Verify the text
+            viewMeetings.editMeetings();
+            cy.wait(1000);
+            viewMeetings.verifyMatterNames(meetings.data16.nameMatter);
+            viewMeetings.verifyMatterTask(meetings.data16.nameTask);
+            viewMeetings.veirfyDate(meetings.common.nameDate);
+            viewMeetings.verifyStartTime(meetings.data16.nameStartTime);
+            viewMeetings.verifyEndTime(meetings.data16.nameEndTime);
+            viewMeetings.verifyTimeZone(meetings.common.nameTimezone);
+
+            viewMeetings.verifyMeetingLink(meetings.data16.meetingLink);
+            createMeeting.scrollDown();
+            viewMeetings.verifyTeamMember(meetings.common.addTM);
+            createMeeting.cancelButton();
+
+      })
+
+      // verfiy add for location
+      it("18.Mandatory with Meeting link, Loc and Clients", () => {
+            //Create Meeting on Legal
+            createMeeting.leftsideMeetingMenu();
+            createMeeting.createTab();
+            createMeeting.legalEventTypeSelect();
+            createMeeting.selectMatterName(meetings.data17.matterName);
+            createMeeting.selectSubjectTask(meetings.data17.selectTask);
+            createMeeting.dateClick();
+            createMeeting.selectDate(meetings.data17.chooseDate);
+            createMeeting.selectStartTime(meetings.data17.startTime);
+            createMeeting.selectEndTime(meetings.data17.endTime);
+            createMeeting.scrollCenter();
+            createMeeting.meetingLinkText(meetings.data17.meetingLink);
+            createMeeting.locationText(meetings.data17.location);
+            createMeeting.scrollDown();
+            createMeeting.addExternalCounselSelect(meetings.common.selectClient);
+            createMeeting.addExternalTeamMember(meetings.common.addClientTM);
+            createMeeting.saveButton();
+            createMeeting.successPopupViewChanges();
+            //View Tab
+            createMeeting.viewDayTab();
+            cy.wait(1000);
+            //Select Date
+            viewDaySelect(meetings.common.viewDate);
+            // After Clicking on the Meeting to verify the text
+            viewMeetings.meetingClick(meetings.data17.checkMeetingName);
+            createMeeting.scrollTop();
+            viewMeetings.textVerifyMeetingName(meetings.data17.checkMeetingName1);
+            // viewMeetings.textVerifyDateandTime(input.checkDateAndTime);
+            viewMeetings.textVerifyMeetingLink(meetings.data17.checkMeetingLink);
+            viewMeetings.textverifyNameList(meetings.common.checkNameClientFirm);
+            viewMeetings.textverifyNameList(meetings.common.checkNameClientTM);
+            // Click on Edit Button Meetings and Verify the text
+            viewMeetings.editMeetings();
+            cy.wait(1000);
+            viewMeetings.verifyMatterNames(meetings.data17.nameMatter);
+            viewMeetings.verifyMatterTask(meetings.data17.nameTask);
+            viewMeetings.veirfyDate(meetings.common.nameDate);
+            viewMeetings.verifyStartTime(meetings.data17.nameStartTime);
+            viewMeetings.verifyEndTime(meetings.data17.nameEndTime);
+            viewMeetings.verifyTimeZone(meetings.common.nameTimezone);
+            viewMeetings.verifyMeetingLink(meetings.data17.meetingLink);
+            createMeeting.scrollDown();
+            viewMeetings.verifyTeamMember(meetings.common.addClientTM);
+            createMeeting.cancelButton();
+
+      })
+
+      it("19.Mandatory with Meeting link, Loc and Documents", () => {
+            //Create Meeting on Legal
+            createMeeting.leftsideMeetingMenu();
+            createMeeting.createTab();
+            createMeeting.legalEventTypeSelect();
+            createMeeting.selectMatterName(meetings.data18.matterName);
+            createMeeting.selectSubjectTask(meetings.data18.selectTask);
+            createMeeting.dateClick();
+            createMeeting.selectDate(meetings.data18.chooseDate);
+            createMeeting.selectStartTime(meetings.data18.startTime);
+            createMeeting.selectEndTime(meetings.data18.endTime);
+            createMeeting.scrollCenter();
+            createMeeting.meetingLinkText(meetings.data18.meetingLink);
+            createMeeting.locationText(meetings.data18.location);
+            createMeeting.scrollDown();
+            createMeeting.addDocument(meetings.common.addDocum);
+            createMeeting.saveButton();
+            createMeeting.successPopupViewChanges();
+            //View Tab
+            createMeeting.viewDayTab();
+            cy.wait(1000);
+            //Select Date
+            viewDaySelect(meetings.common.viewDate);
+            // After Clicking on the Meeting to verify the text
+            viewMeetings.meetingClick(meetings.data18.checkMeetingName);
+            createMeeting.scrollTop();
+            viewMeetings.textVerifyMeetingName(meetings.data18.checkMeetingName1);
+            // viewMeetings.textVerifyDateandTime(input.checkDateAndTime);
+            viewMeetings.textVerifyMeetingLink(meetings.data18.checkMeetingLink);
+            viewMeetings.textVerifyDocumentName(meetings.common.checkDocumentName);
+            // Click on Edit Button Meetings and Verify the text
+            viewMeetings.editMeetings();
+            cy.wait(1000);
+            viewMeetings.verifyMatterNames(meetings.data18.nameMatter);
+            viewMeetings.verifyMatterTask(meetings.data18.nameTask);
+            viewMeetings.veirfyDate(meetings.common.nameDate);
+            viewMeetings.verifyStartTime(meetings.data18.nameStartTime);
+            viewMeetings.verifyEndTime(meetings.data18.nameEndTime);
+            viewMeetings.verifyTimeZone(meetings.common.nameTimezone);
+            viewMeetings.verifyMeetingLink(meetings.data18.meetingLink);
+            createMeeting.scrollDown();
+            viewMeetings.verifyDocumentName(meetings.common.addDocum);
+            createMeeting.cancelButton();
+
+      })
 
 
+      it("20.Mandatory with Meeting link, Meeting agenda and TM", () => {
+            //Create Meeting on Legal
+            createMeeting.leftsideMeetingMenu();
+            createMeeting.createTab();
+            createMeeting.legalEventTypeSelect();
+            createMeeting.selectMatterName(meetings.data19.matterName);
+            createMeeting.selectSubjectTask(meetings.data19.selectTask);
+            createMeeting.dateClick();
+            createMeeting.selectDate(meetings.data19.chooseDate);
+            createMeeting.selectStartTime(meetings.data19.startTime);
+            createMeeting.selectEndTime(meetings.data19.endTime);
+            createMeeting.scrollCenter();
+            createMeeting.meetingAgendaText(meetings.data19.meetingAgenda);
+            createMeeting.meetingLinkText(meetings.data19.meetingLink);
+            createMeeting.scrollDown();
+            createMeeting.addTeamMember(meetings.common.addTM);
+            createMeeting.saveButton();
+            createMeeting.successPopupViewChanges();
+            //View Tab
+            createMeeting.viewDayTab();
+            cy.wait(1000);
+            //Select Date
+            viewDaySelect(meetings.common.viewDate);
+            // After Clicking on the Meeting to verify the text
+            viewMeetings.meetingClick(meetings.data19.checkMeetingName);
+            createMeeting.scrollTop();
+            viewMeetings.textVerifyMeetingName(meetings.data19.checkMeetingName1);
+            // viewMeetings.textVerifyDateandTime(input.checkDateAndTime);
+            viewMeetings.textVerifyMeetingLink(meetings.data19.checkMeetingLink);
+            viewMeetings.textVerifyMeetingAgenda(meetings.data19.checkMeetingAgenda);
+            viewMeetings.textverifyNameList(meetings.common.checkNameAddTM);
+            // Click on Edit Button Meetings and Verify the text
+            viewMeetings.editMeetings();
+            cy.wait(1000);
+            viewMeetings.verifyMatterNames(meetings.data19.nameMatter);
+            viewMeetings.verifyMatterTask(meetings.data19.nameTask);
+            viewMeetings.veirfyDate(meetings.common.nameDate);
+            viewMeetings.verifyStartTime(meetings.data19.nameStartTime);
+            viewMeetings.verifyEndTime(meetings.data19.nameEndTime);
+            viewMeetings.verifyTimeZone(meetings.common.nameTimezone);
+            viewMeetings.verifyMeetingAgenda(meetings.data19.meetingAgenda);
+            viewMeetings.verifyMeetingLink(meetings.data19.meetingLink);
+            createMeeting.scrollDown();
+            viewMeetings.verifyTeamMember(meetings.common.addTM);
+            createMeeting.cancelButton();
+
+      })
 
 
+      it("21.Mandatory with Meeting link, Meeting agenda and Clients", () => {
+            //Create Meeting on Legal
+            createMeeting.leftsideMeetingMenu();
+            createMeeting.createTab();
+            createMeeting.legalEventTypeSelect();
+            createMeeting.selectMatterName(meetings.data20.matterName);
+            createMeeting.selectSubjectTask(meetings.data20.selectTask);
+            createMeeting.dateClick();
+            createMeeting.selectDate(meetings.data20.chooseDate);
+            createMeeting.selectStartTime(meetings.data20.startTime);
+            createMeeting.selectEndTime(meetings.data20.endTime);
+            createMeeting.scrollCenter();
+            createMeeting.meetingAgendaText(meetings.data20.meetingAgenda);
+            createMeeting.meetingLinkText(meetings.data20.meetingLink);
+            createMeeting.scrollDown();
+            createMeeting.addExternalCounselSelect(meetings.common.selectClient);
+            createMeeting.addExternalTeamMember(meetings.common.addClientTM);
+            createMeeting.saveButton();
+            createMeeting.successPopupViewChanges();
+            //View Tab
+            createMeeting.viewDayTab();
+            cy.wait(1000);
+            //Select Date
+            viewDaySelect(meetings.common.viewDate);
+            // After Clicking on the Meeting to verify the text
+            viewMeetings.meetingClick(meetings.data20.checkMeetingName);
+            createMeeting.scrollTop();
+            viewMeetings.textVerifyMeetingName(meetings.data20.checkMeetingName1);
+            // viewMeetings.textVerifyDateandTime(input.checkDateAndTime);
+            viewMeetings.textVerifyMeetingLink(meetings.data20.checkMeetingLink);
+            viewMeetings.textVerifyMeetingAgenda(meetings.data20.checkMeetingAgenda);
+            viewMeetings.textverifyNameList(meetings.common.checkNameClientFirm);
+            viewMeetings.textverifyNameList(meetings.common.checkNameClientTM);
+            // Click on Edit Button Meetings and Verify the text
+            viewMeetings.editMeetings();
+            cy.wait(1000);
+            viewMeetings.verifyMatterNames(meetings.data20.nameMatter);
+            viewMeetings.verifyMatterTask(meetings.data20.nameTask);
+            viewMeetings.veirfyDate(meetings.common.nameDate);
+            viewMeetings.verifyStartTime(meetings.data20.nameStartTime);
+            viewMeetings.verifyEndTime(meetings.data20.nameEndTime);
+            viewMeetings.verifyTimeZone(meetings.common.nameTimezone);
+            viewMeetings.verifyMeetingAgenda(meetings.data20.meetingAgenda);
+            viewMeetings.verifyMeetingLink(meetings.data20.meetingLink);
+            createMeeting.scrollDown();
+            viewMeetings.verifyTeamMember(meetings.common.addClientTM);
+            createMeeting.cancelButton();
 
+      })
 
+      it("22.Mandatory with Meeting link, Meeting agenda and Documents", () => {
+            //Create Meeting on Legal
+            createMeeting.leftsideMeetingMenu();
+            createMeeting.createTab();
+            createMeeting.legalEventTypeSelect();
+            createMeeting.selectMatterName(meetings.data21.matterName);
+            createMeeting.selectSubjectTask(meetings.data21.selectTask);
+            createMeeting.dateClick();
+            createMeeting.selectDate(meetings.data21.chooseDate);
+            createMeeting.selectStartTime(meetings.data21.startTime);
+            createMeeting.selectEndTime(meetings.data21.endTime);
+            createMeeting.scrollCenter();
+            createMeeting.meetingAgendaText(meetings.data21.meetingAgenda);
+            createMeeting.meetingLinkText(meetings.data21.meetingLink);
+            createMeeting.scrollDown();
+            createMeeting.addDocument(meetings.common.addDocum);
+            createMeeting.saveButton();
+            createMeeting.successPopupViewChanges();
+            //View Tab
+            createMeeting.viewDayTab();
+            cy.wait(1000);
+            //Select Date
+            viewDaySelect(meetings.common.viewDate);
+            // After Clicking on the Meeting to verify the text
+            viewMeetings.meetingClick(meetings.data21.checkMeetingName);
+            createMeeting.scrollTop();
+            viewMeetings.textVerifyMeetingName(meetings.data21.checkMeetingName1);
+            // viewMeetings.textVerifyDateandTime(input.checkDateAndTime);
+            viewMeetings.textVerifyMeetingLink(meetings.data21.checkMeetingLink);
+            viewMeetings.textVerifyMeetingAgenda(meetings.data21.checkMeetingAgenda);
+            viewMeetings.textVerifyDocumentName(meetings.common.checkDocumentName);
+            // Click on Edit Button Meetings and Verify the text
+            viewMeetings.editMeetings();
+            cy.wait(1000);
+            viewMeetings.verifyMatterNames(meetings.data21.nameMatter);
+            viewMeetings.verifyMatterTask(meetings.data21.nameTask);
+            viewMeetings.veirfyDate(meetings.common.nameDate);
+            viewMeetings.verifyStartTime(meetings.data21.nameStartTime);
+            viewMeetings.verifyEndTime(meetings.data21.nameEndTime);
+            viewMeetings.verifyTimeZone(meetings.common.nameTimezone);
+            viewMeetings.verifyMeetingAgenda(meetings.data21.meetingAgenda);
+            viewMeetings.verifyMeetingLink(meetings.data21.meetingLink);
+            createMeeting.scrollDown();
+            viewMeetings.verifyDocumentName(meetings.common.addDocum);
+            createMeeting.cancelButton();
 
+      })
 
+      it("23.Mandatory with Meeting link, TM and Clients", () => {
+            //Create Meeting on Legal
+            createMeeting.leftsideMeetingMenu();
+            createMeeting.createTab();
+            createMeeting.legalEventTypeSelect();
+            createMeeting.selectMatterName(meetings.data22.matterName);
+            createMeeting.selectSubjectTask(meetings.data22.selectTask);
+            createMeeting.dateClick();
+            createMeeting.selectDate(meetings.data22.chooseDate);
+            createMeeting.selectStartTime(meetings.data22.startTime);
+            createMeeting.selectEndTime(meetings.data22.endTime);
+            createMeeting.scrollCenter();
+            createMeeting.meetingLinkText(meetings.data22.meetingLink);
+            createMeeting.scrollDown();
+            createMeeting.addTeamMember(meetings.common.addTM);
+            createMeeting.addExternalCounselSelect(meetings.common.selectClient);
+            createMeeting.addExternalTeamMember(meetings.common.addClientTM);
+            createMeeting.saveButton();
+            createMeeting.successPopupViewChanges();
+            //View Tab
+            createMeeting.viewDayTab();
+            cy.wait(1000);
+            //Select Date
+            viewDaySelect(meetings.common.viewDate);
+            // After Clicking on the Meeting to verify the text
+            viewMeetings.meetingClick(meetings.data22.checkMeetingName);
+            createMeeting.scrollTop();
+            viewMeetings.textVerifyMeetingName(meetings.data22.checkMeetingName1);
+            // viewMeetings.textVerifyDateandTime(input.checkDateAndTime);
+            viewMeetings.textVerifyMeetingLink(meetings.data22.checkMeetingLink);
+            viewMeetings.textverifyNameList(meetings.common.checkNameAddTM);
+            viewMeetings.textverifyNameList(meetings.common.checkNameClientFirm);
+            viewMeetings.textverifyNameList(meetings.common.checkNameClientTM);
+            // Click on Edit Button Meetings and Verify the text
+            viewMeetings.editMeetings();
+            cy.wait(1000);
+            viewMeetings.verifyMatterNames(meetings.data22.nameMatter);
+            viewMeetings.verifyMatterTask(meetings.data22.nameTask);
+            viewMeetings.veirfyDate(meetings.common.nameDate);
+            viewMeetings.verifyStartTime(meetings.data22.nameStartTime);
+            viewMeetings.verifyEndTime(meetings.data22.nameEndTime);
+            viewMeetings.verifyTimeZone(meetings.common.nameTimezone);
+            viewMeetings.verifyMeetingLink(meetings.data22.meetingLink);
+            createMeeting.scrollDown();
+            viewMeetings.verifyTeamMember(meetings.common.addTM);
+            viewMeetings.verifyTeamMember(meetings.common.addClientTM);
+            createMeeting.cancelButton();
+
+      })
 
 
 
